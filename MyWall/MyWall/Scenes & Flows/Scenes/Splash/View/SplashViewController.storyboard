@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1LP-J0-HHi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="Ego-od-Alx">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="1LP-J0-HHi" customClass="SplashViewController" customModule="MyWall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aiv-Cz-hMI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_background" translatesAutoresizingMaskIntoConstraints="NO" id="AIE-sa-Df3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet" translatesAutoresizingMaskIntoConstraints="NO" id="Ldl-e0-GDn">
+                                <rect key="frame" x="97" y="84" width="220" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="QdZ-CE-H4A"/>
+                                    <constraint firstAttribute="width" secondItem="Ldl-e0-GDn" secondAttribute="height" multiplier="1:1" id="aCu-Ox-QHw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Wall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnE-pM-b2c">
+                                <rect key="frame" x="15" y="324" width="384" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="AIE-sa-Df3" secondAttribute="bottom" id="97d-uE-0KI"/>
+                            <constraint firstItem="6Rc-L1-aKJ" firstAttribute="trailing" secondItem="hnE-pM-b2c" secondAttribute="trailing" constant="15" id="Dfv-wT-ncM"/>
+                            <constraint firstItem="AIE-sa-Df3" firstAttribute="leading" secondItem="6Rc-L1-aKJ" secondAttribute="leading" id="Lxy-9P-RsC"/>
+                            <constraint firstItem="6Rc-L1-aKJ" firstAttribute="trailing" secondItem="AIE-sa-Df3" secondAttribute="trailing" id="Ujh-nO-w1I"/>
+                            <constraint firstItem="Ldl-e0-GDn" firstAttribute="top" secondItem="6Rc-L1-aKJ" secondAttribute="top" constant="40" id="WPl-Xy-6bd"/>
+                            <constraint firstItem="hnE-pM-b2c" firstAttribute="leading" secondItem="6Rc-L1-aKJ" secondAttribute="leading" constant="15" id="d1D-Qh-tP3"/>
+                            <constraint firstItem="hnE-pM-b2c" firstAttribute="top" secondItem="Ldl-e0-GDn" secondAttribute="bottom" constant="20" id="dlV-i3-roH"/>
+                            <constraint firstItem="Ldl-e0-GDn" firstAttribute="centerX" secondItem="AIE-sa-Df3" secondAttribute="centerX" id="kxP-YV-PUx"/>
+                            <constraint firstItem="AIE-sa-Df3" firstAttribute="top" secondItem="Aiv-Cz-hMI" secondAttribute="top" id="nfG-3S-Jjc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Rc-L1-aKJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4S4-np-cZj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_background" width="375" height="667"/>
+        <image name="wallet" width="200" height="200"/>
+    </resources>
+</document>

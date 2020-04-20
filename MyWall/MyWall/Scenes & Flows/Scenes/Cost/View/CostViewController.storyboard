@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1mI-R8-czB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cost View Controller-->
+        <scene sceneID="D00-CM-zNp">
+            <objects>
+                <viewController id="1mI-R8-czB" customClass="CostViewController" customModule="MyWall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nda-Ph-w4J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uDM-2h-hb9">
+                                <rect key="frame" x="0.0" y="87" width="414" height="775"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1mI-R8-czB" id="nOd-rj-yku"/>
+                                    <outlet property="delegate" destination="1mI-R8-czB" id="vCO-Jn-uSN"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Траты" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2Z-bw-jIH">
+                                <rect key="frame" x="15" y="49" width="384" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Q7y-oR-nsi" firstAttribute="trailing" secondItem="X2Z-bw-jIH" secondAttribute="trailing" constant="15" id="2bC-ge-I83"/>
+                            <constraint firstItem="Q7y-oR-nsi" firstAttribute="trailing" secondItem="uDM-2h-hb9" secondAttribute="trailing" id="IFA-t5-98R"/>
+                            <constraint firstItem="X2Z-bw-jIH" firstAttribute="leading" secondItem="Q7y-oR-nsi" secondAttribute="leading" constant="15" id="VNC-ja-RXK"/>
+                            <constraint firstItem="X2Z-bw-jIH" firstAttribute="top" secondItem="Q7y-oR-nsi" secondAttribute="top" constant="5" id="fui-2b-7C5"/>
+                            <constraint firstItem="uDM-2h-hb9" firstAttribute="top" secondItem="X2Z-bw-jIH" secondAttribute="bottom" constant="15" id="jsq-ud-YC6"/>
+                            <constraint firstItem="Q7y-oR-nsi" firstAttribute="bottom" secondItem="uDM-2h-hb9" secondAttribute="bottom" id="oA8-kO-S9F"/>
+                            <constraint firstItem="uDM-2h-hb9" firstAttribute="leading" secondItem="Q7y-oR-nsi" secondAttribute="leading" id="smV-1R-hfN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Q7y-oR-nsi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bP1-1U-oj4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="64"/>
+        </scene>
+    </scenes>
+</document>

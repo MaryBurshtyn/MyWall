@@ -9,4 +9,11 @@ target 'MyWall' do
   pod 'Firebase/Core'
   pod 'Firebase/MLVision'
   pod 'Firebase/MLVisionTextModel'
+  
+  pod 'SwiftLint'
+  pod 'Result'
+  pod 'MBProgressHUD'
+  pod 'SwiftGen'
+  pod 'IQKeyboardManagerSwift', '~> 6.2.0'
+  pod 'KeychainSwift', '~> 15.0'
 end

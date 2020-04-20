@@ -14,7 +14,36 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_background" translatesAutoresizingMaskIntoConstraints="NO" id="6ah-0o-C74">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet" translatesAutoresizingMaskIntoConstraints="NO" id="Knx-PU-Qgz">
+                                <rect key="frame" x="97" y="84" width="220" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Knx-PU-Qgz" secondAttribute="height" multiplier="1:1" id="eb1-sA-SaF"/>
+                                    <constraint firstAttribute="width" constant="220" id="zYc-s5-mDy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Wall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ex5-j7-8ho">
+                                <rect key="frame" x="15" y="324" width="384" height="35"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ah-0o-C74" secondAttribute="trailing" id="5VC-NL-tB6"/>
+                            <constraint firstAttribute="bottom" secondItem="6ah-0o-C74" secondAttribute="bottom" id="BZI-Rm-gh5"/>
+                            <constraint firstItem="Knx-PU-Qgz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="DHd-Wb-luQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ex5-j7-8ho" secondAttribute="trailing" constant="15" id="H5D-xM-xiU"/>
+                            <constraint firstItem="Knx-PU-Qgz" firstAttribute="centerX" secondItem="6ah-0o-C74" secondAttribute="centerX" id="MS9-oY-5a1"/>
+                            <constraint firstItem="Ex5-j7-8ho" firstAttribute="top" secondItem="Knx-PU-Qgz" secondAttribute="bottom" constant="20" id="Sfm-bd-92A"/>
+                            <constraint firstItem="Ex5-j7-8ho" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="ZIy-CQ-NLG"/>
+                            <constraint firstItem="6ah-0o-C74" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ZMM-HY-Pg3"/>
+                            <constraint firstItem="6ah-0o-C74" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dho-yT-f3y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -23,4 +52,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_background" width="375" height="667"/>
+        <image name="wallet" width="200" height="200"/>
+    </resources>
 </document>
