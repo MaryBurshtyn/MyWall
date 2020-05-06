@@ -13,24 +13,43 @@ class CostViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var tableView: UITableView!
+    var costs = [Cost]()
+    
     // MARK: - Init & Setup
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        registerEventCell()
+        presenter.handleViewDidLoad()
     }
+    
+    private func registerEventCell() {
+           let nib = UINib(nibName: "CostTableViewCell", bundle: Bundle.main)
+           tableView.register(nib, forCellReuseIdentifier: "CostTableViewCell")
+       }
 }
 
 extension CostViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return costs.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CostTableViewCell", for: indexPath) as? CostTableViewCell else {
+                return UITableViewCell()
+        }
+        cell.configureCell(data: costs[indexPath.row])
+        cell.selectionStyle = .none
+        return cell
     }
     
     
 }
 
 extension CostViewController: CostViewProtocol {
+    func setCosts(costs: [Cost]) {
+        self.costs = costs
+        tableView.reloadData()
+    }
 }

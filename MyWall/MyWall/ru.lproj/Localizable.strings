@@ -1,1 +1,31 @@
 "hello" = "Привет";
+
+// Cost Category
+
+"costCategory_foodProducts" = "Продукты";
+"costCategory_eatOuts" = "Еда вне дома";
+"costCategory_noCategory" = "Без категории";
+"costCategory_fare" = "Транспорт";
+"costCategory_internet" = "Интернет";
+"costCategory_mobileTelefony" = "Мобильная связь";
+"costCategory_wear" = "Одежда";
+"costCategory_gifts" = "Подарки";
+"costCategory_recreation" = "Отдых";
+"costCategory_householdGoods" = "Хозяйственные товары";
+"costCategory_communalPayments" = "Комунальные платежи";
+"costCategory_childrenExpenses" = "Затраты на детей";
+"costCategory_parentExpenses"= "Затраты на родителей";
+"costCategory_medication" = "Лекарства";
+"costCategory_treatment" = "Лечение";
+"costCategory_sport" = "Спорт";
+"costCategory_insurance" = "Страховка";
+"costCategory_fuel" = "Топливо";
+"costCategory_carService" = "Обслуживание авто";
+"costCategory_rent" = "Арендная плата";
+"costCategory_householdAppliances" = "Бытовая техника";
+"costCategory_repairs" = "Ремонт";
+"costCategory_homeImprovement" = "Обуствойство дома";
+"costCategory_beauty" = "Красота";
+"costCategory_loans" = "Займы";
+"costCategory_education" = "Обучение";
+

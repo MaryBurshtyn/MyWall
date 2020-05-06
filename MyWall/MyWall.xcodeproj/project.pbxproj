@@ -11,6 +11,15 @@
 		3434E7D12443190B00BBFC32 /* Localizable.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3434E7C22440F40300BBFC32 /* Localizable.strings */; };
 		3434E7D324433A3A00BBFC32 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3434E7D224433A3A00BBFC32 /* LocalizedStrings.swift */; };
 		3434E7D7244E187900BBFC32 /* Graphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3434E7D6244E187800BBFC32 /* Graphics.swift */; };
+		345D3C3A2462E60C00D696E3 /* DataManagerServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C392462E60C00D696E3 /* DataManagerServiceProtocol.swift */; };
+		345D3C3D2462E68500D696E3 /* CostDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C3C2462E68500D696E3 /* CostDB.swift */; };
+		345D3C402462E77E00D696E3 /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C3F2462E77E00D696E3 /* Cost.swift */; };
+		345D3C422462EB1200D696E3 /* IncomeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C412462EB1200D696E3 /* IncomeDB.swift */; };
+		345D3C442462EB4600D696E3 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C432462EB4600D696E3 /* Income.swift */; };
+		345D3C462462EB8800D696E3 /* CostCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C452462EB8800D696E3 /* CostCategory.swift */; };
+		345D3C4824633B5500D696E3 /* CostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C4724633B5500D696E3 /* CostTableViewCell.swift */; };
+		345D3C4A24633BC300D696E3 /* CostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C4924633BC300D696E3 /* CostTableViewCell.xib */; };
+		345D3C4C2463433500D696E3 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C4B2463433500D696E3 /* NibLoadable.swift */; };
 		345F45DA2440D0EF001732C4 /* CostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F45D92440D0EF001732C4 /* CostPresenter.swift */; };
 		345F45DC2440D10C001732C4 /* CostPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F45DB2440D10C001732C4 /* CostPresenterProtocol.swift */; };
 		345F45DE2440D129001732C4 /* CostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F45DD2440D129001732C4 /* CostViewController.swift */; };
@@ -78,6 +87,7 @@
 		346EE2462437834000EF91C3 /* CALayer+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE23E2437834000EF91C3 /* CALayer+Shadow.swift */; };
 		346EE2472437834000EF91C3 /* UIColor+Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE23F2437834000EF91C3 /* UIColor+Brightness.swift */; };
 		346EE2482437834000EF91C3 /* UIImage+Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE2402437834000EF91C3 /* UIImage+Overlay.swift */; };
+		34C2D79D246203F100FC761C /* DataManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C2D79C246203F100FC761C /* DataManagerService.swift */; };
 		379DFC014B7654C610BCCDA2 /* Pods_MyWall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9A976B80F1D18FF0C0AC36 /* Pods_MyWall.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +115,15 @@
 		3434E7D224433A3A00BBFC32 /* LocalizedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
 		3434E7D5244E178C00BBFC32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		3434E7D6244E187800BBFC32 /* Graphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graphics.swift; sourceTree = "<group>"; };
+		345D3C392462E60C00D696E3 /* DataManagerServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerServiceProtocol.swift; sourceTree = "<group>"; };
+		345D3C3C2462E68500D696E3 /* CostDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostDB.swift; sourceTree = "<group>"; };
+		345D3C3F2462E77E00D696E3 /* Cost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cost.swift; sourceTree = "<group>"; };
+		345D3C412462EB1200D696E3 /* IncomeDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeDB.swift; sourceTree = "<group>"; };
+		345D3C432462EB4600D696E3 /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
+		345D3C452462EB8800D696E3 /* CostCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostCategory.swift; sourceTree = "<group>"; };
+		345D3C4724633B5500D696E3 /* CostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostTableViewCell.swift; sourceTree = "<group>"; };
+		345D3C4924633BC300D696E3 /* CostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CostTableViewCell.xib; sourceTree = "<group>"; };
+		345D3C4B2463433500D696E3 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		345F45D92440D0EF001732C4 /* CostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostPresenter.swift; sourceTree = "<group>"; };
 		345F45DB2440D10C001732C4 /* CostPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostPresenterProtocol.swift; sourceTree = "<group>"; };
 		345F45DD2440D129001732C4 /* CostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +193,7 @@
 		346EE23E2437834000EF91C3 /* CALayer+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Shadow.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/CALayer+Shadow.swift"; sourceTree = "<group>"; };
 		346EE23F2437834000EF91C3 /* UIColor+Brightness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Brightness.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/UIColor+Brightness.swift"; sourceTree = "<group>"; };
 		346EE2402437834000EF91C3 /* UIImage+Overlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Overlay.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/UIImage+Overlay.swift"; sourceTree = "<group>"; };
+		34C2D79C246203F100FC761C /* DataManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerService.swift; sourceTree = "<group>"; };
 		8C9A976B80F1D18FF0C0AC36 /* Pods_MyWall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3D2C330C45B10EDA647900 /* Pods-MyWall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWall.release.xcconfig"; path = "Target Support Files/Pods-MyWall/Pods-MyWall.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +210,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3456D4462462035700157D42 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				34C2D79C246203F100FC761C /* DataManagerService.swift */,
+				345D3C392462E60C00D696E3 /* DataManagerServiceProtocol.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		345D3C3B2462E66C00D696E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				345D3C3E2462E74200D696E3 /* Realm */,
+				345D3C3F2462E77E00D696E3 /* Cost.swift */,
+				345D3C432462EB4600D696E3 /* Income.swift */,
+				345D3C452462EB8800D696E3 /* CostCategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		345D3C3E2462E74200D696E3 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				345D3C3C2462E68500D696E3 /* CostDB.swift */,
+				345D3C412462EB1200D696E3 /* IncomeDB.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		345F45D62440D07A001732C4 /* Cost */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +255,8 @@
 				345F45DD2440D129001732C4 /* CostViewController.swift */,
 				345F45DF2440D139001732C4 /* CostViewProtocol.swift */,
 				345F45E32440D2B2001732C4 /* CostViewController.storyboard */,
+				345D3C4724633B5500D696E3 /* CostTableViewCell.swift */,
+				345D3C4924633BC300D696E3 /* CostTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -334,18 +385,19 @@
 		3464E0B92436576D000F57C1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				3464E0BC243657F5000F57C1 /* Protocols */,
-				3464E0BA243657C5000F57C1 /* UserDefaultsService.swift */,
+				3456D4462462035700157D42 /* DataService */,
+				3464E0BC243657F5000F57C1 /* UserDefaultsService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		3464E0BC243657F5000F57C1 /* Protocols */ = {
+		3464E0BC243657F5000F57C1 /* UserDefaultsService */ = {
 			isa = PBXGroup;
 			children = (
+				3464E0BA243657C5000F57C1 /* UserDefaultsService.swift */,
 				3464E0BD2436580D000F57C1 /* UserDefaultsServiceProtocol.swift */,
 			);
-			path = Protocols;
+			path = UserDefaultsService;
 			sourceTree = "<group>";
 		};
 		3464E0BF24365A7E000F57C1 /* Scenes & Flows */ = {
@@ -422,6 +474,7 @@
 		3469559F23F420D000DCDC68 /* MyWall */ = {
 			isa = PBXGroup;
 			children = (
+				345D3C3B2462E66C00D696E3 /* Models */,
 				345F45F62440E665001732C4 /* Generated */,
 				346EE20E243743F000EF91C3 /* Extensions */,
 				3464E0BF24365A7E000F57C1 /* Scenes & Flows */,
@@ -464,6 +517,7 @@
 			isa = PBXGroup;
 			children = (
 				346EE238243782FF00EF91C3 /* UIKit */,
+				345D3C4B2463433500D696E3 /* NibLoadable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -639,6 +693,7 @@
 				346EE23324377EF200EF91C3 /* HomeViewController.storyboard in Resources */,
 				346955AA23F420D100DCDC68 /* Assets.xcassets in Resources */,
 				345F45E42440D2B2001732C4 /* CostViewController.storyboard in Resources */,
+				345D3C4A24633BC300D696E3 /* CostTableViewCell.xib in Resources */,
 				346EE22424374FA500EF91C3 /* TabBarViewController.storyboard in Resources */,
 				346955A823F420D000DCDC68 /* Main.storyboard in Resources */,
 				346EE20D2437420900EF91C3 /* SplashViewController.storyboard in Resources */,
@@ -732,6 +787,7 @@
 				346EE2452437834000EF91C3 /* UILabel+NumberOfLinesForText.swift in Sources */,
 				3464E0AE243656B9000F57C1 /* UIWindow+RootReplacement.swift in Sources */,
 				346955A523F420D000DCDC68 /* ViewController.swift in Sources */,
+				345D3C442462EB4600D696E3 /* Income.swift in Sources */,
 				345F45DE2440D129001732C4 /* CostViewController.swift in Sources */,
 				346EE2412437834000EF91C3 /* UIView+Constraints.swift in Sources */,
 				3434E7D7244E187900BBFC32 /* Graphics.swift in Sources */,
@@ -743,6 +799,7 @@
 				3464E0A424365676000F57C1 /* ServiceFactoryProtocol.swift in Sources */,
 				345F45F32440E013001732C4 /* SceneFactory+Income.swift in Sources */,
 				3464E0A9243656B1000F57C1 /* Scene.swift in Sources */,
+				345D3C422462EB1200D696E3 /* IncomeDB.swift in Sources */,
 				346EE2092437417300EF91C3 /* SplashPresenter.swift in Sources */,
 				346EE203243740C700EF91C3 /* SceneFactory+Splash.swift in Sources */,
 				346EE23524377F3700EF91C3 /* SceneFactory+Home.swift in Sources */,
@@ -755,9 +812,11 @@
 				346EE2432437834000EF91C3 /* UILabel+Truncated.swift in Sources */,
 				3434E7D324433A3A00BBFC32 /* LocalizedStrings.swift in Sources */,
 				346EE22F24377D3D00EF91C3 /* HomePresenterProtocol.swift in Sources */,
+				345D3C3D2462E68500D696E3 /* CostDB.swift in Sources */,
 				346EE2462437834000EF91C3 /* CALayer+Shadow.swift in Sources */,
 				345F45E92440DEED001732C4 /* IncomePresenter.swift in Sources */,
 				346955A123F420D000DCDC68 /* AppDelegate.swift in Sources */,
+				345D3C3A2462E60C00D696E3 /* DataManagerServiceProtocol.swift in Sources */,
 				3464E0B624365727000F57C1 /* AppearanceСonfigurable.swift in Sources */,
 				3464E0C624365ACE000F57C1 /* LaunchFlow.swift in Sources */,
 				345F45DC2440D10C001732C4 /* CostPresenterProtocol.swift in Sources */,
@@ -766,6 +825,7 @@
 				346EE22324374FA500EF91C3 /* TabBarViewController.swift in Sources */,
 				346EE22124374FA500EF91C3 /* TabBarItemType.swift in Sources */,
 				3464E0AF243656B9000F57C1 /* SceneNavigator.swift in Sources */,
+				345D3C462462EB8800D696E3 /* CostCategory.swift in Sources */,
 				345F45E22440D18D001732C4 /* SceneFactory+Cost.swift in Sources */,
 				3464E0B724365727000F57C1 /* AppearanceConfigProtocol.swift in Sources */,
 				3464E0D024365E73000F57C1 /* AppDelegate+CompositionRootFactory.swift in Sources */,
@@ -777,9 +837,12 @@
 				3464E0BE2436580D000F57C1 /* UserDefaultsServiceProtocol.swift in Sources */,
 				346EE2422437834000EF91C3 /* UINavigationController+ConvenienceInit.swift in Sources */,
 				346EE2472437834000EF91C3 /* UIColor+Brightness.swift in Sources */,
+				345D3C4C2463433500D696E3 /* NibLoadable.swift in Sources */,
+				34C2D79D246203F100FC761C /* DataManagerService.swift in Sources */,
 				346EE20B243741B700EF91C3 /* SplashViewProtocol.swift in Sources */,
 				346EE2102437442100EF91C3 /* UIViewController+Storyboard.swift in Sources */,
 				345F45E02440D139001732C4 /* CostViewProtocol.swift in Sources */,
+				345D3C4824633B5500D696E3 /* CostTableViewCell.swift in Sources */,
 				3464E0CC24365B0F000F57C1 /* FlowProtocol.swift in Sources */,
 				346EE22D24377D2900EF91C3 /* HomePresenter.swift in Sources */,
 				346EE22224374FA500EF91C3 /* TabBarViewControllerProtocol.swift in Sources */,
@@ -787,6 +850,7 @@
 				3464E0B1243656B9000F57C1 /* SceneTransitionType.swift in Sources */,
 				346EE2082437417300EF91C3 /* SplashPresenterProtocol.swift in Sources */,
 				346EE2442437834000EF91C3 /* UIViewController+Alerts.swift in Sources */,
+				345D3C402462E77E00D696E3 /* Cost.swift in Sources */,
 				346EE23124377D6200EF91C3 /* HomeViewProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,1 +1,30 @@
 "hello" = "hello";
+
+// Cost Category
+
+"costCategory_foodProducts" = "food";
+"costCategory_eatOuts" = "eat out";
+"costCategory_noCategory" = "No category";
+"costCategory_fare" = "Fare";
+"costCategory_internet" = "Internet";
+"costCategory_mobileTelefony" = "Mobile telefony";
+"costCategory_wear" = "Wear";
+"costCategory_gifts" = "Gifts";
+"costCategory_recreation" = "Recreation";
+"costCategory_householdGoods" = "Household goods";
+"costCategory_communalPayments" = "Communal payments";
+"costCategory_childrenExpenses" = "Children expenses";
+"costCategory_parentExpenses"= "Parent expenses";
+"costCategory_medication" = "Medication";
+"costCategory_treatment" = "Treatment";
+"costCategory_sport" = "Sport";
+"costCategory_insurance" = "Insurance";
+"costCategory_fuel" = "Fuel";
+"costCategory_carService" = "Car service";
+"costCategory_rent" = "Rent";
+"costCategory_householdAppliances" = "Household appliances";
+"costCategory_repairs" = "Repairs";
+"costCategory_homeImprovement" = "Home improvement";
+"costCategory_beauty" = "Beauty";
+"costCategory_loans" = "Loans";
+"costCategory_education" = "Education";

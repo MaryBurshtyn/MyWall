@@ -9,7 +9,7 @@ target 'MyWall' do
   pod 'Firebase/Core'
   pod 'Firebase/MLVision'
   pod 'Firebase/MLVisionTextModel'
-  
+  pod 'RealmSwift'
   pod 'SwiftLint'
   pod 'Result'
   pod 'MBProgressHUD'
