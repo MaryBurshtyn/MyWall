@@ -20,6 +20,7 @@
 		345D3C4824633B5500D696E3 /* CostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C4724633B5500D696E3 /* CostTableViewCell.swift */; };
 		345D3C4A24633BC300D696E3 /* CostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C4924633BC300D696E3 /* CostTableViewCell.xib */; };
 		345D3C4C2463433500D696E3 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C4B2463433500D696E3 /* NibLoadable.swift */; };
+		345D3C612464A28300D696E3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C602464A28300D696E3 /* Fonts.swift */; };
 		345F45DA2440D0EF001732C4 /* CostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F45D92440D0EF001732C4 /* CostPresenter.swift */; };
 		345F45DC2440D10C001732C4 /* CostPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F45DB2440D10C001732C4 /* CostPresenterProtocol.swift */; };
 		345F45DE2440D129001732C4 /* CostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F45DD2440D129001732C4 /* CostViewController.swift */; };
@@ -87,6 +88,11 @@
 		346EE2462437834000EF91C3 /* CALayer+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE23E2437834000EF91C3 /* CALayer+Shadow.swift */; };
 		346EE2472437834000EF91C3 /* UIColor+Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE23F2437834000EF91C3 /* UIColor+Brightness.swift */; };
 		346EE2482437834000EF91C3 /* UIImage+Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE2402437834000EF91C3 /* UIImage+Overlay.swift */; };
+		346F38F32468ACBC0081ABB2 /* AppearanceColorsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F38F22468ACBC0081ABB2 /* AppearanceColorsConfig.swift */; };
+		346F38F52468ADF90081ABB2 /* AppearanceColorsConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F38F42468ADF90081ABB2 /* AppearanceColorsConfigProtocol.swift */; };
+		346F38F72468BDD10081ABB2 /* AddCostAlertView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346F38F62468BDD10081ABB2 /* AddCostAlertView.storyboard */; };
+		346F38F92468C2450081ABB2 /* AddCostAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F38F82468C2450081ABB2 /* AddCostAlertView.swift */; };
+		346F38FB2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F38FA2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift */; };
 		34C2D79D246203F100FC761C /* DataManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C2D79C246203F100FC761C /* DataManagerService.swift */; };
 		379DFC014B7654C610BCCDA2 /* Pods_MyWall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9A976B80F1D18FF0C0AC36 /* Pods_MyWall.framework */; };
 /* End PBXBuildFile section */
@@ -124,6 +130,43 @@
 		345D3C4724633B5500D696E3 /* CostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostTableViewCell.swift; sourceTree = "<group>"; };
 		345D3C4924633BC300D696E3 /* CostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CostTableViewCell.xib; sourceTree = "<group>"; };
 		345D3C4B2463433500D696E3 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		345D3C602464A28300D696E3 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		345D3C622464A8C300D696E3 /* Montserrat-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		345D3C632464A8C300D696E3 /* Montserrat-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.otf"; sourceTree = "<group>"; };
+		345D3C642464A8C300D696E3 /* MontserratAlternates-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-SemiBold.otf"; sourceTree = "<group>"; };
+		345D3C652464A8C300D696E3 /* MontserratAlternates-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		345D3C662464A8C300D696E3 /* Montserrat-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.otf"; sourceTree = "<group>"; };
+		345D3C672464A8C300D696E3 /* MontserratAlternates-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		345D3C682464A8C300D696E3 /* Montserrat-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.otf"; sourceTree = "<group>"; };
+		345D3C692464A8C400D696E3 /* MontserratAlternates-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Medium.otf"; sourceTree = "<group>"; };
+		345D3C6A2464A8C400D696E3 /* MontserratAlternates-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Thin.otf"; sourceTree = "<group>"; };
+		345D3C6B2464A8C400D696E3 /* Montserrat-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.otf"; sourceTree = "<group>"; };
+		345D3C6C2464A8C400D696E3 /* MontserratAlternates-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-LightItalic.otf"; sourceTree = "<group>"; };
+		345D3C6D2464A8C400D696E3 /* MontserratAlternates-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Italic.otf"; sourceTree = "<group>"; };
+		345D3C6E2464A8C400D696E3 /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
+		345D3C6F2464A8C400D696E3 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
+		345D3C702464A8C400D696E3 /* Montserrat-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.otf"; sourceTree = "<group>"; };
+		345D3C712464A8C400D696E3 /* Montserrat-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.otf"; sourceTree = "<group>"; };
+		345D3C722464A8C500D696E3 /* Montserrat-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.otf"; sourceTree = "<group>"; };
+		345D3C732464A8C500D696E3 /* MontserratAlternates-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-ExtraLightItalic.otf"; sourceTree = "<group>"; };
+		345D3C742464A8C500D696E3 /* MontserratAlternates-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Light.otf"; sourceTree = "<group>"; };
+		345D3C752464A8C500D696E3 /* MontserratAlternates-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Black.otf"; sourceTree = "<group>"; };
+		345D3C762464A8C500D696E3 /* Montserrat-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.otf"; sourceTree = "<group>"; };
+		345D3C772464A8C500D696E3 /* MontserratAlternates-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-ThinItalic.otf"; sourceTree = "<group>"; };
+		345D3C782464A8C500D696E3 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		345D3C792464A8C500D696E3 /* MontserratAlternates-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Bold.otf"; sourceTree = "<group>"; };
+		345D3C7A2464A8C600D696E3 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		345D3C7B2464A8C600D696E3 /* MontserratAlternates-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Regular.otf"; sourceTree = "<group>"; };
+		345D3C7C2464A8C600D696E3 /* MontserratAlternates-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-BoldItalic.otf"; sourceTree = "<group>"; };
+		345D3C7D2464A8C600D696E3 /* MontserratAlternates-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-ExtraLight.otf"; sourceTree = "<group>"; };
+		345D3C7E2464A8C600D696E3 /* MontserratAlternates-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-ExtraBold.otf"; sourceTree = "<group>"; };
+		345D3C7F2464A8C600D696E3 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		345D3C802464A8C600D696E3 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		345D3C812464A8C700D696E3 /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
+		345D3C822464A8C700D696E3 /* MontserratAlternates-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-MediumItalic.otf"; sourceTree = "<group>"; };
+		345D3C832464A8C700D696E3 /* Montserrat-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		345D3C842464A8C700D696E3 /* Montserrat-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.otf"; sourceTree = "<group>"; };
+		345D3C852464A8C700D696E3 /* MontserratAlternates-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-BlackItalic.otf"; sourceTree = "<group>"; };
 		345F45D92440D0EF001732C4 /* CostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostPresenter.swift; sourceTree = "<group>"; };
 		345F45DB2440D10C001732C4 /* CostPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostPresenterProtocol.swift; sourceTree = "<group>"; };
 		345F45DD2440D129001732C4 /* CostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +236,11 @@
 		346EE23E2437834000EF91C3 /* CALayer+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Shadow.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/CALayer+Shadow.swift"; sourceTree = "<group>"; };
 		346EE23F2437834000EF91C3 /* UIColor+Brightness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Brightness.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/UIColor+Brightness.swift"; sourceTree = "<group>"; };
 		346EE2402437834000EF91C3 /* UIImage+Overlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Overlay.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/UIImage+Overlay.swift"; sourceTree = "<group>"; };
+		346F38F22468ACBC0081ABB2 /* AppearanceColorsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceColorsConfig.swift; sourceTree = "<group>"; };
+		346F38F42468ADF90081ABB2 /* AppearanceColorsConfigProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceColorsConfigProtocol.swift; sourceTree = "<group>"; };
+		346F38F62468BDD10081ABB2 /* AddCostAlertView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCostAlertView.storyboard; sourceTree = "<group>"; };
+		346F38F82468C2450081ABB2 /* AddCostAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCostAlertView.swift; sourceTree = "<group>"; };
+		346F38FA2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCostAlertViewDelegate.swift; sourceTree = "<group>"; };
 		34C2D79C246203F100FC761C /* DataManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerService.swift; sourceTree = "<group>"; };
 		8C9A976B80F1D18FF0C0AC36 /* Pods_MyWall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3D2C330C45B10EDA647900 /* Pods-MyWall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWall.release.xcconfig"; path = "Target Support Files/Pods-MyWall/Pods-MyWall.release.xcconfig"; sourceTree = "<group>"; };
@@ -239,6 +287,49 @@
 			path = Realm;
 			sourceTree = "<group>";
 		};
+		345D3C862464AAF000D696E3 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				345D3C6E2464A8C400D696E3 /* Montserrat-Black.otf */,
+				345D3C702464A8C400D696E3 /* Montserrat-BlackItalic.otf */,
+				345D3C802464A8C600D696E3 /* Montserrat-Bold.otf */,
+				345D3C712464A8C400D696E3 /* Montserrat-BoldItalic.otf */,
+				345D3C812464A8C700D696E3 /* Montserrat-ExtraBold.otf */,
+				345D3C622464A8C300D696E3 /* Montserrat-ExtraBoldItalic.otf */,
+				345D3C632464A8C300D696E3 /* Montserrat-ExtraLight.otf */,
+				345D3C6B2464A8C400D696E3 /* Montserrat-ExtraLightItalic.otf */,
+				345D3C682464A8C300D696E3 /* Montserrat-Italic.otf */,
+				345D3C7A2464A8C600D696E3 /* Montserrat-Light.otf */,
+				345D3C762464A8C500D696E3 /* Montserrat-LightItalic.otf */,
+				345D3C782464A8C500D696E3 /* Montserrat-Medium.otf */,
+				345D3C722464A8C500D696E3 /* Montserrat-MediumItalic.otf */,
+				345D3C7F2464A8C600D696E3 /* Montserrat-Regular.otf */,
+				345D3C6F2464A8C400D696E3 /* Montserrat-SemiBold.otf */,
+				345D3C832464A8C700D696E3 /* Montserrat-SemiBoldItalic.otf */,
+				345D3C842464A8C700D696E3 /* Montserrat-Thin.otf */,
+				345D3C662464A8C300D696E3 /* Montserrat-ThinItalic.otf */,
+				345D3C752464A8C500D696E3 /* MontserratAlternates-Black.otf */,
+				345D3C852464A8C700D696E3 /* MontserratAlternates-BlackItalic.otf */,
+				345D3C792464A8C500D696E3 /* MontserratAlternates-Bold.otf */,
+				345D3C7C2464A8C600D696E3 /* MontserratAlternates-BoldItalic.otf */,
+				345D3C7E2464A8C600D696E3 /* MontserratAlternates-ExtraBold.otf */,
+				345D3C672464A8C300D696E3 /* MontserratAlternates-ExtraBoldItalic.otf */,
+				345D3C7D2464A8C600D696E3 /* MontserratAlternates-ExtraLight.otf */,
+				345D3C732464A8C500D696E3 /* MontserratAlternates-ExtraLightItalic.otf */,
+				345D3C6D2464A8C400D696E3 /* MontserratAlternates-Italic.otf */,
+				345D3C742464A8C500D696E3 /* MontserratAlternates-Light.otf */,
+				345D3C6C2464A8C400D696E3 /* MontserratAlternates-LightItalic.otf */,
+				345D3C692464A8C400D696E3 /* MontserratAlternates-Medium.otf */,
+				345D3C822464A8C700D696E3 /* MontserratAlternates-MediumItalic.otf */,
+				345D3C7B2464A8C600D696E3 /* MontserratAlternates-Regular.otf */,
+				345D3C642464A8C300D696E3 /* MontserratAlternates-SemiBold.otf */,
+				345D3C652464A8C300D696E3 /* MontserratAlternates-SemiBoldItalic.otf */,
+				345D3C6A2464A8C400D696E3 /* MontserratAlternates-Thin.otf */,
+				345D3C772464A8C500D696E3 /* MontserratAlternates-ThinItalic.otf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
 		345F45D62440D07A001732C4 /* Cost */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +348,9 @@
 				345F45E32440D2B2001732C4 /* CostViewController.storyboard */,
 				345D3C4724633B5500D696E3 /* CostTableViewCell.swift */,
 				345D3C4924633BC300D696E3 /* CostTableViewCell.xib */,
+				346F38F62468BDD10081ABB2 /* AddCostAlertView.storyboard */,
+				346F38F82468C2450081ABB2 /* AddCostAlertView.swift */,
+				346F38FA2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,20 +398,15 @@
 			children = (
 				3434E7D6244E187800BBFC32 /* Graphics.swift */,
 				3434E7D224433A3A00BBFC32 /* LocalizedStrings.swift */,
+				345D3C602464A28300D696E3 /* Fonts.swift */,
 			);
 			path = Generated;
-			sourceTree = "<group>";
-		};
-		345F45F72440E6BA001732C4 /* Strings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Strings;
 			sourceTree = "<group>";
 		};
 		345F45F82440E702001732C4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				345D3C862464AAF000D696E3 /* Montserrat */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -326,8 +415,9 @@
 			isa = PBXGroup;
 			children = (
 				345F45F82440E702001732C4 /* Fonts */,
-				345F45F72440E6BA001732C4 /* Strings */,
 				3464E0B2243656EF000F57C1 /* AppearanceConfig */,
+				346F38F22468ACBC0081ABB2 /* AppearanceColorsConfig.swift */,
+				346F38F42468ADF90081ABB2 /* AppearanceColorsConfigProtocol.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -697,6 +787,7 @@
 				346EE22424374FA500EF91C3 /* TabBarViewController.storyboard in Resources */,
 				346955A823F420D000DCDC68 /* Main.storyboard in Resources */,
 				346EE20D2437420900EF91C3 /* SplashViewController.storyboard in Resources */,
+				346F38F72468BDD10081ABB2 /* AddCostAlertView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,11 +891,15 @@
 				345F45F32440E013001732C4 /* SceneFactory+Income.swift in Sources */,
 				3464E0A9243656B1000F57C1 /* Scene.swift in Sources */,
 				345D3C422462EB1200D696E3 /* IncomeDB.swift in Sources */,
+				346F38F52468ADF90081ABB2 /* AppearanceColorsConfigProtocol.swift in Sources */,
+				346F38F92468C2450081ABB2 /* AddCostAlertView.swift in Sources */,
 				346EE2092437417300EF91C3 /* SplashPresenter.swift in Sources */,
+				346F38F32468ACBC0081ABB2 /* AppearanceColorsConfig.swift in Sources */,
 				346EE203243740C700EF91C3 /* SceneFactory+Splash.swift in Sources */,
 				346EE23524377F3700EF91C3 /* SceneFactory+Home.swift in Sources */,
 				346EE2482437834000EF91C3 /* UIImage+Overlay.swift in Sources */,
 				345F45EF2440DF2F001732C4 /* IncomeViewProtocol.swift in Sources */,
+				346F38FB2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift in Sources */,
 				346EE2052437411800EF91C3 /* SplashViewController.swift in Sources */,
 				346EE21A24374F8900EF91C3 /* TabBarPresenterProtocol.swift in Sources */,
 				345F45EB2440DF06001732C4 /* IncomePresenterProtocol.swift in Sources */,
@@ -839,6 +934,7 @@
 				346EE2472437834000EF91C3 /* UIColor+Brightness.swift in Sources */,
 				345D3C4C2463433500D696E3 /* NibLoadable.swift in Sources */,
 				34C2D79D246203F100FC761C /* DataManagerService.swift in Sources */,
+				345D3C612464A28300D696E3 /* Fonts.swift in Sources */,
 				346EE20B243741B700EF91C3 /* SplashViewProtocol.swift in Sources */,
 				346EE2102437442100EF91C3 /* UIViewController+Storyboard.swift in Sources */,
 				345F45E02440D139001732C4 /* CostViewProtocol.swift in Sources */,

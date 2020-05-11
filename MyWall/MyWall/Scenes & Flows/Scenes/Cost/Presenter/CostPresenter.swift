@@ -22,6 +22,10 @@ class CostPresenter {
 // MARK: - SplashPresenterProtocol
 
 extension CostPresenter: CostPresenterProtocol {
+    func handleAddButtonTapped() {
+        view.openExpensesDialog()
+    }
+    
     func handleViewDidLoad() {
         view.setCosts(costs: costs)
     }

@@ -1,9 +1,14 @@
-"hello" = "hello";
+// TabBar titles
+
+"costs" = "Expenses";
+"incomes" = "Incomes";
+"home" = "Graphics";
+"spent" = "Cost";
 
 // Cost Category
 
-"costCategory_foodProducts" = "food";
-"costCategory_eatOuts" = "eat out";
+"costCategory_foodProducts" = "Food";
+"costCategory_eatOuts" = "Eat out";
 "costCategory_noCategory" = "No category";
 "costCategory_fare" = "Fare";
 "costCategory_internet" = "Internet";
@@ -28,3 +33,9 @@
 "costCategory_beauty" = "Beauty";
 "costCategory_loans" = "Loans";
 "costCategory_education" = "Education";
+
+// Buttons
+
+"addCostButton" = "Add";
+"finishButton" = "Finish";
+"cancelButton" = "Cancel";

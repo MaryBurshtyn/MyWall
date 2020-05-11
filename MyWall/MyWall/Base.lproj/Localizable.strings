@@ -1,4 +1,9 @@
-"hello" = "hello";
+// TabBar titles
+
+"costs" = "Expenses";
+"incomes" = "Incomes";
+"home" = "Graphics";
+"spent" = "Cost";
 
 // Cost Category
 
@@ -28,3 +33,9 @@
 "costCategory_beauty" = "Beauty";
 "costCategory_loans" = "Loans";
 "costCategory_education" = "Education";
+
+// Buttons
+
+"addCostButton" = "Add";
+"finishButton" = "Finish";
+"cancelButton" = "Cancel";

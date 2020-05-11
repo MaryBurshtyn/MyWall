@@ -35,28 +35,27 @@ class TabBarViewController: UITabBarController {
     }
     
     private func setUpTabBarAppearance() {
-//        self.tabBar.barTintColor = appearanceConfig.colors.tabBarTintColor
-//        UITabBarItem.appearance().setTitleTextAttributes(
-//                                    [NSAttributedString.Key.foregroundColor: appearanceConfig.colors.tabBarUnselectedText],
-//                                    for: .normal)
-//        UITabBarItem.appearance().setTitleTextAttributes(
-//                                    [NSAttributedString.Key.foregroundColor: appearanceConfig.colors.tabBarSelectedText],
-//                                    for: .selected)
-        self.tabBar.barTintColor = .blue
+        self.tabBar.barTintColor = appearanceConfig.colors.tabBarTintColor
+        UITabBarItem.appearance().setTitleTextAttributes(
+                                    [NSAttributedString.Key.foregroundColor: appearanceConfig.colors.tabBarUnselectedText],
+                                    for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes(
+                                    [NSAttributedString.Key.foregroundColor: appearanceConfig.colors.tabBarSelectedText],
+                                    for: .selected)
     }
     
     func setupViewControllers(home homeViewController: HomeViewController,
                               cost costViewController: CostViewController,
                               income incomeViewController: IncomeViewController) {
         let menuHome = wrapController(homeViewController,
-                                      title: "Home",
-                                      image: UIImage(contentsOfFile: "ic_home.png"))
+                                      title: L10n.home,
+                                      image: #imageLiteral(resourceName: "ic_home"))
         let cost = wrapController(costViewController,
-                                      title: "Cost",
-                                      image: UIImage(contentsOfFile: "ic_home.png"))
+                                  title: L10n.costs,
+                                      image: #imageLiteral(resourceName: "ic_home"))
         let income = wrapController(incomeViewController,
-                                  title: "Income",
-                                  image: UIImage(contentsOfFile: "ic_home.png"))
+                                    title: L10n.incomes,
+                                  image: #imageLiteral(resourceName: "ic_home"))
         viewControllers = [menuHome, cost, income]
     }
     

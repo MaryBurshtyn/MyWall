@@ -21,13 +21,33 @@ class CostViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         registerEventCell()
+        setupListNavigationBar()
         presenter.handleViewDidLoad()
     }
-    
+
     private func registerEventCell() {
-           let nib = UINib(nibName: "CostTableViewCell", bundle: Bundle.main)
-           tableView.register(nib, forCellReuseIdentifier: "CostTableViewCell")
-       }
+        let nib = UINib(nibName: "CostTableViewCell", bundle: Bundle.main)
+        tableView.register(nib, forCellReuseIdentifier: "CostTableViewCell")
+    }
+
+    private func setupListNavigationBar() {
+        navigationController?.isNavigationBarHidden = false
+        navigationItem.title = L10n.costs
+        navigationController?.navigationBar.isTranslucent = true
+
+        navigationItem.rightBarButtonItem = (UIBarButtonItem(
+            image: #imageLiteral(resourceName: "add2"),
+            style: .plain,
+            target: self,
+            action: #selector(handleRightNavigationItemTapped))
+        )
+    }
+
+    @objc
+    private func handleRightNavigationItemTapped() {
+        presenter.handleAddButtonTapped()
+    }
+    
 }
 
 extension CostViewController: UITableViewDelegate, UITableViewDataSource {
@@ -43,13 +63,34 @@ extension CostViewController: UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = .none
         return cell
     }
-    
-    
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
 }
 
 extension CostViewController: CostViewProtocol {
+    func openExpensesDialog() {
+        guard let costAlert = self.storyboard?.instantiateViewController(withIdentifier: "AddCostAlertView") as? AddCostAlertView else {
+            return
+        }
+        costAlert.providesPresentationContextTransitionStyle = true
+        costAlert.definesPresentationContext = true
+        costAlert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        costAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        costAlert.delegate = self
+        self.present(costAlert, animated: true, completion: nil)
+    }
+    
     func setCosts(costs: [Cost]) {
         self.costs = costs
         tableView.reloadData()
     }
+}
+
+extension CostViewController: AddCostAlertViewDelegate {
+    func okButtonTapped(costs: [Cost]) {
+        self.costs.append(contentsOf: costs)
+        self.tableView.reloadData()
+    }    
 }

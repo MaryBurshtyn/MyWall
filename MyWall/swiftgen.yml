@@ -10,6 +10,11 @@ xcassets:
     templateName: swift4
     output: MyWall/Generated/Graphics.swift
 
+fonts:
+  inputs: MyWall/Resources/Fonts
+  outputs:
+    templateName: swift4
+    output: MyWall/Generated/Fonts.swift
 
 #colors:
 #  inputs: Sources/Resources/Colors.txt
@@ -17,12 +22,8 @@ xcassets:
 #    templateName: swift4
 #    output: Sources/Generated/Colors.swift
 #
-#fonts:
-#  inputs: Sources/Resources/Fonts
-#  outputs:
-#    templateName: swift4
-#    output: Sources/Generated/Fonts.swift
-#
+
+
 #ib:
 #  inputs: 'Sources/UI/Storyboards'
 #  outputs:

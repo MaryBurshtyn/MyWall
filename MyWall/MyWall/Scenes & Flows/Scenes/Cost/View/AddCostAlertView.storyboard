@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="41E-iV-l9B">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--AddCostAlertView-->
+        <scene sceneID="vwc-TE-kUA">
+            <objects>
+                <viewController storyboardIdentifier="AddCostAlertView" title="AddCostAlertView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="41E-iV-l9B" customClass="AddCostAlertView" customModule="MyWall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sio-4R-Goj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSa-n5-loS">
+                                <rect key="frame" x="50" y="144" width="314" height="568"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lts-Zw-rCu">
+                                        <rect key="frame" x="8" y="5" width="298" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="uJw-q7-yqj"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1n-HV-DZp">
+                                        <rect key="frame" x="15" y="170" width="39" height="21"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GBa-Vo-yG2">
+                                        <rect key="frame" x="59" y="163.5" width="100" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="4CA-Ee-RAy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDU-0y-KFp">
+                                        <rect key="frame" x="262" y="164" width="37" height="33"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addCostTapped:" destination="41E-iV-l9B" eventType="touchUpInside" id="DHo-QB-sW6"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BYN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7W-TT-DB8">
+                                        <rect key="frame" x="164" y="170" width="38" height="21"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.34302362419999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8g8-vd-3Zp">
+                                        <rect key="frame" x="8" y="217.5" width="298" height="295.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="41E-iV-l9B" id="zEB-27-2Rn"/>
+                                            <outlet property="delegate" destination="41E-iV-l9B" id="0ec-gn-boA"/>
+                                        </connections>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVw-af-iRz">
+                                        <rect key="frame" x="15" y="523" width="147.5" height="30"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelTapped:" destination="41E-iV-l9B" eventType="touchUpInside" id="09R-dP-9iC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDD-la-uhq">
+                                        <rect key="frame" x="162.5" y="523" width="136.5" height="30"/>
+                                        <state key="normal" title="Finish"/>
+                                        <connections>
+                                            <action selector="okTapped:" destination="41E-iV-l9B" eventType="touchUpInside" id="Who-zs-2SC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gDU-0y-KFp" firstAttribute="centerY" secondItem="B7W-TT-DB8" secondAttribute="centerY" id="0oo-Bf-JuX"/>
+                                    <constraint firstAttribute="trailing" secondItem="gDU-0y-KFp" secondAttribute="trailing" constant="15" id="8ua-o7-Xny"/>
+                                    <constraint firstItem="GBa-Vo-yG2" firstAttribute="leading" secondItem="f1n-HV-DZp" secondAttribute="trailing" constant="5" id="A6h-R3-14m"/>
+                                    <constraint firstItem="Lts-Zw-rCu" firstAttribute="top" secondItem="fSa-n5-loS" secondAttribute="top" constant="5" id="Cxy-PP-Ztx"/>
+                                    <constraint firstItem="QVw-af-iRz" firstAttribute="top" secondItem="8g8-vd-3Zp" secondAttribute="bottom" constant="10" id="Hqd-nG-g7B"/>
+                                    <constraint firstItem="8g8-vd-3Zp" firstAttribute="leading" secondItem="fSa-n5-loS" secondAttribute="leading" constant="8" id="PU0-XG-ZGJ"/>
+                                    <constraint firstItem="Lts-Zw-rCu" firstAttribute="leading" secondItem="fSa-n5-loS" secondAttribute="leading" constant="8" id="Qd1-e7-q9q"/>
+                                    <constraint firstAttribute="trailing" secondItem="xDD-la-uhq" secondAttribute="trailing" constant="15" id="QtW-2W-k6f"/>
+                                    <constraint firstItem="QVw-af-iRz" firstAttribute="width" secondItem="xDD-la-uhq" secondAttribute="width" multiplier="1.07759" id="W7c-Ms-bgD"/>
+                                    <constraint firstItem="GBa-Vo-yG2" firstAttribute="centerY" secondItem="f1n-HV-DZp" secondAttribute="centerY" id="aew-ok-CMK"/>
+                                    <constraint firstItem="gDU-0y-KFp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="B7W-TT-DB8" secondAttribute="trailing" constant="15" id="cfL-vT-DlD"/>
+                                    <constraint firstItem="f1n-HV-DZp" firstAttribute="leading" secondItem="fSa-n5-loS" secondAttribute="leading" constant="15" id="dz2-IX-9eA"/>
+                                    <constraint firstItem="f1n-HV-DZp" firstAttribute="top" secondItem="Lts-Zw-rCu" secondAttribute="bottom" constant="15" id="e8v-Ij-PHS"/>
+                                    <constraint firstAttribute="trailing" secondItem="8g8-vd-3Zp" secondAttribute="trailing" constant="8" id="mEa-4z-CC7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lts-Zw-rCu" secondAttribute="trailing" constant="8" id="mjy-SI-XTB"/>
+                                    <constraint firstItem="B7W-TT-DB8" firstAttribute="centerY" secondItem="GBa-Vo-yG2" secondAttribute="centerY" id="o1r-vq-hSb"/>
+                                    <constraint firstAttribute="bottom" secondItem="QVw-af-iRz" secondAttribute="bottom" constant="15" id="sHl-3W-3aL"/>
+                                    <constraint firstItem="8g8-vd-3Zp" firstAttribute="top" secondItem="GBa-Vo-yG2" secondAttribute="bottom" constant="20" id="tJV-fa-RGh"/>
+                                    <constraint firstAttribute="bottom" secondItem="xDD-la-uhq" secondAttribute="bottom" constant="15" id="u2b-PX-RuR"/>
+                                    <constraint firstItem="xDD-la-uhq" firstAttribute="leading" secondItem="QVw-af-iRz" secondAttribute="trailing" id="uuF-LD-10w"/>
+                                    <constraint firstItem="B7W-TT-DB8" firstAttribute="leading" secondItem="GBa-Vo-yG2" secondAttribute="trailing" constant="5" id="weC-fR-lDf"/>
+                                    <constraint firstItem="QVw-af-iRz" firstAttribute="leading" secondItem="fSa-n5-loS" secondAttribute="leading" constant="15" id="xqE-EM-zSl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dgw-V0-eVP" firstAttribute="trailing" secondItem="fSa-n5-loS" secondAttribute="trailing" constant="50" id="6Ak-Ms-ZPd"/>
+                            <constraint firstItem="fSa-n5-loS" firstAttribute="leading" secondItem="dgw-V0-eVP" secondAttribute="leading" constant="50" id="igD-Pb-iyA"/>
+                            <constraint firstItem="fSa-n5-loS" firstAttribute="top" secondItem="dgw-V0-eVP" secondAttribute="top" constant="100" id="w6a-td-Jaf"/>
+                            <constraint firstItem="dgw-V0-eVP" firstAttribute="bottom" secondItem="fSa-n5-loS" secondAttribute="bottom" constant="150" id="z5F-qw-NQ4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dgw-V0-eVP"/>
+                    </view>
+                    <connections>
+                        <outlet property="addCostButton" destination="gDU-0y-KFp" id="mpG-NR-BIf"/>
+                        <outlet property="alertView" destination="fSa-n5-loS" id="8aw-cr-63B"/>
+                        <outlet property="cancelButton" destination="QVw-af-iRz" id="uJ4-fG-IW2"/>
+                        <outlet property="categoryPicker" destination="Lts-Zw-rCu" id="x2O-W4-s30"/>
+                        <outlet property="costLabel" destination="f1n-HV-DZp" id="PF4-wP-GWR"/>
+                        <outlet property="costTextField" destination="GBa-Vo-yG2" id="I0o-XD-6zu"/>
+                        <outlet property="currencyLabel" destination="B7W-TT-DB8" id="zja-pE-8qk"/>
+                        <outlet property="okButton" destination="xDD-la-uhq" id="Mue-rk-kwg"/>
+                        <outlet property="tableView" destination="8g8-vd-3Zp" id="7hd-Cn-xgh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDz-Lw-eSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-117.39130434782609" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+</document>

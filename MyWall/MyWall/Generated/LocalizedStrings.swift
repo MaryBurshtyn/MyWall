@@ -11,6 +11,10 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
+  /// Add
+  internal static let addCostButton = L10n.tr("Localizable", "addCostButton")
+  /// Cancel
+  internal static let cancelButton = L10n.tr("Localizable", "cancelButton")
   /// Beauty
   internal static let costCategoryBeauty = L10n.tr("Localizable", "costCategory_beauty")
   /// Car service
@@ -63,8 +67,16 @@ internal enum L10n {
   internal static let costCategoryTreatment = L10n.tr("Localizable", "costCategory_treatment")
   /// Wear
   internal static let costCategoryWear = L10n.tr("Localizable", "costCategory_wear")
-  /// hello
-  internal static let hello = L10n.tr("Localizable", "hello")
+  /// Expenses
+  internal static let costs = L10n.tr("Localizable", "costs")
+  /// Finish
+  internal static let finishButton = L10n.tr("Localizable", "finishButton")
+  /// Graphics
+  internal static let home = L10n.tr("Localizable", "home")
+  /// Incomes
+  internal static let incomes = L10n.tr("Localizable", "incomes")
+  /// Cost
+  internal static let spent = L10n.tr("Localizable", "spent")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

@@ -1,6 +1,6 @@
 import Foundation
-
-enum CostCategory {
+import UIKit
+enum CostCategory: Int {
     case noCategory
     case foodProducts
     case eatOuts
@@ -28,7 +28,7 @@ enum CostCategory {
     case loans
     case education
     
-    var rawValue: String {
+    var stringValue: String {
         switch self {
         case .noCategory:
             return L10n.costCategoryNoCategory
@@ -82,6 +82,62 @@ enum CostCategory {
             return L10n.costCategoryLoans
         case .education:
             return L10n.costCategoryEducation
+        }
+    }
+    var icon: UIImage {
+        switch self {
+       case .noCategory:
+            return #imageLiteral(resourceName: "noCategory")
+        case .foodProducts:
+            return #imageLiteral(resourceName: "foodProducts")
+        case .eatOuts:
+            return #imageLiteral(resourceName: "eatOuts")
+        case .fare:
+            return #imageLiteral(resourceName: "fare")
+        case .internet:
+            return #imageLiteral(resourceName: "internet")
+        case .mobileTelefony:
+            return #imageLiteral(resourceName: "mobileTelefony")
+        case .wear:
+            return #imageLiteral(resourceName: "wear")
+        case .gifts:
+            return #imageLiteral(resourceName: "gifts")
+        case .recreation:
+            return #imageLiteral(resourceName: "recreation")
+        case .householdGoods:
+            return #imageLiteral(resourceName: "householdGoods")
+        case .communalPayments:
+            return #imageLiteral(resourceName: "communalPayments")
+        case .childrenExpenses:
+            return #imageLiteral(resourceName: "childrenExpenses")
+        case .parentExpenses:
+            return #imageLiteral(resourceName: "parentExpenses")
+        case .medication:
+            return #imageLiteral(resourceName: "medication")
+        case .treatment:
+            return #imageLiteral(resourceName: "treatment")
+        case .sport:
+            return #imageLiteral(resourceName: "sport")
+        case .insurance:
+            return #imageLiteral(resourceName: "insurance")
+        case .fuel:
+            return #imageLiteral(resourceName: "fuel")
+        case .carService:
+            return #imageLiteral(resourceName: "carService")
+        case .rent:
+            return #imageLiteral(resourceName: "rent")
+        case .householdAppliances:
+            return #imageLiteral(resourceName: "householdAppliances")
+        case .repairs:
+            return #imageLiteral(resourceName: "repairs")
+        case .homeImprovement:
+            return #imageLiteral(resourceName: "homeImprovement")
+        case .beauty:
+            return #imageLiteral(resourceName: "beauty")
+        case .loans:
+            return #imageLiteral(resourceName: "loans")
+        case .education:
+            return #imageLiteral(resourceName: "education")
         }
     }
 }

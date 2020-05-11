@@ -16,7 +16,7 @@ class CostTableViewCell: UITableViewCell, NibLoadable {
     }
     
     private func setupCellView() {
-        cellView.layer.cornerRadius = 16
+        cellView.layer.cornerRadius = 10
         cellView.layer.shadowColor = UIColor.gray.cgColor
         cellView.layer.shadowOffset = CGSize(width: 0, height: 2)
         cellView.layer.shadowRadius = 2
@@ -26,8 +26,10 @@ class CostTableViewCell: UITableViewCell, NibLoadable {
     
     func configureCell(data: Cost) {
         setupCellView()
-        categoryLabel.text = data.category.rawValue
+        categoryLabel.text = data.category.stringValue
         costLabel.text = data.cost
-        
+        categoryImage.image = data.category.icon
+        //costLabel.font = UIFont(font: FontFamily.Montserrat.semiBold, size: 18)
+        //categoryLabel.font = UIFont(font: FontFamily.Montserrat.semiBold, size: 18)
     }
 }
