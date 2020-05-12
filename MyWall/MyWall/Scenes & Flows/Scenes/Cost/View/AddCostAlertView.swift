@@ -15,20 +15,22 @@ class AddCostAlertView: UIViewController, UIPickerViewDelegate, UIPickerViewData
     @IBOutlet weak var costTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var currencyPicker: UIPickerView!
     @IBOutlet weak var categoryPicker: UIPickerView!
     @IBOutlet weak var addCostButton: UIButton!
-    @IBOutlet weak var currencyLabel: UILabel!
     @IBOutlet weak var alertView: UIView!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var okButton: UIButton!
     
     var delegate: AddCostAlertViewDelegate?
-    var addedExpenses = [Cost]()
+    var addedExpenses = [CostDB]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.categoryPicker.delegate = self
         self.categoryPicker.dataSource = self
+        self.currencyPicker.delegate = self
+        self.currencyPicker.dataSource = self
         registerCell()
     }
     
@@ -68,8 +70,14 @@ class AddCostAlertView: UIViewController, UIPickerViewDelegate, UIPickerViewData
     
     @IBAction func addCostTapped(_ sender: Any) {
         guard let category = CostCategory.init(rawValue: categoryPicker.selectedRow(inComponent: 0)),
+            let currency = Currency.init(rawValue: currencyPicker.selectedRow(inComponent: 0)),
             let cost = costTextField.text else { return }
-        addedExpenses.append(Cost(category: category, date: Date(), cost: cost, currency: "BYN"))
+        var costDB = CostDB()
+        costDB.category = category.stringValue
+        costDB.date = Date()
+        costDB.cost = cost
+        costDB.currency = currency.stringValue
+        addedExpenses.append(costDB)
         tableView.reloadData()
     }
     
@@ -87,11 +95,24 @@ class AddCostAlertView: UIViewController, UIPickerViewDelegate, UIPickerViewData
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 25
+        return pickerView.tag == 1 ? 5 : 25
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return CostCategory.init(rawValue: row)?.stringValue
+        return pickerView.tag == 1 ? Currency.init(rawValue: row)?.stringValue : CostCategory.init(rawValue: row)?.stringValue
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        var pickerLabel: UILabel? = (view as? UILabel)
+        if pickerLabel == nil {
+            pickerLabel = UILabel()
+            pickerLabel?.font = UIFont(font: FontFamily.Montserrat.semiBold, size: 12)
+            pickerLabel?.textColor = .blue
+            pickerLabel?.textAlignment = .center
+        }
+        pickerLabel?.text = pickerView.tag == 1 ? Currency.init(rawValue: row)?.stringValue : CostCategory.init(rawValue: row)?.stringValue
+
+        return pickerLabel!
     }
 }
 extension AddCostAlertView: UITableViewDelegate, UITableViewDataSource {

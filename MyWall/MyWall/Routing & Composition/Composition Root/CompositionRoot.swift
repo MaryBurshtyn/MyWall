@@ -1,11 +1,13 @@
 import UIKit
-
+import Reachability
 class CompositionRoot {
     weak var navigator: SceneNavigatorProtocol!
     
     private let serviceFactory: ServiceFactoryProtocol
     private let appearanceConfig: AppearanceConfig
     private let userDefaultsService: UserDefaultsServiceProtocol
+    private let dataManagerService: DataManagerServiceProtocol
+    private let reachability: Reachability?
     //private let api: ApiProtocol
 
     
@@ -13,7 +15,9 @@ class CompositionRoot {
         self.serviceFactory = serviceFactory
         appearanceConfig = AppearanceConfig()
         //api = FirestoreApi()
+        dataManagerService = serviceFactory.getDataManagerService()
         userDefaultsService = serviceFactory.getUserDefaultsService()
+        self.reachability = try? Reachability()
     }
     
     func startServices() {
@@ -33,7 +37,7 @@ class CompositionRoot {
         case .tabBar:
             return composeTabBarScene()
         case .cost:
-            return SceneFactory.makeCostModule(navigator: navigator)
+            return SceneFactory.makeCostModule(navigator: navigator, dataManagerService: dataManagerService, reachability: reachability)
         case .income:
             return SceneFactory.makeIncomeModule(navigator: navigator)
         }

@@ -39,3 +39,22 @@
 "addCostButton" = "Add";
 "finishButton" = "Finish";
 "cancelButton" = "Cancel";
+
+//Currency
+
+"bynCurrency" = "BYN";
+"rubCurrency" = "RUB";
+"usdCurrency" = "USD";
+"grnCurrency" = "грн";
+"eurCurrency" = "EUR";
+
+//IncomeCategory
+
+"incomeCategory_noCategory" = "No category";
+"incomeCategory_debt" = "Debt";
+"incomeCategory_salary" = "Salary";
+"incomeCategory_pension" = "Pension";
+"incomeCategory_gratuity" = "Gratuity";
+"incomeCategory_scholarship" = "Scholarship";
+"incomeCategory_dividends" = "Dividends";
+"incomeCategory_moneyPrize" = "Money prize";

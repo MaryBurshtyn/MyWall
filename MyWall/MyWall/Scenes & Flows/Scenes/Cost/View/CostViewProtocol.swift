@@ -1,6 +1,6 @@
 import Foundation
 
 protocol CostViewProtocol: class {
-    func setCosts(costs: [Cost])
+    func setCosts(costs: [CostDB])
     func openExpensesDialog()
 }

@@ -24,12 +24,11 @@ class CostTableViewCell: UITableViewCell, NibLoadable {
         
     }
     
-    func configureCell(data: Cost) {
+    func configureCell(data: CostDB) {
         setupCellView()
-        categoryLabel.text = data.category.stringValue
+        guard let categoryString = data.category else { return }
+        categoryLabel.text = data.category
         costLabel.text = data.cost
-        categoryImage.image = data.category.icon
-        //costLabel.font = UIFont(font: FontFamily.Montserrat.semiBold, size: 18)
-        //categoryLabel.font = UIFont(font: FontFamily.Montserrat.semiBold, size: 18)
+        categoryImage.image = CostCategory(form: categoryString).icon
     }
 }

@@ -14,7 +14,7 @@ class CostViewController: UIViewController {
     }
     
     @IBOutlet weak var tableView: UITableView!
-    var costs = [Cost]()
+    var costs = [CostDB]()
     
     // MARK: - Init & Setup
 
@@ -82,14 +82,15 @@ extension CostViewController: CostViewProtocol {
         self.present(costAlert, animated: true, completion: nil)
     }
     
-    func setCosts(costs: [Cost]) {
+    func setCosts(costs: [CostDB]) {
         self.costs = costs
         tableView.reloadData()
     }
 }
 
 extension CostViewController: AddCostAlertViewDelegate {
-    func okButtonTapped(costs: [Cost]) {
+    func okButtonTapped(costs: [CostDB]) {
+        presenter.handleUpdateExpensesList(expenses: costs)
         self.costs.append(contentsOf: costs)
         self.tableView.reloadData()
     }    

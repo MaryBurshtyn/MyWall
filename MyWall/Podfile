@@ -17,4 +17,5 @@ target 'MyWall' do
   pod 'SwiftGen'
   pod 'IQKeyboardManagerSwift', '~> 6.2.0'
   pod 'KeychainSwift', '~> 15.0'
+  pod 'ReachabilitySwift'
 end

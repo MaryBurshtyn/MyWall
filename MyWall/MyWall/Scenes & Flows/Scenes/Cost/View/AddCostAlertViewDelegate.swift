@@ -1,4 +1,4 @@
 import Foundation
 protocol AddCostAlertViewDelegate: class {
-    func okButtonTapped(costs: [Cost])
+    func okButtonTapped(costs: [CostDB])
 }

@@ -13,7 +13,6 @@
 		3434E7D7244E187900BBFC32 /* Graphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3434E7D6244E187800BBFC32 /* Graphics.swift */; };
 		345D3C3A2462E60C00D696E3 /* DataManagerServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C392462E60C00D696E3 /* DataManagerServiceProtocol.swift */; };
 		345D3C3D2462E68500D696E3 /* CostDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C3C2462E68500D696E3 /* CostDB.swift */; };
-		345D3C402462E77E00D696E3 /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C3F2462E77E00D696E3 /* Cost.swift */; };
 		345D3C422462EB1200D696E3 /* IncomeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C412462EB1200D696E3 /* IncomeDB.swift */; };
 		345D3C442462EB4600D696E3 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C432462EB4600D696E3 /* Income.swift */; };
 		345D3C462462EB8800D696E3 /* CostCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C452462EB8800D696E3 /* CostCategory.swift */; };
@@ -93,6 +92,8 @@
 		346F38F72468BDD10081ABB2 /* AddCostAlertView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346F38F62468BDD10081ABB2 /* AddCostAlertView.storyboard */; };
 		346F38F92468C2450081ABB2 /* AddCostAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F38F82468C2450081ABB2 /* AddCostAlertView.swift */; };
 		346F38FB2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F38FA2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift */; };
+		346F38FF246AC3D70081ABB2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F38FE246AC3D70081ABB2 /* Currency.swift */; };
+		346F3902246AD0330081ABB2 /* IncomeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F3901246AD0330081ABB2 /* IncomeCategory.swift */; };
 		34C2D79D246203F100FC761C /* DataManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C2D79C246203F100FC761C /* DataManagerService.swift */; };
 		379DFC014B7654C610BCCDA2 /* Pods_MyWall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9A976B80F1D18FF0C0AC36 /* Pods_MyWall.framework */; };
 /* End PBXBuildFile section */
@@ -123,7 +124,6 @@
 		3434E7D6244E187800BBFC32 /* Graphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graphics.swift; sourceTree = "<group>"; };
 		345D3C392462E60C00D696E3 /* DataManagerServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerServiceProtocol.swift; sourceTree = "<group>"; };
 		345D3C3C2462E68500D696E3 /* CostDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostDB.swift; sourceTree = "<group>"; };
-		345D3C3F2462E77E00D696E3 /* Cost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cost.swift; sourceTree = "<group>"; };
 		345D3C412462EB1200D696E3 /* IncomeDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeDB.swift; sourceTree = "<group>"; };
 		345D3C432462EB4600D696E3 /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
 		345D3C452462EB8800D696E3 /* CostCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostCategory.swift; sourceTree = "<group>"; };
@@ -241,6 +241,8 @@
 		346F38F62468BDD10081ABB2 /* AddCostAlertView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCostAlertView.storyboard; sourceTree = "<group>"; };
 		346F38F82468C2450081ABB2 /* AddCostAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCostAlertView.swift; sourceTree = "<group>"; };
 		346F38FA2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCostAlertViewDelegate.swift; sourceTree = "<group>"; };
+		346F38FE246AC3D70081ABB2 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		346F3901246AD0330081ABB2 /* IncomeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCategory.swift; sourceTree = "<group>"; };
 		34C2D79C246203F100FC761C /* DataManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerService.swift; sourceTree = "<group>"; };
 		8C9A976B80F1D18FF0C0AC36 /* Pods_MyWall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3D2C330C45B10EDA647900 /* Pods-MyWall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWall.release.xcconfig"; path = "Target Support Files/Pods-MyWall/Pods-MyWall.release.xcconfig"; sourceTree = "<group>"; };
@@ -270,10 +272,9 @@
 		345D3C3B2462E66C00D696E3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				346F3900246AD0160081ABB2 /* Enums */,
 				345D3C3E2462E74200D696E3 /* Realm */,
-				345D3C3F2462E77E00D696E3 /* Cost.swift */,
 				345D3C432462EB4600D696E3 /* Income.swift */,
-				345D3C452462EB8800D696E3 /* CostCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -695,6 +696,16 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		346F3900246AD0160081ABB2 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				345D3C452462EB8800D696E3 /* CostCategory.swift */,
+				346F38FE246AC3D70081ABB2 /* Currency.swift */,
+				346F3901246AD0330081ABB2 /* IncomeCategory.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		42846DDBF779743992201BDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -880,6 +891,7 @@
 				346955A523F420D000DCDC68 /* ViewController.swift in Sources */,
 				345D3C442462EB4600D696E3 /* Income.swift in Sources */,
 				345F45DE2440D129001732C4 /* CostViewController.swift in Sources */,
+				346F38FF246AC3D70081ABB2 /* Currency.swift in Sources */,
 				346EE2412437834000EF91C3 /* UIView+Constraints.swift in Sources */,
 				3434E7D7244E187900BBFC32 /* Graphics.swift in Sources */,
 				346EE22B24377D0100EF91C3 /* HomeViewController.swift in Sources */,
@@ -929,6 +941,7 @@
 				345F45ED2440DF1D001732C4 /* IncomeViewController.swift in Sources */,
 				346EE21924374F8900EF91C3 /* TabBarPresenter.swift in Sources */,
 				3464E0BB243657C5000F57C1 /* UserDefaultsService.swift in Sources */,
+				346F3902246AD0330081ABB2 /* IncomeCategory.swift in Sources */,
 				3464E0BE2436580D000F57C1 /* UserDefaultsServiceProtocol.swift in Sources */,
 				346EE2422437834000EF91C3 /* UINavigationController+ConvenienceInit.swift in Sources */,
 				346EE2472437834000EF91C3 /* UIColor+Brightness.swift in Sources */,
@@ -946,7 +959,6 @@
 				3464E0B1243656B9000F57C1 /* SceneTransitionType.swift in Sources */,
 				346EE2082437417300EF91C3 /* SplashPresenterProtocol.swift in Sources */,
 				346EE2442437834000EF91C3 /* UIViewController+Alerts.swift in Sources */,
-				345D3C402462E77E00D696E3 /* Cost.swift in Sources */,
 				346EE23124377D6200EF91C3 /* HomeViewProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

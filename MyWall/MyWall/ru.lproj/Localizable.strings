@@ -37,3 +37,22 @@
 "addCostButton" = "Добавить";
 "finishButton" = "Завершить";
 "cancelButton" = "Отмена";
+
+//Currency
+
+"bynCurrency" = "BYN";
+"rubCurrency" = "RUB";
+"usdCurrency" = "USD";
+"grnCurrency" = "грн";
+"eurCurrency" = "EUR";
+
+//IncomeCategory
+
+"incomeCategory_noCategory" = "Без категории";
+"incomeCategory_debt" = "Долги";
+"incomeCategory_salary" = "З/п";
+"incomeCategory_pension" = "Пенсия";
+"incomeCategory_gratuity" = "Пособие";
+"incomeCategory_scholarship" = "Стипендия";
+"incomeCategory_dividends" = "Дивиденды";
+"incomeCategory_moneyPrize" = "Выигрыш";

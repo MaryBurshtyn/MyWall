@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+
 enum CostCategory: Int {
     case noCategory
     case foodProducts
@@ -27,6 +28,65 @@ enum CostCategory: Int {
     case beauty
     case loans
     case education
+    
+    init(form stringValue: String) {
+        switch stringValue {
+        case L10n.costCategoryNoCategory:
+            self =  CostCategory.noCategory
+        case L10n.costCategoryFoodProducts:
+            self =  CostCategory.foodProducts
+        case L10n.costCategoryEatOuts:
+            self = CostCategory.eatOuts
+        case L10n.costCategoryFare:
+            self = CostCategory.fare
+        case L10n.costCategoryInternet:
+            self = CostCategory.internet
+        case L10n.costCategoryMobileTelefony:
+            self = CostCategory.mobileTelefony
+        case L10n.costCategoryWear:
+            self = CostCategory.wear
+        case L10n.costCategoryGifts:
+            self = CostCategory.gifts
+        case L10n.costCategoryRecreation:
+            self = CostCategory.recreation
+        case L10n.costCategoryHouseholdGoods:
+            self = CostCategory.householdGoods
+        case L10n.costCategoryCommunalPayments:
+            self = CostCategory.communalPayments
+        case L10n.costCategoryChildrenExpenses:
+            self = CostCategory.childrenExpenses
+        case L10n.costCategoryParentExpenses:
+            self = CostCategory.parentExpenses
+        case L10n.costCategoryMedication:
+            self = CostCategory.medication
+        case L10n.costCategoryTreatment:
+            self = CostCategory.treatment
+        case L10n.costCategorySport:
+            self = CostCategory.sport
+        case L10n.costCategoryInsurance:
+            self = CostCategory.insurance
+        case L10n.costCategoryFuel:
+            self = CostCategory.fuel
+        case L10n.costCategoryCarService:
+            self = CostCategory.carService
+        case L10n.costCategoryRent:
+            self = CostCategory.rent
+        case L10n.costCategoryHouseholdAppliances:
+            self = CostCategory.householdAppliances
+        case L10n.costCategoryRepairs:
+            self = CostCategory.repairs
+        case L10n.costCategoryHomeImprovement:
+            self = CostCategory.homeImprovement
+        case L10n.costCategoryBeauty:
+            self = CostCategory.beauty
+        case L10n.costCategoryLoans:
+            self = CostCategory.loans
+        case L10n.costCategoryEducation:
+            self = CostCategory.education
+        default:
+            self = CostCategory.noCategory
+        }
+    }
     
     var stringValue: String {
         switch self {

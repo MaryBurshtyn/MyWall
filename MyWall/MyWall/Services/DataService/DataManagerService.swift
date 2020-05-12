@@ -1,64 +1,45 @@
 import Foundation
 import RealmSwift
-public class DataManagerService {
 
-//    func getNextObjectId() -> Int? {
-//        let items = getAllRepoItems()
-//        if !items.isEmpty {
-//            guard let number = items.max(by: { (left, right) -> Bool in
-//                return left.objectId < right.objectId
-//            })?.objectId else { return nil }//.value(forKey: "objectId") as? Int else { return }
-//            return number + 1
-//        } else {
-//            return 1
-//        }
-//    }
+public typealias CallBack = (Bool, Error?) -> Void
 
-//    func deleteTripItems(_ items: [TripInfo]) {
-//        items.forEach {
-//            self.delete($0)
-//        }
-//    }
-//
-//    func uploadToRepo<T: Object>(_ data: [T], _ tripId: String?, completion: CallBack? = nil) {
-//        data.forEach { (data) in
-//            write(data, shouldUpdate: false)
-//        }
-//    }
-//
-//    func getAllRepoItems() -> [TripInfo] {
-//        guard let items = realm?.objects(TripInfo.self).toArray() else {
-//            return []
-//        }
-//        return items
-//    }
-//
-//    func getLastItem() -> LastTripInfo? {
-//        guard let lastItem = realm?.objects(LastTripInfo.self).last else { return nil }
-//        return lastItem
-//    }
-//
-//    func deleteLastItems() {
-//        guard let lastItems = realm?.objects(LastTripInfo.self) else { return }
-//        delete(lastItems)
-//    }
-//
-//    func deleteAllItems() {
-//        deleteAll()
-//    }
-//
-//    func uploadLastItem(_ item: LastTripInfo) {
-//        write(item, shouldUpdate: false)
-//    }
-//
-//    func makeLastPoint(_ state: String) {
-//        guard let lastItem = realm?.objects(TripInfo.self).last else {
-//            return
-//        }
-//        write(lastItem, shouldUpdate: false) {
-//            lastItem.type = state
-//        }
-//    }
+public class DataManagerService:  DataManagerServiceProtocol {
+
+    func deleteExpenses(_ items: [CostDB]) {
+        items.forEach {
+            self.delete($0)
+        }
+    }
+    
+    func deleteIncomes(_ items: [IncomeDB]) {
+        items.forEach {
+            self.delete($0)
+        }
+    }
+
+    func uploadToRepo<T: Object>(_ data: [T], completion: CallBack? = nil) {
+        data.forEach { (data) in
+            write(data, shouldUpdate: false)
+        }
+    }
+
+    func getAllExpenses() -> [CostDB] {
+        guard let items = realm?.objects(CostDB.self).toArray() else {
+            return []
+        }
+        return items
+    }
+    
+    func getAllIncomes() -> [IncomeDB] {
+        guard let items = realm?.objects(IncomeDB.self).toArray() else {
+            return []
+        }
+        return items
+    }
+    
+    func deleteAllItems() {
+        deleteAll()
+    }
 }
 
 extension DataManagerService {

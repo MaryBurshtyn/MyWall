@@ -13,6 +13,8 @@ import Foundation
 internal enum L10n {
   /// Add
   internal static let addCostButton = L10n.tr("Localizable", "addCostButton")
+  /// BYN
+  internal static let bynCurrency = L10n.tr("Localizable", "bynCurrency")
   /// Cancel
   internal static let cancelButton = L10n.tr("Localizable", "cancelButton")
   /// Beauty
@@ -69,14 +71,38 @@ internal enum L10n {
   internal static let costCategoryWear = L10n.tr("Localizable", "costCategory_wear")
   /// Expenses
   internal static let costs = L10n.tr("Localizable", "costs")
+  /// EUR
+  internal static let eurCurrency = L10n.tr("Localizable", "eurCurrency")
   /// Finish
   internal static let finishButton = L10n.tr("Localizable", "finishButton")
+  /// грн
+  internal static let grnCurrency = L10n.tr("Localizable", "grnCurrency")
   /// Graphics
   internal static let home = L10n.tr("Localizable", "home")
+  /// Debt
+  internal static let incomeCategoryDebt = L10n.tr("Localizable", "incomeCategory_debt")
+  /// Dividends
+  internal static let incomeCategoryDividends = L10n.tr("Localizable", "incomeCategory_dividends")
+  /// Gratuity
+  internal static let incomeCategoryGratuity = L10n.tr("Localizable", "incomeCategory_gratuity")
+  /// Money prize
+  internal static let incomeCategoryMoneyPrize = L10n.tr("Localizable", "incomeCategory_moneyPrize")
+  /// No category
+  internal static let incomeCategoryNoCategory = L10n.tr("Localizable", "incomeCategory_noCategory")
+  /// Pension
+  internal static let incomeCategoryPension = L10n.tr("Localizable", "incomeCategory_pension")
+  /// Salary
+  internal static let incomeCategorySalary = L10n.tr("Localizable", "incomeCategory_salary")
+  /// Scholarship
+  internal static let incomeCategoryScholarship = L10n.tr("Localizable", "incomeCategory_scholarship")
   /// Incomes
   internal static let incomes = L10n.tr("Localizable", "incomes")
+  /// RUB
+  internal static let rubCurrency = L10n.tr("Localizable", "rubCurrency")
   /// Cost
   internal static let spent = L10n.tr("Localizable", "spent")
+  /// USD
+  internal static let usdCurrency = L10n.tr("Localizable", "usdCurrency")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name
