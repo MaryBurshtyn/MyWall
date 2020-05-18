@@ -4,6 +4,8 @@
 "incomes" = "Incomes";
 "home" = "Graphics";
 "spent" = "Cost";
+"income" = "Income";
+"settings" = "Settings";
 
 // Cost Category
 
@@ -58,3 +60,23 @@
 "incomeCategory_scholarship" = "Scholarship";
 "incomeCategory_dividends" = "Dividends";
 "incomeCategory_moneyPrize" = "Money prize";
+
+"locale" = "en_GB";
+
+"remainingMoney" = "Remaining money: ";
+"spentMoney" = "You spent";
+"youGot" = "you've got";
+
+"chart_noData" = "No data for the chart";
+
+
+"day" = "Day";
+"month" = "Month";
+"category" = "Category";
+"week" = "Week";
+"custom" = "Custom";
+"quarter" = "Quarter";
+"year" = "Year";
+"sumType" = "Choose summarization type";
+"period" = "Choose time period to plot";
+"plot" = "Plot";

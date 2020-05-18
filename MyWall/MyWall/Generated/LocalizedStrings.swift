@@ -17,6 +17,10 @@ internal enum L10n {
   internal static let bynCurrency = L10n.tr("Localizable", "bynCurrency")
   /// Cancel
   internal static let cancelButton = L10n.tr("Localizable", "cancelButton")
+  /// Category
+  internal static let category = L10n.tr("Localizable", "category")
+  /// No data for the chart
+  internal static let chartNoData = L10n.tr("Localizable", "chart_noData")
   /// Beauty
   internal static let costCategoryBeauty = L10n.tr("Localizable", "costCategory_beauty")
   /// Car service
@@ -71,6 +75,10 @@ internal enum L10n {
   internal static let costCategoryWear = L10n.tr("Localizable", "costCategory_wear")
   /// Expenses
   internal static let costs = L10n.tr("Localizable", "costs")
+  /// Custom
+  internal static let custom = L10n.tr("Localizable", "custom")
+  /// Day
+  internal static let day = L10n.tr("Localizable", "day")
   /// EUR
   internal static let eurCurrency = L10n.tr("Localizable", "eurCurrency")
   /// Finish
@@ -79,6 +87,8 @@ internal enum L10n {
   internal static let grnCurrency = L10n.tr("Localizable", "grnCurrency")
   /// Graphics
   internal static let home = L10n.tr("Localizable", "home")
+  /// Income
+  internal static let income = L10n.tr("Localizable", "income")
   /// Debt
   internal static let incomeCategoryDebt = L10n.tr("Localizable", "incomeCategory_debt")
   /// Dividends
@@ -97,12 +107,36 @@ internal enum L10n {
   internal static let incomeCategoryScholarship = L10n.tr("Localizable", "incomeCategory_scholarship")
   /// Incomes
   internal static let incomes = L10n.tr("Localizable", "incomes")
+  /// en_GB
+  internal static let locale = L10n.tr("Localizable", "locale")
+  /// Month
+  internal static let month = L10n.tr("Localizable", "month")
+  /// Choose time period to plot
+  internal static let period = L10n.tr("Localizable", "period")
+  /// Plot
+  internal static let plot = L10n.tr("Localizable", "plot")
+  /// Quarter
+  internal static let quarter = L10n.tr("Localizable", "quarter")
+  /// Remaining money: 
+  internal static let remainingMoney = L10n.tr("Localizable", "remainingMoney")
   /// RUB
   internal static let rubCurrency = L10n.tr("Localizable", "rubCurrency")
+  /// Settings
+  internal static let settings = L10n.tr("Localizable", "settings")
   /// Cost
   internal static let spent = L10n.tr("Localizable", "spent")
+  /// You spent
+  internal static let spentMoney = L10n.tr("Localizable", "spentMoney")
+  /// Choose summarization type
+  internal static let sumType = L10n.tr("Localizable", "sumType")
   /// USD
   internal static let usdCurrency = L10n.tr("Localizable", "usdCurrency")
+  /// Week
+  internal static let week = L10n.tr("Localizable", "week")
+  /// Year
+  internal static let year = L10n.tr("Localizable", "year")
+  /// you've got
+  internal static let youGot = L10n.tr("Localizable", "youGot")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

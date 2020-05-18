@@ -45,6 +45,7 @@ internal enum Asset {
   internal static let medication = ImageAsset(name: "medication")
   internal static let mobileTelefony = ImageAsset(name: "mobileTelefony")
   internal static let noCategory = ImageAsset(name: "noCategory")
+  internal static let notificationTextGradient = ImageAsset(name: "notificationTextGradient")
   internal static let parentExpenses = ImageAsset(name: "parentExpenses")
   internal static let recreation = ImageAsset(name: "recreation")
   internal static let rent = ImageAsset(name: "rent")

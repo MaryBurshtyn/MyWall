@@ -9,14 +9,20 @@
 import UIKit
 import Firebase
 import IQKeyboardManagerSwift
+import SwiftyBeaver
+
+let log = SwiftyBeaver.self
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private var compositionRoot: CompositionRoot!
     private var applicationFlow: ApplicationFlow!
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let console = ConsoleDestination()
+        log.addDestination(console)
         setupFirebase()
         compositionRoot = makeCompositionRoot()
         applicationFlow = ApplicationFlow(compositionRoot: compositionRoot)
@@ -33,6 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupKeyboardManager() {
         IQKeyboardManager.shared.enable = true
+        
     }
 
 

@@ -78,7 +78,7 @@ class ApplicationFlow: FlowProtocol, ApplicationFlowNavigatorProtocol {
             removeRunningFlows()
         }
         
-        //navigator.navigateTo(.login(delegate: self), transitionType: .modal)
+        navigator.navigateTo(.login, transitionType: .modal)
     }
     
     func removeRunningFlows() {
@@ -104,15 +104,16 @@ class ApplicationFlow: FlowProtocol, ApplicationFlowNavigatorProtocol {
 
 extension ApplicationFlow: LaunchFlowDelegate {
     func handleFlowFinished() {
-        handleLaunchApplication()
-//        sessionService.refreshSignInState { [weak self] (result) in
-//            switch result {
-//            case .success:
-//                self?.handleLaunchApplication()
-//            case .failure:
-//                self?.navigateToLogin(transitionType: .modal)
-//            }
-//        }
+        compositionRoot.getFirebaseApiService().isSignedIn ?
+            handleLaunchApplication()
+            : compositionRoot.getFirebaseApiService().refresh(completion: { [weak self] result in
+                switch result {
+                case .success():
+                    self?.handleLaunchApplication()
+                case .failure(_):
+                    self?.navigator.navigateTo(.login, transitionType: .root)
+                }
+            })
     }
     
     private func handleLaunchApplication() {

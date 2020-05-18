@@ -35,7 +35,9 @@ protocol AppearanceColorsConfigProtocol {
     var toolbarButtonBottomLabel: UIColor { get }
     var toolbarButtonTintColor: UIColor { get }
     var backButtonTintColor: UIColor { get }
-
+    
+    var loginBorderColor: UIColor { get }
+    var dateBackgroundColor: UIColor { get }
     // MARK: - Login
 
     var hintTextColor: UIColor { get }

@@ -3,6 +3,9 @@
 "incomes" = "Доходы";
 "home" = "Графики";
 "spent" = "Цена";
+"income" = "Доход";
+"settings" = "Настройки";
+
 // Cost Category
 
 "costCategory_foodProducts" = "Продукты";
@@ -56,3 +59,22 @@
 "incomeCategory_scholarship" = "Стипендия";
 "incomeCategory_dividends" = "Дивиденды";
 "incomeCategory_moneyPrize" = "Выигрыш";
+
+"locale" = "ru_RU";
+
+"remainingMoney" = "Оставшиеся деньги: ";
+"spentMoney" = "Вы потратили";
+"youGot" = "у Вас есть";
+
+"chart_noData" = "Нет данных для построения графика";
+
+"day" = "День";
+"month" = "Месяц";
+"category" = "Категория";
+"week" = "Неделя";
+"custom" = "Пользовательский";
+"quarter" = "Квартал";
+"year" = "Год";
+"sumType" = "Выберите тип суммирования";
+"period" = "Выберите период времени для графика";
+"plot" = "Ок";

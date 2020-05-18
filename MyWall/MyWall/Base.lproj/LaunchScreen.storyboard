@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Montserrat-SemiBold.ttf">
+        <array key="Montserrat-SemiBold.otf">
             <string>Montserrat-SemiBold</string>
         </array>
     </customFonts>
@@ -25,14 +25,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet" translatesAutoresizingMaskIntoConstraints="NO" id="Knx-PU-Qgz">
-                                <rect key="frame" x="97" y="84" width="220" height="220"/>
+                                <rect key="frame" x="117" y="84" width="180" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Knx-PU-Qgz" secondAttribute="height" multiplier="1:1" id="eb1-sA-SaF"/>
-                                    <constraint firstAttribute="width" constant="220" id="zYc-s5-mDy"/>
+                                    <constraint firstAttribute="width" constant="180" id="zYc-s5-mDy"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyWall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ex5-j7-8ho">
-                                <rect key="frame" x="15" y="324" width="384" height="51.5"/>
+                                <rect key="frame" x="15" y="284" width="384" height="51.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="42"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

@@ -8,7 +8,7 @@ class CompositionRoot {
     private let userDefaultsService: UserDefaultsServiceProtocol
     private let dataManagerService: DataManagerServiceProtocol
     private let reachability: Reachability?
-    //private let api: ApiProtocol
+    private let api: ApiProtocol
 
     
     init(serviceFactory: ServiceFactoryProtocol) {
@@ -18,6 +18,7 @@ class CompositionRoot {
         dataManagerService = serviceFactory.getDataManagerService()
         userDefaultsService = serviceFactory.getUserDefaultsService()
         self.reachability = try? Reachability()
+        self.api = serviceFactory.getFirebaseService()
     }
     
     func startServices() {
@@ -37,9 +38,15 @@ class CompositionRoot {
         case .tabBar:
             return composeTabBarScene()
         case .cost:
-            return SceneFactory.makeCostModule(navigator: navigator, dataManagerService: dataManagerService, reachability: reachability)
+            return SceneFactory.makeCostModule(navigator: navigator, dataManagerService: dataManagerService, reachability: reachability, api: api, appearenceConfig: appearanceConfig)
         case .income:
-            return SceneFactory.makeIncomeModule(navigator: navigator)
+            return SceneFactory.makeIncomeModule(navigator: navigator, dataManagerService: dataManagerService, reachability: reachability, api: api, appearenceConfig: appearanceConfig)
+        case .login:
+            return SceneFactory.makeLoginModule(navigator: navigator, appearenceConfig: appearanceConfig, api: api)
+        case .settings:
+            return SceneFactory.makeSettingsModule(navigator: navigator, appearenceConfig: appearanceConfig, api: api)
+        case .graphics:
+            return SceneFactory.makeGraphicsModule(navigator: navigator, appearenceConfig: appearanceConfig, dataManager: dataManagerService)
         }
     }
 
@@ -49,6 +56,10 @@ class CompositionRoot {
 
     func getUserDefaultsService() -> UserDefaultsServiceProtocol {
         return userDefaultsService
+    }
+    
+    func getFirebaseApiService() -> ApiProtocol {
+        return api
     }
 
 }
@@ -64,10 +75,11 @@ extension CompositionRoot {
         }
         
         private func composeTabBarScene() -> UIViewController {
-            let home: HomeViewController = composeScene(.home)
             let cost: CostViewController = composeScene(.cost)
             let income: IncomeViewController = composeScene(.income)
-            return SceneFactory.makeTabBar(navigator: navigator, menuHomeView: home, costView: cost, incomeView: income, appearenceConfig: appearanceConfig)
+            let settings: SettingsViewController = composeScene(.settings)
+            let graphics: GraphicsViewController = composeScene(.graphics)
+            return SceneFactory.makeTabBar(navigator: navigator, costView: cost, incomeView: income, settings: settings, graphics: graphics, appearenceConfig: appearanceConfig)
         }
         
         

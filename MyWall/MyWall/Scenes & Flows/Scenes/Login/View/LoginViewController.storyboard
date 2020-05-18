@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qQ1-gn-H8A">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LoginViewController-->
+        <scene sceneID="0wr-0k-2el">
+            <objects>
+                <viewController title="LoginViewController" id="qQ1-gn-H8A" customClass="LoginViewController" customModule="MyWall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9kL-aY-MZl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_background" translatesAutoresizingMaskIntoConstraints="NO" id="5jK-QH-EbE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet" translatesAutoresizingMaskIntoConstraints="NO" id="KPb-Fd-yyn">
+                                <rect key="frame" x="117" y="84" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="98z-G1-UfE"/>
+                                    <constraint firstAttribute="width" secondItem="KPb-Fd-yyn" secondAttribute="height" multiplier="1:1" id="pYe-g8-uII"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sIJ-yN-6BF">
+                                <rect key="frame" x="30" y="465.5" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mJ6-BD-S3z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ph-q1-URC">
+                                <rect key="frame" x="30" y="565.5" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="shF-07-7yH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byu-un-0Zm">
+                                <rect key="frame" x="30" y="435.5" width="58" height="25"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQc-TS-h1N">
+                                <rect key="frame" x="30" y="535.5" width="98" height="25"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6A-Ib-cuS">
+                                <rect key="frame" x="157" y="700.5" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="fRb-g4-Es6"/>
+                                    <constraint firstAttribute="height" constant="40" id="jFs-FY-gCh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.21568627450980393" green="0.33333333333333331" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerTapped:" destination="qQ1-gn-H8A" eventType="touchUpInside" id="nwA-YP-Pd4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dM-7a-h7n">
+                                <rect key="frame" x="167" y="645.5" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CUZ-eQ-wqA"/>
+                                    <constraint firstAttribute="width" constant="80" id="T6T-jF-stF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.21568627450980393" green="0.33333333333333331" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginTapped:" destination="qQ1-gn-H8A" eventType="touchUpInside" id="552-bq-YFI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5jK-QH-EbE" firstAttribute="leading" secondItem="kkV-AV-W11" secondAttribute="leading" id="0UI-sJ-nb3"/>
+                            <constraint firstItem="Z6A-Ib-cuS" firstAttribute="centerX" secondItem="5jK-QH-EbE" secondAttribute="centerX" id="16U-Mv-dtk"/>
+                            <constraint firstItem="kkV-AV-W11" firstAttribute="trailing" secondItem="sIJ-yN-6BF" secondAttribute="trailing" constant="30" id="6w2-i9-wRy"/>
+                            <constraint firstItem="9Ph-q1-URC" firstAttribute="top" secondItem="aQc-TS-h1N" secondAttribute="bottom" constant="5" id="B5C-8H-33B"/>
+                            <constraint firstItem="kkV-AV-W11" firstAttribute="trailing" secondItem="9Ph-q1-URC" secondAttribute="trailing" constant="30" id="CP2-JD-mRh"/>
+                            <constraint firstItem="sIJ-yN-6BF" firstAttribute="leading" secondItem="kkV-AV-W11" secondAttribute="leading" constant="30" id="Fcq-KO-8SR"/>
+                            <constraint firstItem="5jK-QH-EbE" firstAttribute="trailing" secondItem="kkV-AV-W11" secondAttribute="trailing" id="FkA-nZ-jZA"/>
+                            <constraint firstItem="5jK-QH-EbE" firstAttribute="top" secondItem="9kL-aY-MZl" secondAttribute="top" id="KRP-vq-8ii"/>
+                            <constraint firstItem="9Ph-q1-URC" firstAttribute="leading" secondItem="kkV-AV-W11" secondAttribute="leading" constant="30" id="NSe-fZ-zGe"/>
+                            <constraint firstItem="sIJ-yN-6BF" firstAttribute="top" secondItem="Byu-un-0Zm" secondAttribute="bottom" constant="5" id="Yv9-Z0-sSs"/>
+                            <constraint firstItem="9dM-7a-h7n" firstAttribute="top" secondItem="9Ph-q1-URC" secondAttribute="bottom" constant="30" id="beq-Xn-HEG"/>
+                            <constraint firstItem="KPb-Fd-yyn" firstAttribute="top" secondItem="kkV-AV-W11" secondAttribute="top" constant="40" id="eVT-9t-Ggq"/>
+                            <constraint firstItem="aQc-TS-h1N" firstAttribute="top" secondItem="sIJ-yN-6BF" secondAttribute="bottom" constant="20" id="eiC-dY-EZQ"/>
+                            <constraint firstItem="Byu-un-0Zm" firstAttribute="leading" secondItem="kkV-AV-W11" secondAttribute="leading" constant="30" id="fIV-d1-daF"/>
+                            <constraint firstItem="aQc-TS-h1N" firstAttribute="leading" secondItem="kkV-AV-W11" secondAttribute="leading" constant="30" id="fVE-D5-xRd"/>
+                            <constraint firstItem="KPb-Fd-yyn" firstAttribute="centerX" secondItem="5jK-QH-EbE" secondAttribute="centerX" id="hMz-Ud-Zbk"/>
+                            <constraint firstAttribute="bottom" secondItem="5jK-QH-EbE" secondAttribute="bottom" id="hSo-xm-R9t"/>
+                            <constraint firstItem="9dM-7a-h7n" firstAttribute="centerX" secondItem="5jK-QH-EbE" secondAttribute="centerX" id="jpR-ab-cYU"/>
+                            <constraint firstItem="Byu-un-0Zm" firstAttribute="centerY" secondItem="5jK-QH-EbE" secondAttribute="centerY" id="sKM-KR-NPq"/>
+                            <constraint firstItem="Z6A-Ib-cuS" firstAttribute="top" secondItem="9dM-7a-h7n" secondAttribute="bottom" constant="15" id="vBq-G6-zDd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kkV-AV-W11"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="sIJ-yN-6BF" id="lgC-Oo-5fW"/>
+                        <outlet property="loginButton" destination="9dM-7a-h7n" id="u3N-GN-O6P"/>
+                        <outlet property="passwordTextField" destination="9Ph-q1-URC" id="Kh3-xP-Jxi"/>
+                        <outlet property="registerButton" destination="Z6A-Ib-cuS" id="o1L-su-uPb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o07-zq-dXV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.7971014492753632" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_background" width="375" height="667"/>
+        <image name="wallet" width="200" height="200"/>
+    </resources>
+</document>

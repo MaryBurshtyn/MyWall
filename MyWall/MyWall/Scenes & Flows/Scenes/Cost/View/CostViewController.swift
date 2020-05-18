@@ -1,5 +1,12 @@
 import Foundation
 import UIKit
+import MBProgressHUD
+
+private struct Constants {
+    static let tableSectionHeaderFontSize: CGFloat = 15
+    static let tableSectionHeaderViewInsetX: CGFloat = 10
+    static let tableSectionHeaderViewInsetY: CGFloat = 0
+}
 
 class CostViewController: UIViewController {
     
@@ -12,9 +19,16 @@ class CostViewController: UIViewController {
             }
         }
     }
+    var appearanceConfig: AppearanceConfigProtocol! {
+        didSet {
+            guard oldValue == nil else {
+                fatalError("AppearanceConfig can be set only once -- during assembling \(self.description)")
+            }
+        }
+    }
     
     @IBOutlet weak var tableView: UITableView!
-    var costs = [CostDB]()
+    var costs = [(key: String, value: [CostDB])]()
     
     // MARK: - Init & Setup
 
@@ -23,6 +37,8 @@ class CostViewController: UIViewController {
         registerEventCell()
         setupListNavigationBar()
         presenter.handleViewDidLoad()
+        tableView.backgroundView = UIImageView(image: #imageLiteral(resourceName: "ic_background"))
+        //tableView.backgroundColor = appearanceConfig.colors.dateBackgroundColor
     }
 
     private func registerEventCell() {
@@ -51,21 +67,38 @@ class CostViewController: UIViewController {
 }
 
 extension CostViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return costs.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return costs[section].value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CostTableViewCell", for: indexPath) as? CostTableViewCell else {
                 return UITableViewCell()
         }
-        cell.configureCell(data: costs[indexPath.row])
+        cell.configureCell(data: costs[indexPath.section].value[indexPath.row])
         cell.selectionStyle = .none
+        cell.backgroundColor = .clear
         return cell
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = LabelWithInsets(frame: CGRect(x: 0, y: 0, width: 0, height: 0),
+                                    insetX: Constants.tableSectionHeaderViewInsetX,
+                                    insetY: Constants.tableSectionHeaderViewInsetY)
+        label.textColor = UIColor(patternImage: #imageLiteral(resourceName: "notificationTextGradient"))
+        label.textAlignment = .center
+        label.backgroundColor = .clear
+        label.font = UIFont.systemFont(ofSize: Constants.tableSectionHeaderFontSize, weight: .medium)
+        label.text = costs[section].key
+        return label
     }
 }
 
@@ -82,16 +115,22 @@ extension CostViewController: CostViewProtocol {
         self.present(costAlert, animated: true, completion: nil)
     }
     
-    func setCosts(costs: [CostDB]) {
+    func setCosts(costs: [(key: String, value: [CostDB])]) {
         self.costs = costs
         tableView.reloadData()
+    }
+    
+    func showPreloader() {
+        MBProgressHUD.showAdded(to: view, animated: true)
+    }
+    
+    func hidePreloader() {
+        MBProgressHUD.hide(for: view, animated: true)
     }
 }
 
 extension CostViewController: AddCostAlertViewDelegate {
     func okButtonTapped(costs: [CostDB]) {
         presenter.handleUpdateExpensesList(expenses: costs)
-        self.costs.append(contentsOf: costs)
-        self.tableView.reloadData()
     }    
 }

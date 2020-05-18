@@ -44,10 +44,11 @@ class TabBarViewController: UITabBarController {
                                     for: .selected)
     }
     
-    func setupViewControllers(home homeViewController: HomeViewController,
-                              cost costViewController: CostViewController,
-                              income incomeViewController: IncomeViewController) {
-        let menuHome = wrapController(homeViewController,
+    func setupViewControllers(cost costViewController: CostViewController,
+                              income incomeViewController: IncomeViewController,
+                              settings: SettingsViewController,
+                              graphics: GraphicsViewController) {
+        let graphics = wrapController(graphics,
                                       title: L10n.home,
                                       image: #imageLiteral(resourceName: "ic_home"))
         let cost = wrapController(costViewController,
@@ -56,7 +57,11 @@ class TabBarViewController: UITabBarController {
         let income = wrapController(incomeViewController,
                                     title: L10n.incomes,
                                   image: #imageLiteral(resourceName: "ic_home"))
-        viewControllers = [menuHome, cost, income]
+        let settings = wrapController(settings,
+                                      title: L10n.settings,
+                                      image:  #imageLiteral(resourceName: "ic_home"))
+        
+        viewControllers = [graphics, cost, income, settings]
     }
     
     // MARK: - Make Controllers

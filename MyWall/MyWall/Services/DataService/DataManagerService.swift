@@ -40,6 +40,42 @@ public class DataManagerService:  DataManagerServiceProtocol {
     func deleteAllItems() {
         deleteAll()
     }
+    
+    func getExpenses(for month: Date) -> [CostDB] {
+        let expenses = getAllExpenses()
+        var neededExpenses = [CostDB]()
+        expenses.forEach { element in
+            if element.date?.month() == month.month() {
+                neededExpenses.append(element)
+            }
+        }
+        return neededExpenses
+    }
+    
+    func getExpenses(for period: (Date, Date)) -> [CostDB] {
+        let expenses = getAllExpenses()
+        var neededExpenses = [CostDB]()
+        expenses.forEach { element in
+            guard let date = element.date else {
+                return
+            }
+            if date > period.0 && date < period.1 {
+               neededExpenses.append(element)
+           }
+        }
+        return neededExpenses
+    }
+    
+    func getIncomes(for month: Date) -> [IncomeDB] {
+        let incomes = getAllIncomes()
+        var neededIncomes = [IncomeDB]()
+        incomes.forEach { element in
+            if element.date?.month() == month.month() {
+                neededIncomes.append(element)
+            }
+        }
+        return neededIncomes
+    }
 }
 
 extension DataManagerService {
@@ -56,7 +92,7 @@ extension DataManagerService {
                 realm?.deleteAll()
             }
         } catch {
-            print(error)
+            log.error(error)
         }
     }
 
@@ -66,7 +102,7 @@ extension DataManagerService {
                 realm?.delete(objects)
             }
         } catch {
-            print(error)
+            log.error(error)
         }
     }
 
@@ -76,7 +112,7 @@ extension DataManagerService {
                 realm?.delete(object)
             }
         } catch {
-            print(error)
+            log.error(error)
         }
     }
 
@@ -95,7 +131,7 @@ extension DataManagerService {
                 }
             }
         } catch let error {
-            print(error)
+            log.error(error)
         }
     }
 }

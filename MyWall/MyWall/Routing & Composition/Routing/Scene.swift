@@ -6,4 +6,7 @@ enum Scene {
     case tabBar
     case cost
     case income
+    case login
+    case settings
+    case graphics
 }

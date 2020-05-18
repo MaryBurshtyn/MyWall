@@ -8,4 +8,7 @@ protocol DataManagerServiceProtocol {
     func getAllExpenses() -> [CostDB]
     func getAllIncomes() -> [IncomeDB]
     func deleteAllItems()
+    func getExpenses(for month: Date) -> [CostDB]
+    func getIncomes(for month: Date) -> [IncomeDB]
+    func getExpenses(for period: (Date, Date)) -> [CostDB]
 }

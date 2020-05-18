@@ -7,6 +7,7 @@ class ServiceFactory: ServiceFactoryProtocol {
     private let bundle: Bundle
     private let userDefaultsService: UserDefaultsServiceProtocol
     private let dataManagerService: DataManagerServiceProtocol
+    private let firebaseService: ApiProtocol
     
     init(//api: ApiProtocol,
          userDafaults: UserDefaults,
@@ -16,6 +17,7 @@ class ServiceFactory: ServiceFactoryProtocol {
         self.bundle = bundle
         self.userDefaultsService = UserDefaultsService(userDefaults: userDafaults)
         self.dataManagerService = DataManagerService()
+        self.firebaseService = FirebaseApiService()
     }
 
     func getUserDefaultsService() -> UserDefaultsServiceProtocol {
@@ -24,6 +26,10 @@ class ServiceFactory: ServiceFactoryProtocol {
     
     func getDataManagerService() -> DataManagerServiceProtocol {
         return dataManagerService
+    }
+    
+    func getFirebaseService() -> ApiProtocol {
+        return firebaseService
     }
 
 }

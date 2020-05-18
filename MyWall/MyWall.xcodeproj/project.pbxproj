@@ -20,6 +20,27 @@
 		345D3C4A24633BC300D696E3 /* CostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C4924633BC300D696E3 /* CostTableViewCell.xib */; };
 		345D3C4C2463433500D696E3 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C4B2463433500D696E3 /* NibLoadable.swift */; };
 		345D3C612464A28300D696E3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C602464A28300D696E3 /* Fonts.swift */; };
+		345D846D246DF43400E5B7A9 /* LabelWithInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D846C246DF43400E5B7A9 /* LabelWithInsets.swift */; };
+		345D8473246E054700E5B7A9 /* AddIncomeAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D8472246E054700E5B7A9 /* AddIncomeAlertView.swift */; };
+		345D8475246E05C100E5B7A9 /* AddIncomeAlertViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D8474246E05C100E5B7A9 /* AddIncomeAlertViewDelegate.swift */; };
+		345D8477246E08B100E5B7A9 /* IncomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D8476246E08B100E5B7A9 /* IncomeTableViewCell.swift */; };
+		345D8479246E08CF00E5B7A9 /* IncomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345D8478246E08CF00E5B7A9 /* IncomeTableViewCell.xib */; };
+		345D847E246EB59700E5B7A9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D847D246EB59600E5B7A9 /* SettingsViewController.swift */; };
+		345D8480246EB5AB00E5B7A9 /* SettingsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D847F246EB5AB00E5B7A9 /* SettingsViewProtocol.swift */; };
+		345D8482246EB5BE00E5B7A9 /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345D8481246EB5BE00E5B7A9 /* SettingsViewController.storyboard */; };
+		345D8484246EB5FC00E5B7A9 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D8483246EB5FC00E5B7A9 /* SettingsPresenter.swift */; };
+		345D8486246EB62F00E5B7A9 /* SettingsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D8485246EB62F00E5B7A9 /* SettingsPresenterProtocol.swift */; };
+		345D8488246EB70D00E5B7A9 /* Settings+SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D8487246EB70D00E5B7A9 /* Settings+SceneFactory.swift */; };
+		345D848D246F174B00E5B7A9 /* GraphicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D848C246F174B00E5B7A9 /* GraphicsViewController.swift */; };
+		345D848F246F176400E5B7A9 /* GraphicsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D848E246F176400E5B7A9 /* GraphicsViewProtocol.swift */; };
+		345D8491246F178B00E5B7A9 /* GraphicsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D8490246F178B00E5B7A9 /* GraphicsPresenter.swift */; };
+		345D8493246F179B00E5B7A9 /* GraphicsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D8492246F179B00E5B7A9 /* GraphicsPresenterProtocol.swift */; };
+		345D8495246F1DE000E5B7A9 /* GraphicsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345D8494246F1DE000E5B7A9 /* GraphicsViewController.storyboard */; };
+		345D8497246F267400E5B7A9 /* Graphics+SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D8496246F267400E5B7A9 /* Graphics+SceneFactory.swift */; };
+		345D849D2470249C00E5B7A9 /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 345D849C2470249B00E5B7A9 /* appIcon.png */; };
+		345D84A32472B2F500E5B7A9 /* AddGraphicsAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D84A22472B2F500E5B7A9 /* AddGraphicsAlertView.swift */; };
+		345D84A52472B31400E5B7A9 /* AddGraphicsAlertViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D84A42472B31400E5B7A9 /* AddGraphicsAlertViewDelegate.swift */; };
+		345D84A72472DD4000E5B7A9 /* TimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D84A62472DD4000E5B7A9 /* TimePeriod.swift */; };
 		345F45DA2440D0EF001732C4 /* CostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F45D92440D0EF001732C4 /* CostPresenter.swift */; };
 		345F45DC2440D10C001732C4 /* CostPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F45DB2440D10C001732C4 /* CostPresenterProtocol.swift */; };
 		345F45DE2440D129001732C4 /* CostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F45DD2440D129001732C4 /* CostViewController.swift */; };
@@ -89,11 +110,27 @@
 		346EE2482437834000EF91C3 /* UIImage+Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE2402437834000EF91C3 /* UIImage+Overlay.swift */; };
 		346F38F32468ACBC0081ABB2 /* AppearanceColorsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F38F22468ACBC0081ABB2 /* AppearanceColorsConfig.swift */; };
 		346F38F52468ADF90081ABB2 /* AppearanceColorsConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F38F42468ADF90081ABB2 /* AppearanceColorsConfigProtocol.swift */; };
-		346F38F72468BDD10081ABB2 /* AddCostAlertView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346F38F62468BDD10081ABB2 /* AddCostAlertView.storyboard */; };
 		346F38F92468C2450081ABB2 /* AddCostAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F38F82468C2450081ABB2 /* AddCostAlertView.swift */; };
 		346F38FB2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F38FA2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift */; };
 		346F38FF246AC3D70081ABB2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F38FE246AC3D70081ABB2 /* Currency.swift */; };
 		346F3902246AD0330081ABB2 /* IncomeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F3901246AD0330081ABB2 /* IncomeCategory.swift */; };
+		346F3905246B4FFF0081ABB2 /* FirebaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F3904246B4FFF0081ABB2 /* FirebaseApiService.swift */; };
+		346F3907246B50300081ABB2 /* ApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F3906246B50300081ABB2 /* ApiProtocol.swift */; };
+		346F3909246B50A50081ABB2 /* FirebaseErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F3908246B50A50081ABB2 /* FirebaseErrorParser.swift */; };
+		346F390B246B50FE0081ABB2 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F390A246B50FE0081ABB2 /* CommonError.swift */; };
+		346F390D246B54EA0081ABB2 /* FirestoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F390C246B54EA0081ABB2 /* FirestoreDataService.swift */; };
+		346F390F246B55340081ABB2 /* CommonBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F390E246B55340081ABB2 /* CommonBlock.swift */; };
+		346F3912246B55730081ABB2 /* CommonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F3911246B55730081ABB2 /* CommonParser.swift */; };
+		346F3917246BF0670081ABB2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F3916246BF0670081ABB2 /* LoginPresenter.swift */; };
+		346F3919246BF07A0081ABB2 /* LoginPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F3918246BF07A0081ABB2 /* LoginPresenterProtocol.swift */; };
+		346F391B246BF08E0081ABB2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F391A246BF08E0081ABB2 /* LoginViewController.swift */; };
+		346F391D246BF0A60081ABB2 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F391C246BF0A60081ABB2 /* LoginViewProtocol.swift */; };
+		346F391F246BF0C60081ABB2 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346F391E246BF0C60081ABB2 /* LoginViewController.storyboard */; };
+		346F3921246BFF3F0081ABB2 /* Login+SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F3920246BFF3F0081ABB2 /* Login+SceneFactory.swift */; };
+		346F3927246C95230081ABB2 /* FirestoreCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F3926246C95230081ABB2 /* FirestoreCollections.swift */; };
+		346F3929246C98090081ABB2 /* ExpenseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F3928246C98090081ABB2 /* ExpenseParser.swift */; };
+		346F392B246C9BC40081ABB2 /* IncomeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F392A246C9BC40081ABB2 /* IncomeParser.swift */; };
+		346F392D246DDC4C0081ABB2 /* Date+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F392C246DDC4C0081ABB2 /* Date+Time.swift */; };
 		34C2D79D246203F100FC761C /* DataManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C2D79C246203F100FC761C /* DataManagerService.swift */; };
 		379DFC014B7654C610BCCDA2 /* Pods_MyWall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9A976B80F1D18FF0C0AC36 /* Pods_MyWall.framework */; };
 /* End PBXBuildFile section */
@@ -167,6 +204,27 @@
 		345D3C832464A8C700D696E3 /* Montserrat-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.otf"; sourceTree = "<group>"; };
 		345D3C842464A8C700D696E3 /* Montserrat-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.otf"; sourceTree = "<group>"; };
 		345D3C852464A8C700D696E3 /* MontserratAlternates-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-BlackItalic.otf"; sourceTree = "<group>"; };
+		345D846C246DF43400E5B7A9 /* LabelWithInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithInsets.swift; sourceTree = "<group>"; };
+		345D8472246E054700E5B7A9 /* AddIncomeAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncomeAlertView.swift; sourceTree = "<group>"; };
+		345D8474246E05C100E5B7A9 /* AddIncomeAlertViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncomeAlertViewDelegate.swift; sourceTree = "<group>"; };
+		345D8476246E08B100E5B7A9 /* IncomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTableViewCell.swift; sourceTree = "<group>"; };
+		345D8478246E08CF00E5B7A9 /* IncomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IncomeTableViewCell.xib; sourceTree = "<group>"; };
+		345D847D246EB59600E5B7A9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		345D847F246EB5AB00E5B7A9 /* SettingsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewProtocol.swift; sourceTree = "<group>"; };
+		345D8481246EB5BE00E5B7A9 /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		345D8483246EB5FC00E5B7A9 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		345D8485246EB62F00E5B7A9 /* SettingsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterProtocol.swift; sourceTree = "<group>"; };
+		345D8487246EB70D00E5B7A9 /* Settings+SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+SceneFactory.swift"; sourceTree = "<group>"; };
+		345D848C246F174B00E5B7A9 /* GraphicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsViewController.swift; sourceTree = "<group>"; };
+		345D848E246F176400E5B7A9 /* GraphicsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsViewProtocol.swift; sourceTree = "<group>"; };
+		345D8490246F178B00E5B7A9 /* GraphicsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsPresenter.swift; sourceTree = "<group>"; };
+		345D8492246F179B00E5B7A9 /* GraphicsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsPresenterProtocol.swift; sourceTree = "<group>"; };
+		345D8494246F1DE000E5B7A9 /* GraphicsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GraphicsViewController.storyboard; sourceTree = "<group>"; };
+		345D8496246F267400E5B7A9 /* Graphics+SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Graphics+SceneFactory.swift"; sourceTree = "<group>"; };
+		345D849C2470249B00E5B7A9 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appIcon.png; path = Assets.xcassets/AppIcon.appiconset/appIcon.png; sourceTree = "<group>"; };
+		345D84A22472B2F500E5B7A9 /* AddGraphicsAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGraphicsAlertView.swift; sourceTree = "<group>"; };
+		345D84A42472B31400E5B7A9 /* AddGraphicsAlertViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGraphicsAlertViewDelegate.swift; sourceTree = "<group>"; };
+		345D84A62472DD4000E5B7A9 /* TimePeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePeriod.swift; sourceTree = "<group>"; };
 		345F45D92440D0EF001732C4 /* CostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostPresenter.swift; sourceTree = "<group>"; };
 		345F45DB2440D10C001732C4 /* CostPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostPresenterProtocol.swift; sourceTree = "<group>"; };
 		345F45DD2440D129001732C4 /* CostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostViewController.swift; sourceTree = "<group>"; };
@@ -238,11 +296,27 @@
 		346EE2402437834000EF91C3 /* UIImage+Overlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Overlay.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/UIImage+Overlay.swift"; sourceTree = "<group>"; };
 		346F38F22468ACBC0081ABB2 /* AppearanceColorsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceColorsConfig.swift; sourceTree = "<group>"; };
 		346F38F42468ADF90081ABB2 /* AppearanceColorsConfigProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceColorsConfigProtocol.swift; sourceTree = "<group>"; };
-		346F38F62468BDD10081ABB2 /* AddCostAlertView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCostAlertView.storyboard; sourceTree = "<group>"; };
 		346F38F82468C2450081ABB2 /* AddCostAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCostAlertView.swift; sourceTree = "<group>"; };
 		346F38FA2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCostAlertViewDelegate.swift; sourceTree = "<group>"; };
 		346F38FE246AC3D70081ABB2 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		346F3901246AD0330081ABB2 /* IncomeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCategory.swift; sourceTree = "<group>"; };
+		346F3904246B4FFF0081ABB2 /* FirebaseApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseApiService.swift; sourceTree = "<group>"; };
+		346F3906246B50300081ABB2 /* ApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProtocol.swift; sourceTree = "<group>"; };
+		346F3908246B50A50081ABB2 /* FirebaseErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseErrorParser.swift; sourceTree = "<group>"; };
+		346F390A246B50FE0081ABB2 /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
+		346F390C246B54EA0081ABB2 /* FirestoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreDataService.swift; sourceTree = "<group>"; };
+		346F390E246B55340081ABB2 /* CommonBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonBlock.swift; sourceTree = "<group>"; };
+		346F3911246B55730081ABB2 /* CommonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonParser.swift; sourceTree = "<group>"; };
+		346F3916246BF0670081ABB2 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		346F3918246BF07A0081ABB2 /* LoginPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterProtocol.swift; sourceTree = "<group>"; };
+		346F391A246BF08E0081ABB2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		346F391C246BF0A60081ABB2 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
+		346F391E246BF0C60081ABB2 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		346F3920246BFF3F0081ABB2 /* Login+SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+SceneFactory.swift"; sourceTree = "<group>"; };
+		346F3926246C95230081ABB2 /* FirestoreCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreCollections.swift; sourceTree = "<group>"; };
+		346F3928246C98090081ABB2 /* ExpenseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseParser.swift; sourceTree = "<group>"; };
+		346F392A246C9BC40081ABB2 /* IncomeParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeParser.swift; sourceTree = "<group>"; };
+		346F392C246DDC4C0081ABB2 /* Date+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Time.swift"; sourceTree = "<group>"; };
 		34C2D79C246203F100FC761C /* DataManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerService.swift; sourceTree = "<group>"; };
 		8C9A976B80F1D18FF0C0AC36 /* Pods_MyWall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3D2C330C45B10EDA647900 /* Pods-MyWall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWall.release.xcconfig"; path = "Target Support Files/Pods-MyWall/Pods-MyWall.release.xcconfig"; sourceTree = "<group>"; };
@@ -331,6 +405,102 @@
 			path = Montserrat;
 			sourceTree = "<group>";
 		};
+		345D846E246E047300E5B7A9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				345D3C4724633B5500D696E3 /* CostTableViewCell.swift */,
+				345D3C4924633BC300D696E3 /* CostTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		345D846F246E048100E5B7A9 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				346F38FA2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift */,
+				346F38F82468C2450081ABB2 /* AddCostAlertView.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		345D8470246E04B800E5B7A9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				345D8476246E08B100E5B7A9 /* IncomeTableViewCell.swift */,
+				345D8478246E08CF00E5B7A9 /* IncomeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		345D8471246E04C000E5B7A9 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				345D8472246E054700E5B7A9 /* AddIncomeAlertView.swift */,
+				345D8474246E05C100E5B7A9 /* AddIncomeAlertViewDelegate.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		345D847A246EB55F00E5B7A9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				345D847C246EB57400E5B7A9 /* View */,
+				345D847B246EB56B00E5B7A9 /* Presenter */,
+				345D8487246EB70D00E5B7A9 /* Settings+SceneFactory.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		345D847B246EB56B00E5B7A9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				345D8483246EB5FC00E5B7A9 /* SettingsPresenter.swift */,
+				345D8485246EB62F00E5B7A9 /* SettingsPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		345D847C246EB57400E5B7A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				345D847D246EB59600E5B7A9 /* SettingsViewController.swift */,
+				345D847F246EB5AB00E5B7A9 /* SettingsViewProtocol.swift */,
+				345D8481246EB5BE00E5B7A9 /* SettingsViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		345D8489246ED2FA00E5B7A9 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				345D848B246ED31500E5B7A9 /* View */,
+				345D848A246ED30C00E5B7A9 /* Presenter */,
+				345D8496246F267400E5B7A9 /* Graphics+SceneFactory.swift */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		345D848A246ED30C00E5B7A9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				345D8490246F178B00E5B7A9 /* GraphicsPresenter.swift */,
+				345D8492246F179B00E5B7A9 /* GraphicsPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		345D848B246ED31500E5B7A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				345D848C246F174B00E5B7A9 /* GraphicsViewController.swift */,
+				345D848E246F176400E5B7A9 /* GraphicsViewProtocol.swift */,
+				345D8494246F1DE000E5B7A9 /* GraphicsViewController.storyboard */,
+				345D84A22472B2F500E5B7A9 /* AddGraphicsAlertView.swift */,
+				345D84A42472B31400E5B7A9 /* AddGraphicsAlertViewDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		345F45D62440D07A001732C4 /* Cost */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,14 +514,11 @@
 		345F45D72440D08A001732C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				345D846F246E048100E5B7A9 /* Dialog */,
+				345D846E246E047300E5B7A9 /* Cell */,
 				345F45DD2440D129001732C4 /* CostViewController.swift */,
 				345F45DF2440D139001732C4 /* CostViewProtocol.swift */,
 				345F45E32440D2B2001732C4 /* CostViewController.storyboard */,
-				345D3C4724633B5500D696E3 /* CostTableViewCell.swift */,
-				345D3C4924633BC300D696E3 /* CostTableViewCell.xib */,
-				346F38F62468BDD10081ABB2 /* AddCostAlertView.storyboard */,
-				346F38F82468C2450081ABB2 /* AddCostAlertView.swift */,
-				346F38FA2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -378,6 +545,8 @@
 		345F45E62440DEAB001732C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				345D8471246E04C000E5B7A9 /* Dialog */,
+				345D8470246E04B800E5B7A9 /* Cell */,
 				345F45EC2440DF1D001732C4 /* IncomeViewController.swift */,
 				345F45EE2440DF2F001732C4 /* IncomeViewProtocol.swift */,
 				345F45F02440DF47001732C4 /* IncomeViewController.storyboard */,
@@ -476,6 +645,7 @@
 		3464E0B92436576D000F57C1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				346F3903246B4FBB0081ABB2 /* FirebaseService */,
 				3456D4462462035700157D42 /* DataService */,
 				3464E0BC243657F5000F57C1 /* UserDefaultsService */,
 			);
@@ -523,6 +693,9 @@
 		3464E0D124365FCF000F57C1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				345D8489246ED2FA00E5B7A9 /* Graphics */,
+				345D847A246EB55F00E5B7A9 /* Settings */,
+				346F3913246BEF5F0081ABB2 /* Login */,
 				345F45E52440DE9C001732C4 /* Income */,
 				345F45D62440D07A001732C4 /* Cost */,
 				346EE2252437507300EF91C3 /* Common */,
@@ -580,6 +753,7 @@
 				3434E7BE2440F04C00BBFC32 /* Base.lproj */,
 				346955B423F4254C00DCDC68 /* GoogleService-Info.plist */,
 				346955AE23F420D100DCDC68 /* Info.plist */,
+				345D849C2470249B00E5B7A9 /* appIcon.png */,
 				3464E0CF24365E73000F57C1 /* AppDelegate+CompositionRootFactory.swift */,
 			);
 			path = MyWall;
@@ -609,6 +783,7 @@
 			children = (
 				346EE238243782FF00EF91C3 /* UIKit */,
 				345D3C4B2463433500D696E3 /* NibLoadable.swift */,
+				346F392C246DDC4C0081ABB2 /* Date+Time.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -692,6 +867,7 @@
 				346EE2392437833F00EF91C3 /* UIView+Constraints.swift */,
 				346EE23C2437833F00EF91C3 /* UIViewController+Alerts.swift */,
 				346EE20F2437442100EF91C3 /* UIViewController+Storyboard.swift */,
+				345D846C246DF43400E5B7A9 /* LabelWithInsets.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -702,8 +878,63 @@
 				345D3C452462EB8800D696E3 /* CostCategory.swift */,
 				346F38FE246AC3D70081ABB2 /* Currency.swift */,
 				346F3901246AD0330081ABB2 /* IncomeCategory.swift */,
+				346F390A246B50FE0081ABB2 /* CommonError.swift */,
+				346F390E246B55340081ABB2 /* CommonBlock.swift */,
+				345D84A62472DD4000E5B7A9 /* TimePeriod.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		346F3903246B4FBB0081ABB2 /* FirebaseService */ = {
+			isa = PBXGroup;
+			children = (
+				346F3910246B55620081ABB2 /* Parsers */,
+				346F3904246B4FFF0081ABB2 /* FirebaseApiService.swift */,
+				346F3906246B50300081ABB2 /* ApiProtocol.swift */,
+				346F3908246B50A50081ABB2 /* FirebaseErrorParser.swift */,
+				346F390C246B54EA0081ABB2 /* FirestoreDataService.swift */,
+				346F3926246C95230081ABB2 /* FirestoreCollections.swift */,
+			);
+			path = FirebaseService;
+			sourceTree = "<group>";
+		};
+		346F3910246B55620081ABB2 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				346F3911246B55730081ABB2 /* CommonParser.swift */,
+				346F3928246C98090081ABB2 /* ExpenseParser.swift */,
+				346F392A246C9BC40081ABB2 /* IncomeParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		346F3913246BEF5F0081ABB2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				346F3915246BEF700081ABB2 /* View */,
+				346F3914246BEF680081ABB2 /* Presenter */,
+				346F3920246BFF3F0081ABB2 /* Login+SceneFactory.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		346F3914246BEF680081ABB2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				346F3916246BF0670081ABB2 /* LoginPresenter.swift */,
+				346F3918246BF07A0081ABB2 /* LoginPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		346F3915246BEF700081ABB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				346F391A246BF08E0081ABB2 /* LoginViewController.swift */,
+				346F391C246BF0A60081ABB2 /* LoginViewProtocol.swift */,
+				346F391E246BF0C60081ABB2 /* LoginViewController.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		42846DDBF779743992201BDD /* Frameworks */ = {
@@ -787,18 +1018,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345D8495246F1DE000E5B7A9 /* GraphicsViewController.storyboard in Resources */,
+				345D8482246EB5BE00E5B7A9 /* SettingsViewController.storyboard in Resources */,
+				345D8479246E08CF00E5B7A9 /* IncomeTableViewCell.xib in Resources */,
 				345F45F12440DF47001732C4 /* IncomeViewController.storyboard in Resources */,
 				346955AD23F420D100DCDC68 /* LaunchScreen.storyboard in Resources */,
 				3434E7BF2440F04C00BBFC32 /* Base.lproj in Resources */,
 				346955B523F4254C00DCDC68 /* GoogleService-Info.plist in Resources */,
 				346EE23324377EF200EF91C3 /* HomeViewController.storyboard in Resources */,
+				345D849D2470249C00E5B7A9 /* appIcon.png in Resources */,
+				346F391F246BF0C60081ABB2 /* LoginViewController.storyboard in Resources */,
 				346955AA23F420D100DCDC68 /* Assets.xcassets in Resources */,
 				345F45E42440D2B2001732C4 /* CostViewController.storyboard in Resources */,
 				345D3C4A24633BC300D696E3 /* CostTableViewCell.xib in Resources */,
 				346EE22424374FA500EF91C3 /* TabBarViewController.storyboard in Resources */,
 				346955A823F420D000DCDC68 /* Main.storyboard in Resources */,
 				346EE20D2437420900EF91C3 /* SplashViewController.storyboard in Resources */,
-				346F38F72468BDD10081ABB2 /* AddCostAlertView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,14 +1123,20 @@
 				3464E0A324365676000F57C1 /* ServiceFactory.swift in Sources */,
 				346EE2452437834000EF91C3 /* UILabel+NumberOfLinesForText.swift in Sources */,
 				3464E0AE243656B9000F57C1 /* UIWindow+RootReplacement.swift in Sources */,
+				346F3929246C98090081ABB2 /* ExpenseParser.swift in Sources */,
 				346955A523F420D000DCDC68 /* ViewController.swift in Sources */,
 				345D3C442462EB4600D696E3 /* Income.swift in Sources */,
 				345F45DE2440D129001732C4 /* CostViewController.swift in Sources */,
+				346F3919246BF07A0081ABB2 /* LoginPresenterProtocol.swift in Sources */,
 				346F38FF246AC3D70081ABB2 /* Currency.swift in Sources */,
+				346F3905246B4FFF0081ABB2 /* FirebaseApiService.swift in Sources */,
 				346EE2412437834000EF91C3 /* UIView+Constraints.swift in Sources */,
 				3434E7D7244E187900BBFC32 /* Graphics.swift in Sources */,
+				345D8491246F178B00E5B7A9 /* GraphicsPresenter.swift in Sources */,
 				346EE22B24377D0100EF91C3 /* HomeViewController.swift in Sources */,
 				346EE2272437509100EF91C3 /* ShadowNavigationBar.swift in Sources */,
+				345D8486246EB62F00E5B7A9 /* SettingsPresenterProtocol.swift in Sources */,
+				346F391B246BF08E0081ABB2 /* LoginViewController.swift in Sources */,
 				3464E0A624365676000F57C1 /* SceneFactory.swift in Sources */,
 				3464E0C424365ACE000F57C1 /* ApplicationFlow.swift in Sources */,
 				3464E0B0243656B9000F57C1 /* SceneNavigatorProtocol.swift in Sources */,
@@ -903,34 +1144,49 @@
 				345F45F32440E013001732C4 /* SceneFactory+Income.swift in Sources */,
 				3464E0A9243656B1000F57C1 /* Scene.swift in Sources */,
 				345D3C422462EB1200D696E3 /* IncomeDB.swift in Sources */,
+				346F3917246BF0670081ABB2 /* LoginPresenter.swift in Sources */,
+				345D8488246EB70D00E5B7A9 /* Settings+SceneFactory.swift in Sources */,
+				346F390D246B54EA0081ABB2 /* FirestoreDataService.swift in Sources */,
 				346F38F52468ADF90081ABB2 /* AppearanceColorsConfigProtocol.swift in Sources */,
 				346F38F92468C2450081ABB2 /* AddCostAlertView.swift in Sources */,
 				346EE2092437417300EF91C3 /* SplashPresenter.swift in Sources */,
+				345D8497246F267400E5B7A9 /* Graphics+SceneFactory.swift in Sources */,
+				346F3912246B55730081ABB2 /* CommonParser.swift in Sources */,
+				346F3927246C95230081ABB2 /* FirestoreCollections.swift in Sources */,
 				346F38F32468ACBC0081ABB2 /* AppearanceColorsConfig.swift in Sources */,
 				346EE203243740C700EF91C3 /* SceneFactory+Splash.swift in Sources */,
 				346EE23524377F3700EF91C3 /* SceneFactory+Home.swift in Sources */,
 				346EE2482437834000EF91C3 /* UIImage+Overlay.swift in Sources */,
 				345F45EF2440DF2F001732C4 /* IncomeViewProtocol.swift in Sources */,
+				345D8475246E05C100E5B7A9 /* AddIncomeAlertViewDelegate.swift in Sources */,
 				346F38FB2468CBC60081ABB2 /* AddCostAlertViewDelegate.swift in Sources */,
 				346EE2052437411800EF91C3 /* SplashViewController.swift in Sources */,
+				345D8477246E08B100E5B7A9 /* IncomeTableViewCell.swift in Sources */,
 				346EE21A24374F8900EF91C3 /* TabBarPresenterProtocol.swift in Sources */,
 				345F45EB2440DF06001732C4 /* IncomePresenterProtocol.swift in Sources */,
+				345D84A52472B31400E5B7A9 /* AddGraphicsAlertViewDelegate.swift in Sources */,
 				3464E0CD24365B0F000F57C1 /* ApplicationFlowRouter.swift in Sources */,
 				346EE2432437834000EF91C3 /* UILabel+Truncated.swift in Sources */,
 				3434E7D324433A3A00BBFC32 /* LocalizedStrings.swift in Sources */,
+				346F3909246B50A50081ABB2 /* FirebaseErrorParser.swift in Sources */,
 				346EE22F24377D3D00EF91C3 /* HomePresenterProtocol.swift in Sources */,
 				345D3C3D2462E68500D696E3 /* CostDB.swift in Sources */,
 				346EE2462437834000EF91C3 /* CALayer+Shadow.swift in Sources */,
 				345F45E92440DEED001732C4 /* IncomePresenter.swift in Sources */,
+				345D846D246DF43400E5B7A9 /* LabelWithInsets.swift in Sources */,
 				346955A123F420D000DCDC68 /* AppDelegate.swift in Sources */,
 				345D3C3A2462E60C00D696E3 /* DataManagerServiceProtocol.swift in Sources */,
 				3464E0B624365727000F57C1 /* AppearanceСonfigurable.swift in Sources */,
+				346F390F246B55340081ABB2 /* CommonBlock.swift in Sources */,
+				346F391D246BF0A60081ABB2 /* LoginViewProtocol.swift in Sources */,
+				346F392B246C9BC40081ABB2 /* IncomeParser.swift in Sources */,
 				3464E0C624365ACE000F57C1 /* LaunchFlow.swift in Sources */,
 				345F45DC2440D10C001732C4 /* CostPresenterProtocol.swift in Sources */,
 				3464E0A524365676000F57C1 /* CompositionRoot.swift in Sources */,
 				346EE21C24374F9B00EF91C3 /* TabBar+SceneFactory.swift in Sources */,
 				346EE22324374FA500EF91C3 /* TabBarViewController.swift in Sources */,
 				346EE22124374FA500EF91C3 /* TabBarItemType.swift in Sources */,
+				346F390B246B50FE0081ABB2 /* CommonError.swift in Sources */,
 				3464E0AF243656B9000F57C1 /* SceneNavigator.swift in Sources */,
 				345D3C462462EB8800D696E3 /* CostCategory.swift in Sources */,
 				345F45E22440D18D001732C4 /* SceneFactory+Cost.swift in Sources */,
@@ -938,15 +1194,24 @@
 				3464E0D024365E73000F57C1 /* AppDelegate+CompositionRootFactory.swift in Sources */,
 				3464E0C524365ACE000F57C1 /* MainFlow.swift in Sources */,
 				345F45DA2440D0EF001732C4 /* CostPresenter.swift in Sources */,
+				345D84A32472B2F500E5B7A9 /* AddGraphicsAlertView.swift in Sources */,
 				345F45ED2440DF1D001732C4 /* IncomeViewController.swift in Sources */,
 				346EE21924374F8900EF91C3 /* TabBarPresenter.swift in Sources */,
+				345D847E246EB59700E5B7A9 /* SettingsViewController.swift in Sources */,
+				345D848D246F174B00E5B7A9 /* GraphicsViewController.swift in Sources */,
 				3464E0BB243657C5000F57C1 /* UserDefaultsService.swift in Sources */,
 				346F3902246AD0330081ABB2 /* IncomeCategory.swift in Sources */,
+				346F3907246B50300081ABB2 /* ApiProtocol.swift in Sources */,
+				345D8473246E054700E5B7A9 /* AddIncomeAlertView.swift in Sources */,
 				3464E0BE2436580D000F57C1 /* UserDefaultsServiceProtocol.swift in Sources */,
 				346EE2422437834000EF91C3 /* UINavigationController+ConvenienceInit.swift in Sources */,
+				345D848F246F176400E5B7A9 /* GraphicsViewProtocol.swift in Sources */,
 				346EE2472437834000EF91C3 /* UIColor+Brightness.swift in Sources */,
 				345D3C4C2463433500D696E3 /* NibLoadable.swift in Sources */,
+				345D84A72472DD4000E5B7A9 /* TimePeriod.swift in Sources */,
+				346F3921246BFF3F0081ABB2 /* Login+SceneFactory.swift in Sources */,
 				34C2D79D246203F100FC761C /* DataManagerService.swift in Sources */,
+				346F392D246DDC4C0081ABB2 /* Date+Time.swift in Sources */,
 				345D3C612464A28300D696E3 /* Fonts.swift in Sources */,
 				346EE20B243741B700EF91C3 /* SplashViewProtocol.swift in Sources */,
 				346EE2102437442100EF91C3 /* UIViewController+Storyboard.swift in Sources */,
@@ -955,11 +1220,14 @@
 				3464E0CC24365B0F000F57C1 /* FlowProtocol.swift in Sources */,
 				346EE22D24377D2900EF91C3 /* HomePresenter.swift in Sources */,
 				346EE22224374FA500EF91C3 /* TabBarViewControllerProtocol.swift in Sources */,
+				345D8480246EB5AB00E5B7A9 /* SettingsViewProtocol.swift in Sources */,
 				3464E0B824365727000F57C1 /* AppearanceConfig.swift in Sources */,
 				3464E0B1243656B9000F57C1 /* SceneTransitionType.swift in Sources */,
 				346EE2082437417300EF91C3 /* SplashPresenterProtocol.swift in Sources */,
 				346EE2442437834000EF91C3 /* UIViewController+Alerts.swift in Sources */,
+				345D8493246F179B00E5B7A9 /* GraphicsPresenterProtocol.swift in Sources */,
 				346EE23124377D6200EF91C3 /* HomeViewProtocol.swift in Sources */,
+				345D8484246EB5FC00E5B7A9 /* SettingsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

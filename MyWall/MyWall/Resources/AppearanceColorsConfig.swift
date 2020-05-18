@@ -22,7 +22,7 @@ class AppearanceColorsConfig: AppearanceColorsConfigProtocol {
     let tabBarUnselectedImage = #colorLiteral(red: 0.568627451, green: 0.5803921569, blue: 0.6078431373, alpha: 1)
     let tabBarSelectedText: UIColor = #colorLiteral(red: 0.01960784314, green: 0.4784313725, blue: 1, alpha: 1)
     let tabBarUnselectedText: UIColor = #colorLiteral(red: 0.2509803922, green: 0.2509803922, blue: 0.2509803922, alpha: 1)
-    let tabBarTintColor: UIColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
+    let tabBarTintColor: UIColor = #colorLiteral(red: 0.6656950116, green: 1, blue: 0.9145853519, alpha: 1)
 
     // MARK: ButtonColor
 
@@ -36,7 +36,9 @@ class AppearanceColorsConfig: AppearanceColorsConfigProtocol {
     let toolbarButtonBottomLabel = #colorLiteral(red: 0.1843137255, green: 0.1843137255, blue: 0.1960784314, alpha: 1)
     let toolbarButtonTintColor = #colorLiteral(red: 0.1843137255, green: 0.1843137255, blue: 0.1960784314, alpha: 1)
     let backButtonTintColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
-
+    
+    let loginBorderColor =  #colorLiteral(red: 0.4664202505, green: 0.7799158287, blue: 0.7136617595, alpha: 1)
+    let dateBackgroundColor =  #colorLiteral(red: 0.6000769009, green: 1, blue: 0.9246149459, alpha: 0.2034460616)
     // MARK: - Login
 
     let hintTextColor = UIColor.white

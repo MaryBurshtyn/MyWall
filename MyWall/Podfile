@@ -18,4 +18,10 @@ target 'MyWall' do
   pod 'IQKeyboardManagerSwift', '~> 6.2.0'
   pod 'KeychainSwift', '~> 15.0'
   pod 'ReachabilitySwift'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFunctions'
+  pod 'Firebase/Storage'
+  pod 'SwiftyBeaver'
+  pod 'Charts'
 end
