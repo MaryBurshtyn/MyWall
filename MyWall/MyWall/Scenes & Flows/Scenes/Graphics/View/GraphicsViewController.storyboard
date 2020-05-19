@@ -31,35 +31,35 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDD-SR-twE">
-                                                <rect key="frame" x="8" y="15" width="384" height="110"/>
+                                                <rect key="frame" x="15" y="15" width="384" height="110"/>
                                                 <subviews>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="n8r-As-9Ld">
-                                                        <rect key="frame" x="15" y="58" width="354" height="2"/>
+                                                        <rect key="frame" x="15" y="57" width="354" height="2"/>
                                                         <color key="tintColor" red="1" green="0.21948061120000001" blue="0.5357899116" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="progressTintColor" red="0.0" green="0.34302362419999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="trackTintColor" red="0.17254901959999999" green="0.7725490196" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You spent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZC-dJ-ZGp">
-                                                        <rect key="frame" x="15" y="15" width="76.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="15" y="15" width="90" height="22"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you've got" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yz2-sj-w3N">
-                                                        <rect key="frame" x="289.5" y="15" width="79.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="276" y="15" width="93" height="22"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugi-5b-I0s">
-                                                        <rect key="frame" x="15" y="74.5" width="136" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="15" y="73" width="168" height="22"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2K-NF-1Ma">
-                                                        <rect key="frame" x="169" y="15" width="46.5" height="23"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                        <rect key="frame" x="167.5" y="15" width="49.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
                                                         <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -92,10 +92,10 @@
                                         <constraints>
                                             <constraint firstItem="FDD-SR-twE" firstAttribute="top" secondItem="VDH-Ib-4Go" secondAttribute="top" constant="15" id="NHS-X8-QLf"/>
                                             <constraint firstItem="0nj-fa-W4E" firstAttribute="top" secondItem="FDD-SR-twE" secondAttribute="bottom" constant="20" id="P1o-Uv-cld"/>
-                                            <constraint firstAttribute="trailing" secondItem="FDD-SR-twE" secondAttribute="trailing" constant="22" id="RZo-0M-6fe"/>
+                                            <constraint firstAttribute="trailing" secondItem="FDD-SR-twE" secondAttribute="trailing" constant="15" id="RZo-0M-6fe"/>
                                             <constraint firstAttribute="trailing" secondItem="0nj-fa-W4E" secondAttribute="trailing" constant="15" id="Vc0-a7-v6l"/>
                                             <constraint firstItem="0nj-fa-W4E" firstAttribute="leading" secondItem="VDH-Ib-4Go" secondAttribute="leading" constant="15" id="iQd-eE-upq"/>
-                                            <constraint firstItem="FDD-SR-twE" firstAttribute="leading" secondItem="VDH-Ib-4Go" secondAttribute="leading" constant="8" id="ijn-lC-IUA"/>
+                                            <constraint firstItem="FDD-SR-twE" firstAttribute="leading" secondItem="VDH-Ib-4Go" secondAttribute="leading" constant="15" id="ijn-lC-IUA"/>
                                         </constraints>
                                     </view>
                                 </subviews>

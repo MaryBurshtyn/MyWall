@@ -11,4 +11,7 @@ protocol DataManagerServiceProtocol {
     func getExpenses(for month: Date) -> [CostDB]
     func getIncomes(for month: Date) -> [IncomeDB]
     func getExpenses(for period: (Date, Date)) -> [CostDB]
+    func getMonthExpensesFor(period: TimePeriod) ->  [(key: String, value: Float)]
+    func getDayExpensesFor(period: TimePeriod) -> [(key: String, value: Float)]
+    func getCategoryExpensesFor(period: TimePeriod) -> [(key: String, value: Float)]
 }

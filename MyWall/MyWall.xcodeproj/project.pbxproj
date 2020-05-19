@@ -14,7 +14,6 @@
 		345D3C3A2462E60C00D696E3 /* DataManagerServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C392462E60C00D696E3 /* DataManagerServiceProtocol.swift */; };
 		345D3C3D2462E68500D696E3 /* CostDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C3C2462E68500D696E3 /* CostDB.swift */; };
 		345D3C422462EB1200D696E3 /* IncomeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C412462EB1200D696E3 /* IncomeDB.swift */; };
-		345D3C442462EB4600D696E3 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C432462EB4600D696E3 /* Income.swift */; };
 		345D3C462462EB8800D696E3 /* CostCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C452462EB8800D696E3 /* CostCategory.swift */; };
 		345D3C4824633B5500D696E3 /* CostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D3C4724633B5500D696E3 /* CostTableViewCell.swift */; };
 		345D3C4A24633BC300D696E3 /* CostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C4924633BC300D696E3 /* CostTableViewCell.xib */; };
@@ -65,8 +64,6 @@
 		3464E0B624365727000F57C1 /* AppearanceСonfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464E0B324365727000F57C1 /* AppearanceСonfigurable.swift */; };
 		3464E0B724365727000F57C1 /* AppearanceConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464E0B424365727000F57C1 /* AppearanceConfigProtocol.swift */; };
 		3464E0B824365727000F57C1 /* AppearanceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464E0B524365727000F57C1 /* AppearanceConfig.swift */; };
-		3464E0BB243657C5000F57C1 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464E0BA243657C5000F57C1 /* UserDefaultsService.swift */; };
-		3464E0BE2436580D000F57C1 /* UserDefaultsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464E0BD2436580D000F57C1 /* UserDefaultsServiceProtocol.swift */; };
 		3464E0C424365ACE000F57C1 /* ApplicationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464E0C124365ACE000F57C1 /* ApplicationFlow.swift */; };
 		3464E0C524365ACE000F57C1 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464E0C224365ACE000F57C1 /* MainFlow.swift */; };
 		3464E0C624365ACE000F57C1 /* LaunchFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464E0C324365ACE000F57C1 /* LaunchFlow.swift */; };
@@ -100,11 +97,7 @@
 		346EE23124377D6200EF91C3 /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE23024377D6200EF91C3 /* HomeViewProtocol.swift */; };
 		346EE23324377EF200EF91C3 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346EE23224377EF200EF91C3 /* HomeViewController.storyboard */; };
 		346EE23524377F3700EF91C3 /* SceneFactory+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE23424377F3700EF91C3 /* SceneFactory+Home.swift */; };
-		346EE2412437834000EF91C3 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE2392437833F00EF91C3 /* UIView+Constraints.swift */; };
 		346EE2422437834000EF91C3 /* UINavigationController+ConvenienceInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE23A2437833F00EF91C3 /* UINavigationController+ConvenienceInit.swift */; };
-		346EE2432437834000EF91C3 /* UILabel+Truncated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE23B2437833F00EF91C3 /* UILabel+Truncated.swift */; };
-		346EE2442437834000EF91C3 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE23C2437833F00EF91C3 /* UIViewController+Alerts.swift */; };
-		346EE2452437834000EF91C3 /* UILabel+NumberOfLinesForText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE23D2437833F00EF91C3 /* UILabel+NumberOfLinesForText.swift */; };
 		346EE2462437834000EF91C3 /* CALayer+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE23E2437834000EF91C3 /* CALayer+Shadow.swift */; };
 		346EE2472437834000EF91C3 /* UIColor+Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE23F2437834000EF91C3 /* UIColor+Brightness.swift */; };
 		346EE2482437834000EF91C3 /* UIImage+Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EE2402437834000EF91C3 /* UIImage+Overlay.swift */; };
@@ -162,7 +155,6 @@
 		345D3C392462E60C00D696E3 /* DataManagerServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerServiceProtocol.swift; sourceTree = "<group>"; };
 		345D3C3C2462E68500D696E3 /* CostDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostDB.swift; sourceTree = "<group>"; };
 		345D3C412462EB1200D696E3 /* IncomeDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeDB.swift; sourceTree = "<group>"; };
-		345D3C432462EB4600D696E3 /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
 		345D3C452462EB8800D696E3 /* CostCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostCategory.swift; sourceTree = "<group>"; };
 		345D3C4724633B5500D696E3 /* CostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostTableViewCell.swift; sourceTree = "<group>"; };
 		345D3C4924633BC300D696E3 /* CostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CostTableViewCell.xib; sourceTree = "<group>"; };
@@ -249,8 +241,6 @@
 		3464E0B324365727000F57C1 /* AppearanceСonfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppearanceСonfigurable.swift"; sourceTree = "<group>"; };
 		3464E0B424365727000F57C1 /* AppearanceConfigProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceConfigProtocol.swift; sourceTree = "<group>"; };
 		3464E0B524365727000F57C1 /* AppearanceConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceConfig.swift; sourceTree = "<group>"; };
-		3464E0BA243657C5000F57C1 /* UserDefaultsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
-		3464E0BD2436580D000F57C1 /* UserDefaultsServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiceProtocol.swift; sourceTree = "<group>"; };
 		3464E0C124365ACE000F57C1 /* ApplicationFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationFlow.swift; sourceTree = "<group>"; };
 		3464E0C224365ACE000F57C1 /* MainFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		3464E0C324365ACE000F57C1 /* LaunchFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchFlow.swift; sourceTree = "<group>"; };
@@ -286,11 +276,7 @@
 		346EE23024377D6200EF91C3 /* HomeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
 		346EE23224377EF200EF91C3 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		346EE23424377F3700EF91C3 /* SceneFactory+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneFactory+Home.swift"; sourceTree = "<group>"; };
-		346EE2392437833F00EF91C3 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Constraints.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/UIView+Constraints.swift"; sourceTree = "<group>"; };
 		346EE23A2437833F00EF91C3 /* UINavigationController+ConvenienceInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationController+ConvenienceInit.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/UINavigationController+ConvenienceInit.swift"; sourceTree = "<group>"; };
-		346EE23B2437833F00EF91C3 /* UILabel+Truncated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UILabel+Truncated.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/UILabel+Truncated.swift"; sourceTree = "<group>"; };
-		346EE23C2437833F00EF91C3 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Alerts.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/UIViewController+Alerts.swift"; sourceTree = "<group>"; };
-		346EE23D2437833F00EF91C3 /* UILabel+NumberOfLinesForText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UILabel+NumberOfLinesForText.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/UILabel+NumberOfLinesForText.swift"; sourceTree = "<group>"; };
 		346EE23E2437834000EF91C3 /* CALayer+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Shadow.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/CALayer+Shadow.swift"; sourceTree = "<group>"; };
 		346EE23F2437834000EF91C3 /* UIColor+Brightness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Brightness.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/UIColor+Brightness.swift"; sourceTree = "<group>"; };
 		346EE2402437834000EF91C3 /* UIImage+Overlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Overlay.swift"; path = "../../../../../../Projects/itransitionapp-ios/OnlineCheckInIOS/Scenes & Flows/Scenes/Common/Extensions/UIKit/UIImage+Overlay.swift"; sourceTree = "<group>"; };
@@ -348,7 +334,6 @@
 			children = (
 				346F3900246AD0160081ABB2 /* Enums */,
 				345D3C3E2462E74200D696E3 /* Realm */,
-				345D3C432462EB4600D696E3 /* Income.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -647,18 +632,8 @@
 			children = (
 				346F3903246B4FBB0081ABB2 /* FirebaseService */,
 				3456D4462462035700157D42 /* DataService */,
-				3464E0BC243657F5000F57C1 /* UserDefaultsService */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		3464E0BC243657F5000F57C1 /* UserDefaultsService */ = {
-			isa = PBXGroup;
-			children = (
-				3464E0BA243657C5000F57C1 /* UserDefaultsService.swift */,
-				3464E0BD2436580D000F57C1 /* UserDefaultsServiceProtocol.swift */,
-			);
-			path = UserDefaultsService;
 			sourceTree = "<group>";
 		};
 		3464E0BF24365A7E000F57C1 /* Scenes & Flows */ = {
@@ -861,11 +836,7 @@
 				346EE23E2437834000EF91C3 /* CALayer+Shadow.swift */,
 				346EE23F2437834000EF91C3 /* UIColor+Brightness.swift */,
 				346EE2402437834000EF91C3 /* UIImage+Overlay.swift */,
-				346EE23D2437833F00EF91C3 /* UILabel+NumberOfLinesForText.swift */,
-				346EE23B2437833F00EF91C3 /* UILabel+Truncated.swift */,
 				346EE23A2437833F00EF91C3 /* UINavigationController+ConvenienceInit.swift */,
-				346EE2392437833F00EF91C3 /* UIView+Constraints.swift */,
-				346EE23C2437833F00EF91C3 /* UIViewController+Alerts.swift */,
 				346EE20F2437442100EF91C3 /* UIViewController+Storyboard.swift */,
 				345D846C246DF43400E5B7A9 /* LabelWithInsets.swift */,
 			);
@@ -1121,16 +1092,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3464E0A324365676000F57C1 /* ServiceFactory.swift in Sources */,
-				346EE2452437834000EF91C3 /* UILabel+NumberOfLinesForText.swift in Sources */,
 				3464E0AE243656B9000F57C1 /* UIWindow+RootReplacement.swift in Sources */,
 				346F3929246C98090081ABB2 /* ExpenseParser.swift in Sources */,
 				346955A523F420D000DCDC68 /* ViewController.swift in Sources */,
-				345D3C442462EB4600D696E3 /* Income.swift in Sources */,
 				345F45DE2440D129001732C4 /* CostViewController.swift in Sources */,
 				346F3919246BF07A0081ABB2 /* LoginPresenterProtocol.swift in Sources */,
 				346F38FF246AC3D70081ABB2 /* Currency.swift in Sources */,
 				346F3905246B4FFF0081ABB2 /* FirebaseApiService.swift in Sources */,
-				346EE2412437834000EF91C3 /* UIView+Constraints.swift in Sources */,
 				3434E7D7244E187900BBFC32 /* Graphics.swift in Sources */,
 				345D8491246F178B00E5B7A9 /* GraphicsPresenter.swift in Sources */,
 				346EE22B24377D0100EF91C3 /* HomeViewController.swift in Sources */,
@@ -1166,7 +1134,6 @@
 				345F45EB2440DF06001732C4 /* IncomePresenterProtocol.swift in Sources */,
 				345D84A52472B31400E5B7A9 /* AddGraphicsAlertViewDelegate.swift in Sources */,
 				3464E0CD24365B0F000F57C1 /* ApplicationFlowRouter.swift in Sources */,
-				346EE2432437834000EF91C3 /* UILabel+Truncated.swift in Sources */,
 				3434E7D324433A3A00BBFC32 /* LocalizedStrings.swift in Sources */,
 				346F3909246B50A50081ABB2 /* FirebaseErrorParser.swift in Sources */,
 				346EE22F24377D3D00EF91C3 /* HomePresenterProtocol.swift in Sources */,
@@ -1199,11 +1166,9 @@
 				346EE21924374F8900EF91C3 /* TabBarPresenter.swift in Sources */,
 				345D847E246EB59700E5B7A9 /* SettingsViewController.swift in Sources */,
 				345D848D246F174B00E5B7A9 /* GraphicsViewController.swift in Sources */,
-				3464E0BB243657C5000F57C1 /* UserDefaultsService.swift in Sources */,
 				346F3902246AD0330081ABB2 /* IncomeCategory.swift in Sources */,
 				346F3907246B50300081ABB2 /* ApiProtocol.swift in Sources */,
 				345D8473246E054700E5B7A9 /* AddIncomeAlertView.swift in Sources */,
-				3464E0BE2436580D000F57C1 /* UserDefaultsServiceProtocol.swift in Sources */,
 				346EE2422437834000EF91C3 /* UINavigationController+ConvenienceInit.swift in Sources */,
 				345D848F246F176400E5B7A9 /* GraphicsViewProtocol.swift in Sources */,
 				346EE2472437834000EF91C3 /* UIColor+Brightness.swift in Sources */,
@@ -1224,7 +1189,6 @@
 				3464E0B824365727000F57C1 /* AppearanceConfig.swift in Sources */,
 				3464E0B1243656B9000F57C1 /* SceneTransitionType.swift in Sources */,
 				346EE2082437417300EF91C3 /* SplashPresenterProtocol.swift in Sources */,
-				346EE2442437834000EF91C3 /* UIViewController+Alerts.swift in Sources */,
 				345D8493246F179B00E5B7A9 /* GraphicsPresenterProtocol.swift in Sources */,
 				346EE23124377D6200EF91C3 /* HomeViewProtocol.swift in Sources */,
 				345D8484246EB5FC00E5B7A9 /* SettingsPresenter.swift in Sources */,

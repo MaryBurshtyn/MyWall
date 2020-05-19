@@ -26,6 +26,7 @@ class GraphicsViewController: UIViewController {
     @IBOutlet weak var gotLabel: UILabel!
     @IBOutlet weak var remainingMoney: UILabel!
     @IBOutlet weak var barChartView: BarChartView!
+    var horizontalChart: HorizontalBarChartView?
     // MARK: - Init & Setup
 
     override func viewWillAppear(_ animated: Bool) {
@@ -50,7 +51,7 @@ class GraphicsViewController: UIViewController {
         gotLabel.text = L10n.youGot
         spentLabel.text = L10n.spentMoney
         barChartView.noDataText = L10n.chartNoData
-        
+        setupHorizonyalChart()
     }
     
     private func setupListNavigationBar() {
@@ -71,9 +72,22 @@ class GraphicsViewController: UIViewController {
         openSettingsDialog()
     }
     
-    private func setChart(dataPoints: [String], values: [Float]) {
-        
-            
+   private func setupHorizonyalChart() {
+    horizontalChart = HorizontalBarChartView()
+        horizontalChart?.isHidden = true
+        guard let view = horizontalChart else {
+            return
+        }
+        self.view.addSubview(view)
+        horizontalChart?.translatesAutoresizingMaskIntoConstraints = false
+    NSLayoutConstraint(item: view, attribute: NSLayoutConstraint.Attribute.leading, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.view, attribute: NSLayoutConstraint.Attribute.leading, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: view, attribute: NSLayoutConstraint.Attribute.trailing, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.view, attribute: NSLayoutConstraint.Attribute.trailing, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: view, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: progressMoneyView, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1, constant: 15).isActive = true
+        NSLayoutConstraint(item: view, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 400).isActive = true
+    
+        horizontalChart?.fitBars = true
+        horizontalChart?.legend.enabled = false
+        horizontalChart?.animate(yAxisDuration: 1.5)
     }
     
     private func openSettingsDialog() {
@@ -87,21 +101,65 @@ class GraphicsViewController: UIViewController {
         settingsAlert.delegate = self
         self.present(settingsAlert, animated: true, completion: nil)
     }
-}
-
-extension GraphicsViewController: GraphicsViewProtocol {
-    func setChartData(_ data: [(key: String, value: Float)]) {
+    
+    private func setBarChartViewData(_ data: [(key: String, value: Float)]) {
+        horizontalChart?.isHidden = true
+        barChartView.isHidden = false
         if data.count == 0 {
             barChartView.noDataText = L10n.chartNoData
         }
+        var labels = [String]()
         var dataEntries: [BarChartDataEntry] = []
         for i in 0..<data.count {
+            labels.append(data[i].key)
             let dataEntry = BarChartDataEntry(x: Double(i), y: Double(data[i].value))
           dataEntries.append(dataEntry)
         }
-        let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Bar Chart View")
+        let chartDataSet = BarChartDataSet(entries: dataEntries, label: "")
         let chartData = BarChartData(dataSet: chartDataSet)
+        barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: labels)
+        barChartView.xAxis.granularity = 1
         barChartView.data = chartData
+        barChartView.legend.enabled = false
+    }
+    
+    private func setHorizontalChartViewData(_ data: [(key: String, value: Float)]) {
+        barChartView.isHidden = true
+        if data.count == 0 {
+            horizontalChart?.noDataText = L10n.chartNoData
+            return
+        }
+        horizontalChart?.isHidden = false
+        var labels = [String]()
+        var values = [String]()
+        var dataEntries: [BarChartDataEntry] = []
+        for i in 0..<data.count {
+            labels.append(data[i].key)
+            values.append(String(data[i].value))
+            let dataEntry = BarChartDataEntry(x: Double(i), y: Double(data[i].value))
+         dataEntries.append(dataEntry)
+        }
+        let chartDataSet = BarChartDataSet(entries: dataEntries, label: "")
+        let chartData = BarChartData(dataSet: chartDataSet)
+        let formatter = MyValueFormatter()
+        formatter.data = data
+        horizontalChart?.xAxis.valueFormatter = IndexAxisValueFormatter(values: values)
+        horizontalChart?.xAxis.granularity = 1
+        horizontalChart?.data = chartData
+        horizontalChart?.data?.setValueFormatter(formatter)
+        horizontalChart?.data?.setDrawValues(true)
+        }
+    
+}
+
+extension GraphicsViewController: GraphicsViewProtocol {
+    func setChartData(_ data: [(key: String, value: Float)], for sumType: SumType) {
+        switch sumType {
+        case .day, .month:
+            setBarChartViewData(data)
+        case .category:
+            setHorizontalChartViewData(data)
+        }
     }
     
     func setProgress(incomes: Float, expenses: Float) {
@@ -117,6 +175,24 @@ extension GraphicsViewController: AddGraphicsAlertViewDelegate {
     func plotButtonTapped(sumType: SumType, period: TimePeriod) {
         presenter.handleSettingsChoosed(sumType: sumType, period: period)
     }
-    
-    
+}
+
+class MyValueFormatter: IValueFormatter {
+    var index = 0
+    var data: [(key: String, value: Float)] = [(key: String, value: Float)]()
+    func stringForValue(_ value: Double, entry: ChartDataEntry, dataSetIndex: Int, viewPortHandler: ViewPortHandler?) -> String {
+        let values = data.filter({ (element) -> Bool in
+            Double(element.value) == value
+        })
+        
+        var stringValue = values[index].key
+        if values.count - 1 == index {
+            stringValue = values[index].key
+            index = 0
+            return stringValue
+        }
+        if values.count > 1 {index += 1}
+        
+        return stringValue
+    }
 }

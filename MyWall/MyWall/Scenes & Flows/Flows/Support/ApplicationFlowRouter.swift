@@ -1,9 +1,3 @@
-//
-//  ApplicationFlowRouter.swift
-//  OnlineCheckInApp
-//
-//  Created on 06/06/2019
-
 import Foundation
 
 class ApplicationFlowRouter {

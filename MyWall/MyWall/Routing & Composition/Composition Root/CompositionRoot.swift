@@ -5,7 +5,6 @@ class CompositionRoot {
     
     private let serviceFactory: ServiceFactoryProtocol
     private let appearanceConfig: AppearanceConfig
-    private let userDefaultsService: UserDefaultsServiceProtocol
     private let dataManagerService: DataManagerServiceProtocol
     private let reachability: Reachability?
     private let api: ApiProtocol
@@ -14,9 +13,7 @@ class CompositionRoot {
     init(serviceFactory: ServiceFactoryProtocol) {
         self.serviceFactory = serviceFactory
         appearanceConfig = AppearanceConfig()
-        //api = FirestoreApi()
         dataManagerService = serviceFactory.getDataManagerService()
-        userDefaultsService = serviceFactory.getUserDefaultsService()
         self.reachability = try? Reachability()
         self.api = serviceFactory.getFirebaseService()
     }
@@ -52,10 +49,6 @@ class CompositionRoot {
 
     func getAppearanceConfig() -> AppearanceConfigProtocol {
         return appearanceConfig
-    }
-
-    func getUserDefaultsService() -> UserDefaultsServiceProtocol {
-        return userDefaultsService
     }
     
     func getFirebaseApiService() -> ApiProtocol {

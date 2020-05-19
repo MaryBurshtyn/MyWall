@@ -22,11 +22,6 @@ class LaunchFlow: FlowProtocol {
             self?.flowDelegate.handleFlowFinished()
             //self.navigator.navigateTo(.tabBar, transitionType: transitionType)
         }
-//        if !userAgreementsService.checkIsAgreementAccepted() {
-//            navigator.navigateTo(.acceptAgreements(delegate: self), transitionType: transitionType)
-//        } else {
-//            flowDelegate.handleFlowFinished()
-//        }
     }
     
     // MARK: - Private
