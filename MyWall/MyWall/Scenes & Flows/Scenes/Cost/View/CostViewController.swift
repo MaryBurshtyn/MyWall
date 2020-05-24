@@ -63,7 +63,6 @@ class CostViewController: UIViewController {
     private func handleRightNavigationItemTapped() {
         presenter.handleAddButtonTapped()
     }
-    
 }
 
 extension CostViewController: UITableViewDelegate, UITableViewDataSource {
@@ -99,6 +98,15 @@ extension CostViewController: UITableViewDelegate, UITableViewDataSource {
         label.font = UIFont.systemFont(ofSize: Constants.tableSectionHeaderFontSize, weight: .medium)
         label.text = costs[section].key
         return label
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+      if editingStyle == .delete {
+        let deleted = costs[indexPath.section].value[indexPath.row]
+        costs[indexPath.section].value.remove(at: indexPath.row)
+        presenter.handleDeleteExpense(deleted)
+        self.tableView.deleteRows(at: [indexPath], with: .automatic)
+      }
     }
 }
 

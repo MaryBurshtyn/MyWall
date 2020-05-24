@@ -171,6 +171,7 @@
 		347FC6FE2479F3CF003B007D /* ShopListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347FC6FD2479F3CF003B007D /* ShopListCell.swift */; };
 		347FC7002479F3E3003B007D /* ShopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 347FC6FF2479F3E3003B007D /* ShopListCell.xib */; };
 		347FC7022479FA70003B007D /* SceneFactory+ShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347FC7012479FA70003B007D /* SceneFactory+ShopList.swift */; };
+		347FC704247B25B5003B007D /* String+RegEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347FC703247B25B5003B007D /* String+RegEx.swift */; };
 		34C2D79D246203F100FC761C /* DataManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C2D79C246203F100FC761C /* DataManagerService.swift */; };
 		379DFC014B7654C610BCCDA2 /* Pods_MyWall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9A976B80F1D18FF0C0AC36 /* Pods_MyWall.framework */; };
 /* End PBXBuildFile section */
@@ -361,6 +362,7 @@
 		347FC6FD2479F3CF003B007D /* ShopListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListCell.swift; sourceTree = "<group>"; };
 		347FC6FF2479F3E3003B007D /* ShopListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopListCell.xib; sourceTree = "<group>"; };
 		347FC7012479FA70003B007D /* SceneFactory+ShopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneFactory+ShopList.swift"; sourceTree = "<group>"; };
+		347FC703247B25B5003B007D /* String+RegEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+RegEx.swift"; sourceTree = "<group>"; };
 		34C2D79C246203F100FC761C /* DataManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerService.swift; sourceTree = "<group>"; };
 		8C9A976B80F1D18FF0C0AC36 /* Pods_MyWall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3D2C330C45B10EDA647900 /* Pods-MyWall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWall.release.xcconfig"; path = "Target Support Files/Pods-MyWall/Pods-MyWall.release.xcconfig"; sourceTree = "<group>"; };
@@ -820,6 +822,7 @@
 				346EE238243782FF00EF91C3 /* UIKit */,
 				345D3C4B2463433500D696E3 /* NibLoadable.swift */,
 				346F392C246DDC4C0081ABB2 /* Date+Time.swift */,
+				347FC703247B25B5003B007D /* String+RegEx.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1320,6 +1323,7 @@
 				345F45DC2440D10C001732C4 /* CostPresenterProtocol.swift in Sources */,
 				3464E0A524365676000F57C1 /* CompositionRoot.swift in Sources */,
 				346EE21C24374F9B00EF91C3 /* TabBar+SceneFactory.swift in Sources */,
+				347FC704247B25B5003B007D /* String+RegEx.swift in Sources */,
 				346EE22324374FA500EF91C3 /* TabBarViewController.swift in Sources */,
 				346EE22124374FA500EF91C3 /* TabBarItemType.swift in Sources */,
 				346F390B246B50FE0081ABB2 /* CommonError.swift in Sources */,

@@ -13,9 +13,9 @@ class ServiceFactory: ServiceFactoryProtocol {
          bundle: Bundle
     ) {
         self.bundle = bundle
-        self.firebaseService = FirebaseApiService()
         self.currencyService = CurrencyService()
         self.dataManagerService = DataManagerService(currencyService: currencyService)
+        self.firebaseService = FirebaseApiService(dataManager: dataManagerService)
         //currencyService.makeRequest()
     }
     

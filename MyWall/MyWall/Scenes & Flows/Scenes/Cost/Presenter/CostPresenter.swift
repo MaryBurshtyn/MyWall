@@ -144,4 +144,10 @@ extension CostPresenter: CostPresenterProtocol {
         makeDatesDictionary()
         view.setCosts(costs: datesDictionary)
     }
+    
+    func handleDeleteExpense(_ expense: CostDB) {
+        api.deleteExpense(with: expense.objectId)
+        dataManagerService.deleteExpenses([expense])
+        
+    }
 }

@@ -67,18 +67,21 @@ class AddCostAlertView: UIViewController, UIPickerViewDelegate, UIPickerViewData
         let nib = UINib(nibName: "CostTableViewCell", bundle: Bundle.main)
         tableView.register(nib, forCellReuseIdentifier: "CostTableViewCell")
     }
-    
     @IBAction func addCostTapped(_ sender: Any) {
         guard let category = CostCategory.init(rawValue: categoryPicker.selectedRow(inComponent: 0)),
             let currency = Currency.init(rawValue: currencyPicker.selectedRow(inComponent: 0)),
             let cost = costTextField.text else { return }
         var costDB = CostDB()
-        costDB.category = category.stringValue
-        costDB.date = Date()
-        costDB.value = cost
-        costDB.currency = currency.stringValue
-        addedExpenses.append(costDB)
-        tableView.reloadData()
+        if !cost.isNumeric {
+            setBorder()
+        } else {
+            costDB.category = category.stringValue
+            costDB.date = Date()
+            costDB.value = cost
+            costDB.currency = currency.stringValue
+            addedExpenses.append(costDB)
+            tableView.reloadData()
+        }
     }
     
     @IBAction func cancelTapped(_ sender: Any) {
@@ -113,6 +116,13 @@ class AddCostAlertView: UIViewController, UIPickerViewDelegate, UIPickerViewData
         pickerLabel?.text = pickerView.tag == 1 ? Currency.init(rawValue: row)?.stringValue : CostCategory.init(rawValue: row)?.stringValue
 
         return pickerLabel!
+    }
+    
+    private func setBorder() {
+        costTextField.layer.borderColor = UIColor.red.cgColor
+        costTextField.text = ""
+        costTextField.layer.borderWidth = 1.0
+        costTextField.borderStyle = .roundedRect
     }
 }
 extension AddCostAlertView: UITableViewDelegate, UITableViewDataSource {

@@ -26,6 +26,7 @@ internal enum Asset {
   internal static let add2 = ImageAsset(name: "add2")
   internal static let beauty = ImageAsset(name: "beauty")
   internal static let carService = ImageAsset(name: "carService")
+  internal static let checked = ImageAsset(name: "checked")
   internal static let childrenExpenses = ImageAsset(name: "childrenExpenses")
   internal static let communalPayments = ImageAsset(name: "communalPayments")
   internal static let dividends = ImageAsset(name: "dividends")
@@ -60,6 +61,7 @@ internal enum Asset {
   internal static let salary = ImageAsset(name: "salary")
   internal static let sport = ImageAsset(name: "sport")
   internal static let treatment = ImageAsset(name: "treatment")
+  internal static let unchecked = ImageAsset(name: "unchecked")
   internal static let wallet = ImageAsset(name: "wallet")
   internal static let wear = ImageAsset(name: "wear")
 }

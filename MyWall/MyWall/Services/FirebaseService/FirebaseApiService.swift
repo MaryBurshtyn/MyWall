@@ -21,6 +21,7 @@ class FirebaseApiService: ApiProtocol {
     private let errorParser = FirebaseErrorParser()
     private let firestoreService: FirestoreDataService
     private let keychain = KeychainSwift()
+    private let dataManegerService: DataManagerServiceProtocol
     private var cachedRefreshToken: String? {
        get {
            return keychain.get(Constants.refreshTokenKey)
@@ -69,8 +70,9 @@ class FirebaseApiService: ApiProtocol {
     }
 
 
-    init() {
+    init(dataManager: DataManagerServiceProtocol) {
         self.firestoreService = FirestoreDataService(errorParser: errorParser)
+        self.dataManegerService = dataManager
     }
 }
 
@@ -142,6 +144,7 @@ extension FirebaseApiService {
         cachedEmail = nil
         cachedUserId = nil
         cachedRefreshToken = nil
+        dataManegerService.deleteAllItems()
     }
     
     func getExpenses(completion: @escaping CommonBlock.ResultCompletionBlock<[CostDB]>) {
@@ -210,6 +213,36 @@ extension FirebaseApiService {
             }
         }
         
+    }
+    
+    func deleteExpense(with id: String) {
+        guard let userId = self.cachedUserId else { return }
+        self.firestore.collection(FirestoreCollections.usersData.reference)
+            .document(userId)
+            .collection(FirestoreCollections.usersData.expenses)
+            .document(id)
+            .delete() { error in
+                guard let err = error else {
+                    log.info("Delete successfully")
+                    return
+                }
+                log.error("While delete error \(err.localizedDescription) happens")
+            }
+    }
+    
+    func deleteIncome(with id: String) {
+        guard let userId = self.cachedUserId else { return }
+        self.firestore.collection(FirestoreCollections.usersData.reference)
+            .document(userId)
+            .collection(FirestoreCollections.usersData.incomes)
+            .document(id)
+            .delete() { error in
+                guard let err = error else {
+                    log.info("Delete successfully")
+                    return
+                }
+                log.error("While delete error \(err.localizedDescription) happens")
+            }
     }
     
     func getEmail() -> String? {

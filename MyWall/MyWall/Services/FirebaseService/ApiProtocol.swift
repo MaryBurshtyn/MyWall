@@ -15,6 +15,8 @@ protocol ApiProtocol: class {
     func sendExpenses(_ expenses: [CostDB])
     func sendIncomes(_ incomes: [IncomeDB])
     func getEmail() -> String?
+    func deleteExpense(with id: String)
+    func deleteIncome(with id: String)
 //    func getCurrentUserUid() -> Result<String, CommonError>
 //    func setInvalidUserErrorObserverBlock(_ block: @escaping (() -> Void))
 //    func setUserLocation(locationPoint: LocationPoint, completion: @escaping CommonBlock.EmptyResultCompletionBlock)
