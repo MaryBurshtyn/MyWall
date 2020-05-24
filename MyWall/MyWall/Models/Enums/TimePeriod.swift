@@ -13,3 +13,8 @@ enum SumType: Int {
     case month
     case category
 }
+
+enum DataType: Int {
+    case expenses
+    case incomes
+}

@@ -26,9 +26,11 @@ class CostTableViewCell: UITableViewCell, NibLoadable {
     
     func configureCell(data: CostDB) {
         setupCellView()
-        guard let categoryString = data.category else { return }
+        guard let categoryString = data.category,
+            let value = data.value,
+            let currency = data.currency else { return }
         categoryLabel.text = data.category
-        costLabel.text = data.cost
+        costLabel.text = "\(value) \(currency)"
         categoryImage.image = CostCategory(form: categoryString).icon
     }
 }

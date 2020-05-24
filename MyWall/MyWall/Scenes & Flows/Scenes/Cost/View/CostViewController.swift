@@ -49,7 +49,7 @@ class CostViewController: UIViewController {
     private func setupListNavigationBar() {
         navigationController?.isNavigationBarHidden = false
         navigationItem.title = L10n.costs
-        navigationController?.navigationBar.isTranslucent = true
+        //navigationController?.navigationBar.isTranslucent = true
 
         navigationItem.rightBarButtonItem = (UIBarButtonItem(
             image: #imageLiteral(resourceName: "add2"),

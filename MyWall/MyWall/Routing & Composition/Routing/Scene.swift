@@ -9,4 +9,5 @@ enum Scene {
     case login
     case settings
     case graphics
+    case list
 }

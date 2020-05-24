@@ -8,8 +8,8 @@ enum FirestoreCollections {
         static let expenses = "expenses"
         static let category = "category"
         static let date = "date"
-        static let cost = "cost"
-        static let income = "income"
+        static let cost = "value"
+        static let income = "value"
         static let currency = "currency"
         
     }

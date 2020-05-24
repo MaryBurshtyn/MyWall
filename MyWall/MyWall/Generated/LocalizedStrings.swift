@@ -19,6 +19,8 @@ internal enum L10n {
   internal static let cancelButton = L10n.tr("Localizable", "cancelButton")
   /// Category
   internal static let category = L10n.tr("Localizable", "category")
+  /// Change password
+  internal static let changePassword = L10n.tr("Localizable", "changePassword")
   /// No data for the chart
   internal static let chartNoData = L10n.tr("Localizable", "chart_noData")
   /// Beauty
@@ -79,11 +81,15 @@ internal enum L10n {
   internal static let custom = L10n.tr("Localizable", "custom")
   /// Day
   internal static let day = L10n.tr("Localizable", "day")
+  /// Default currency
+  internal static let defCurrency = L10n.tr("Localizable", "defCurrency")
+  /// Email
+  internal static let email = L10n.tr("Localizable", "email")
   /// EUR
   internal static let eurCurrency = L10n.tr("Localizable", "eurCurrency")
   /// Finish
   internal static let finishButton = L10n.tr("Localizable", "finishButton")
-  /// грн
+  /// UAH
   internal static let grnCurrency = L10n.tr("Localizable", "grnCurrency")
   /// Graphics
   internal static let home = L10n.tr("Localizable", "home")
@@ -109,6 +115,8 @@ internal enum L10n {
   internal static let incomes = L10n.tr("Localizable", "incomes")
   /// en_GB
   internal static let locale = L10n.tr("Localizable", "locale")
+  /// Log out
+  internal static let logOut = L10n.tr("Localizable", "logOut")
   /// Month
   internal static let month = L10n.tr("Localizable", "month")
   /// Choose time period to plot
@@ -123,6 +131,10 @@ internal enum L10n {
   internal static let rubCurrency = L10n.tr("Localizable", "rubCurrency")
   /// Settings
   internal static let settings = L10n.tr("Localizable", "settings")
+  /// Shop\nlist
+  internal static let shopList = L10n.tr("Localizable", "shopList")
+  /// Shop list
+  internal static let shopListNavBar = L10n.tr("Localizable", "shopListNavBar")
   /// Cost
   internal static let spent = L10n.tr("Localizable", "spent")
   /// You spent

@@ -6,6 +6,8 @@
 "spent" = "Cost";
 "income" = "Income";
 "settings" = "Settings";
+"shopList" = "Shop\nlist";
+"shopListNavBar" = "Shop list";
 
 // Cost Category
 
@@ -47,7 +49,7 @@
 "bynCurrency" = "BYN";
 "rubCurrency" = "RUB";
 "usdCurrency" = "USD";
-"grnCurrency" = "грн";
+"grnCurrency" = "UAH";
 "eurCurrency" = "EUR";
 
 //IncomeCategory
@@ -80,3 +82,9 @@
 "sumType" = "Choose summarization type";
 "period" = "Choose time period to plot";
 "plot" = "Plot";
+
+"email" = "Email";
+"defCurrency" = "Default currency";
+"changePassword" = "Change password";
+"logOut" = "Log out";
+

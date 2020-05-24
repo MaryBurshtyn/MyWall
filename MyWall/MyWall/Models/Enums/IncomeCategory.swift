@@ -54,4 +54,25 @@ enum IncomeCategory: Int {
             return L10n.incomeCategoryMoneyPrize
         }
     }
+    
+    var icon: UIImage {
+        switch self {
+        case .noCategory:
+            return #imageLiteral(resourceName: "noCategory")
+        case .debt:
+            return #imageLiteral(resourceName: "loans")
+        case .salary:
+            return #imageLiteral(resourceName: "salary")
+        case .pension:
+            return #imageLiteral(resourceName: "pension")
+        case .gratuity:
+            return #imageLiteral(resourceName: "gifts")
+        case .scholarship:
+            return #imageLiteral(resourceName: "education")
+        case .dividends:
+            return #imageLiteral(resourceName: "dividends")
+        case .moneyPrize:
+            return #imageLiteral(resourceName: "prize")
+        }
+    }
 }

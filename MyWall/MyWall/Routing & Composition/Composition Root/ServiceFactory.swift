@@ -3,19 +3,20 @@ import UserNotifications
 
 class ServiceFactory: ServiceFactoryProtocol {
     
-    //private let api: ApiProtocol
     private let bundle: Bundle
     private let dataManagerService: DataManagerServiceProtocol
     private let firebaseService: ApiProtocol
+    private let currencyService: CurrencyServiceProtocol
     
-    init(//api: ApiProtocol,
+    init(
          userDafaults: UserDefaults,
          bundle: Bundle
     ) {
-        //self.api = api
         self.bundle = bundle
-        self.dataManagerService = DataManagerService()
         self.firebaseService = FirebaseApiService()
+        self.currencyService = CurrencyService()
+        self.dataManagerService = DataManagerService(currencyService: currencyService)
+        //currencyService.makeRequest()
     }
     
     func getDataManagerService() -> DataManagerServiceProtocol {
@@ -25,5 +26,7 @@ class ServiceFactory: ServiceFactoryProtocol {
     func getFirebaseService() -> ApiProtocol {
         return firebaseService
     }
-
+    func getCurrencyService() -> CurrencyServiceProtocol {
+        return currencyService
+    }
 }

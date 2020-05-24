@@ -47,7 +47,6 @@ class IncomeViewController: UIViewController {
     private func setupListNavigationBar() {
         navigationController?.isNavigationBarHidden = false
         navigationItem.title = L10n.incomes
-        navigationController?.navigationBar.isTranslucent = true
 
         navigationItem.rightBarButtonItem = (UIBarButtonItem(
             image: #imageLiteral(resourceName: "add2"),

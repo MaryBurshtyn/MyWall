@@ -46,4 +46,35 @@ enum Currency: Int {
             return L10n.eurCurrency
         }
     }
+    
+    var rate: Float {
+        switch self {
+        case .byn:
+            guard let stringValue = UserDefaults.standard.string(forKey: AppConstants.bynRate),
+            let value = Float(stringValue) else {
+                return 1.0
+            }
+            return value
+        case .rub:
+            guard let stringValue = UserDefaults.standard.string(forKey: AppConstants.rubRate),
+            let value = Float(stringValue) else {
+               return 1.0
+            }
+            return Float(value)
+        case .usd:
+            guard let stringValue = UserDefaults.standard.string(forKey: AppConstants.usdRate),
+            let value = Float(stringValue) else {
+              return 1.0
+            }
+            return Float(value)
+        case .grn:
+            guard let stringValue = UserDefaults.standard.string(forKey: AppConstants.uahRate),
+            let value = Float(stringValue) else {
+              return 1.0
+            }
+            return Float(value)
+        case .eur:
+              return 1.0
+        }
+    }
 }

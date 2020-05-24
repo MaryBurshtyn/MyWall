@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 
 extension SceneFactory {
-    static func makeGraphicsModule(navigator: SceneNavigatorProtocol, appearenceConfig: AppearanceConfigProtocol, dataManager: DataManagerServiceProtocol) -> GraphicsViewController {
+    static func makeGraphicsModule(navigator: SceneNavigatorProtocol, appearenceConfig: AppearanceConfigProtocol, dataManager: DataManagerServiceProtocol, currencyService: CurrencyServiceProtocol) -> GraphicsViewController {
         let viewController: GraphicsViewController = GraphicsViewController.storyboardInstance()
         viewController.appearanceConfig = appearenceConfig
         let presenter = GraphicsPresenter(view: viewController,
-                                        navigator: navigator, dataManagerService: dataManager)
+                                          navigator: navigator, dataManagerService: dataManager, currencyService: currencyService)
         viewController.presenter = presenter
         
         return viewController

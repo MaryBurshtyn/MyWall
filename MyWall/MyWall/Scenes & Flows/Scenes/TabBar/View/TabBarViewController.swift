@@ -47,21 +47,25 @@ class TabBarViewController: UITabBarController {
     func setupViewControllers(cost costViewController: CostViewController,
                               income incomeViewController: IncomeViewController,
                               settings: SettingsViewController,
-                              graphics: GraphicsViewController) {
+                              graphics: GraphicsViewController,
+                              list: ShopListViewController) {
         let graphics = wrapController(graphics,
                                       title: L10n.home,
-                                      image: #imageLiteral(resourceName: "ic_home"))
+                                      image: #imageLiteral(resourceName: "ic_charts"))
         let cost = wrapController(costViewController,
                                   title: L10n.costs,
-                                      image: #imageLiteral(resourceName: "ic_home"))
+                                      image: #imageLiteral(resourceName: "ic_expense"))
         let income = wrapController(incomeViewController,
                                     title: L10n.incomes,
-                                  image: #imageLiteral(resourceName: "ic_home"))
+                                  image: #imageLiteral(resourceName: "ic_income"))
         let settings = wrapController(settings,
                                       title: L10n.settings,
-                                      image:  #imageLiteral(resourceName: "ic_home"))
+                                      image:  #imageLiteral(resourceName: "ic_settings"))
+        let list = wrapController(list,
+                                title: L10n.shopListNavBar,
+                                image:  #imageLiteral(resourceName: "ic_settings"))
         
-        viewControllers = [graphics, cost, income, settings]
+        viewControllers = [graphics, cost, income, settings, list]
     }
     
     // MARK: - Make Controllers

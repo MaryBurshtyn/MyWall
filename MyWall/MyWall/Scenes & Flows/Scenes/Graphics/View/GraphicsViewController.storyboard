@@ -36,8 +36,8 @@
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="n8r-As-9Ld">
                                                         <rect key="frame" x="15" y="57" width="354" height="2"/>
                                                         <color key="tintColor" red="1" green="0.21948061120000001" blue="0.5357899116" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="progressTintColor" red="0.0" green="0.34302362419999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="trackTintColor" red="0.17254901959999999" green="0.7725490196" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="progressTintColor" red="0.65310184288325246" green="0.75306985553684647" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="trackTintColor" red="0.62000309853242186" green="0.93282043147208116" blue="0.85328600569927371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You spent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZC-dJ-ZGp">
                                                         <rect key="frame" x="15" y="15" width="90" height="22"/>
@@ -64,7 +64,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.70633561643835618" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="u2K-NF-1Ma" firstAttribute="top" secondItem="FDD-SR-twE" secondAttribute="top" constant="15" id="0Gp-kE-CJ8"/>
                                                     <constraint firstAttribute="trailing" secondItem="Yz2-sj-w3N" secondAttribute="trailing" constant="15" id="4S3-pZ-hNX"/>
@@ -81,11 +81,8 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nj-fa-W4E" customClass="BarChartView" customModule="Charts">
-                                                <rect key="frame" x="15" y="145" width="384" height="400"/>
+                                                <rect key="frame" x="15" y="145" width="384" height="658"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="400" id="IKy-rn-zRG"/>
-                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,6 +91,7 @@
                                             <constraint firstItem="0nj-fa-W4E" firstAttribute="top" secondItem="FDD-SR-twE" secondAttribute="bottom" constant="20" id="P1o-Uv-cld"/>
                                             <constraint firstAttribute="trailing" secondItem="FDD-SR-twE" secondAttribute="trailing" constant="15" id="RZo-0M-6fe"/>
                                             <constraint firstAttribute="trailing" secondItem="0nj-fa-W4E" secondAttribute="trailing" constant="15" id="Vc0-a7-v6l"/>
+                                            <constraint firstAttribute="bottom" secondItem="0nj-fa-W4E" secondAttribute="bottom" constant="15" id="e0Y-nj-aZ8"/>
                                             <constraint firstItem="0nj-fa-W4E" firstAttribute="leading" secondItem="VDH-Ib-4Go" secondAttribute="leading" constant="15" id="iQd-eE-upq"/>
                                             <constraint firstItem="FDD-SR-twE" firstAttribute="leading" secondItem="VDH-Ib-4Go" secondAttribute="leading" constant="15" id="ijn-lC-IUA"/>
                                         </constraints>
@@ -146,16 +144,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gg1-u2-0cB">
-                                <rect key="frame" x="32" y="193" width="350" height="520"/>
+                                <rect key="frame" x="32" y="178" width="350" height="550"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose summarization type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bJ-zY-zBU">
-                                        <rect key="frame" x="15" y="15" width="320" height="23.5"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="19"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yZ2-OW-EL2">
-                                        <rect key="frame" x="15" y="53.5" width="320" height="32"/>
+                                        <rect key="frame" x="15" y="99.5" width="320" height="32"/>
                                         <segments>
                                             <segment title="Day"/>
                                             <segment title="Month"/>
@@ -166,13 +158,13 @@
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose time period to plot" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSR-AL-sL7">
-                                        <rect key="frame" x="15" y="99.5" width="320" height="24.5"/>
+                                        <rect key="frame" x="15" y="145.5" width="320" height="24.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ifu-GL-NG6">
-                                        <rect key="frame" x="15" y="139" width="320" height="32"/>
+                                        <rect key="frame" x="15" y="185" width="320" height="32"/>
                                         <segments>
                                             <segment title="Week"/>
                                             <segment title="Month"/>
@@ -183,7 +175,7 @@
                                         </connections>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zw8-CZ-rqE">
-                                        <rect key="frame" x="175" y="475" width="160" height="30"/>
+                                        <rect key="frame" x="175" y="505" width="160" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Wvp-nM-Um4"/>
                                         </constraints>
@@ -193,7 +185,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOO-x6-Hlt">
-                                        <rect key="frame" x="15" y="475" width="160" height="30"/>
+                                        <rect key="frame" x="15" y="505" width="160" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="sOd-rR-rGJ"/>
                                         </constraints>
@@ -203,7 +195,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Rg-gz-Zaq">
-                                        <rect key="frame" x="15" y="185" width="320" height="275"/>
+                                        <rect key="frame" x="15" y="231" width="320" height="259"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ym4-tN-Mku">
                                                 <rect key="frame" x="153.5" y="4" width="13" height="26"/>
@@ -249,11 +241,28 @@
                                             <constraint firstItem="OUW-sw-CaY" firstAttribute="leading" secondItem="ym4-tN-Mku" secondAttribute="trailing" constant="5" id="wqN-k8-Weg"/>
                                         </constraints>
                                     </view>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2ey-eb-Koe">
+                                        <rect key="frame" x="30" y="15" width="290" height="32"/>
+                                        <segments>
+                                            <segment title="Expenses"/>
+                                            <segment title="Incomes"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="dateTypeValueChanged:" destination="TKk-9S-sCQ" eventType="valueChanged" id="k1D-oG-bLh"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose summarization type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bJ-zY-zBU">
+                                        <rect key="frame" x="15" y="61" width="320" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="yZ2-OW-EL2" firstAttribute="top" secondItem="8bJ-zY-zBU" secondAttribute="bottom" constant="15" id="1Qj-2k-yEV"/>
                                     <constraint firstAttribute="bottom" secondItem="Zw8-CZ-rqE" secondAttribute="bottom" constant="15" id="2mr-mY-tk0"/>
+                                    <constraint firstAttribute="trailing" secondItem="2ey-eb-Koe" secondAttribute="trailing" constant="30" id="3g5-cP-6N9"/>
                                     <constraint firstAttribute="trailing" secondItem="Zw8-CZ-rqE" secondAttribute="trailing" constant="15" id="4ca-HR-FyA"/>
                                     <constraint firstAttribute="bottom" secondItem="LOO-x6-Hlt" secondAttribute="bottom" constant="15" id="75G-Pa-DY9"/>
                                     <constraint firstAttribute="trailing" secondItem="5Rg-gz-Zaq" secondAttribute="trailing" constant="15" id="92L-zN-3H4"/>
@@ -262,9 +271,11 @@
                                     <constraint firstItem="5Rg-gz-Zaq" firstAttribute="top" secondItem="ifu-GL-NG6" secondAttribute="bottom" constant="15" id="DxO-MD-9tw"/>
                                     <constraint firstItem="yZ2-OW-EL2" firstAttribute="leading" secondItem="Gg1-u2-0cB" secondAttribute="leading" constant="15" id="G2e-FM-sce"/>
                                     <constraint firstItem="LOO-x6-Hlt" firstAttribute="width" secondItem="Zw8-CZ-rqE" secondAttribute="width" id="JDi-uT-vVa"/>
-                                    <constraint firstItem="8bJ-zY-zBU" firstAttribute="top" secondItem="Gg1-u2-0cB" secondAttribute="top" constant="15" id="Vk9-GY-LhY"/>
+                                    <constraint firstItem="8bJ-zY-zBU" firstAttribute="top" secondItem="2ey-eb-Koe" secondAttribute="bottom" constant="15" id="VhS-eV-aD9"/>
                                     <constraint firstAttribute="width" constant="350" id="WJR-gy-0KG"/>
+                                    <constraint firstItem="2ey-eb-Koe" firstAttribute="top" secondItem="Gg1-u2-0cB" secondAttribute="top" constant="15" id="a69-eP-3yn"/>
                                     <constraint firstAttribute="trailing" secondItem="8bJ-zY-zBU" secondAttribute="trailing" constant="15" id="bp7-ho-Bhh"/>
+                                    <constraint firstItem="2ey-eb-Koe" firstAttribute="leading" secondItem="Gg1-u2-0cB" secondAttribute="leading" constant="30" id="co7-AW-4bq"/>
                                     <constraint firstItem="Zw8-CZ-rqE" firstAttribute="top" secondItem="5Rg-gz-Zaq" secondAttribute="bottom" constant="15" id="crJ-uc-iTb"/>
                                     <constraint firstItem="Zw8-CZ-rqE" firstAttribute="leading" secondItem="LOO-x6-Hlt" secondAttribute="trailing" id="dO2-ES-lqA"/>
                                     <constraint firstItem="LOO-x6-Hlt" firstAttribute="leading" secondItem="Gg1-u2-0cB" secondAttribute="leading" constant="15" id="fkk-Q8-K0e"/>
@@ -272,7 +283,7 @@
                                     <constraint firstItem="5Rg-gz-Zaq" firstAttribute="leading" secondItem="Gg1-u2-0cB" secondAttribute="leading" constant="15" id="jkr-2x-rbt"/>
                                     <constraint firstAttribute="trailing" secondItem="yZ2-OW-EL2" secondAttribute="trailing" constant="15" id="k9m-Hd-tEX"/>
                                     <constraint firstItem="KSR-AL-sL7" firstAttribute="top" secondItem="yZ2-OW-EL2" secondAttribute="bottom" constant="15" id="qwF-Xl-cr8"/>
-                                    <constraint firstAttribute="height" constant="520" id="tu2-1d-PE3"/>
+                                    <constraint firstAttribute="height" constant="550" id="tu2-1d-PE3"/>
                                     <constraint firstItem="ifu-GL-NG6" firstAttribute="leading" secondItem="Gg1-u2-0cB" secondAttribute="leading" constant="15" id="vRo-wu-bpl"/>
                                     <constraint firstItem="8bJ-zY-zBU" firstAttribute="leading" secondItem="Gg1-u2-0cB" secondAttribute="leading" constant="15" id="zFx-50-S6G"/>
                                     <constraint firstItem="ifu-GL-NG6" firstAttribute="top" secondItem="KSR-AL-sL7" secondAttribute="bottom" constant="15" id="zvf-oH-mBU"/>
@@ -290,6 +301,7 @@
                         <outlet property="alertView" destination="Gg1-u2-0cB" id="4xP-pg-Akr"/>
                         <outlet property="cancelButton" destination="LOO-x6-Hlt" id="jEP-Wf-cyu"/>
                         <outlet property="customView" destination="5Rg-gz-Zaq" id="T9C-XA-rMe"/>
+                        <outlet property="dataTypeControl" destination="2ey-eb-Koe" id="goM-dw-Eln"/>
                         <outlet property="datePicker" destination="sQP-GD-95X" id="vQI-pt-4xV"/>
                         <outlet property="firstDate" destination="FSQ-KG-ASH" id="eZT-qQ-0yW"/>
                         <outlet property="plotButton" destination="Zw8-CZ-rqE" id="NVc-GA-Yni"/>
@@ -306,6 +318,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_background" width="375" height="667"/>
+        <image name="ic_background" width="357" height="667"/>
     </resources>
 </document>

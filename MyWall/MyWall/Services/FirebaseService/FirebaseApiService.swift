@@ -220,19 +220,19 @@ extension FirebaseApiService {
         guard let category = cost.category,
             let currency = cost.currency,
             let date = cost.date,
-            let cost = cost.cost else {
+            let cost = cost.value else {
                 return [String : Any]()
         }
-        return ["category": category, "date": Timestamp(date: date), "cost": cost, "currency": currency]
+        return ["category": category, "date": Timestamp(date: date), "value": cost, "currency": currency]
     }
     
     private func toDictionary(income: IncomeDB) -> [String : Any] {
         guard let category = income.category,
             let currency = income.currency,
             let date = income.date,
-            let income = income.income else {
+            let income = income.value else {
                 return [String : Any]()
         }
-        return ["category": category, "date": Timestamp(date: date), "income": income, "currency": currency]
+        return ["category": category, "date": Timestamp(date: date), "value": income, "currency": currency]
     }
 }

@@ -13,9 +13,9 @@ class AppearanceConfig: AppearanceConfigProtocol {
     
     private func setupNavigationBar() {
         let navigationBar = UINavigationBar.appearance()
-        navigationBar.barTintColor = colors.barTintColor
+        navigationBar.barTintColor = colors.navBarColor
         navigationBar.tintColor = colors.navigationBarButtonColor
-        navigationBar.backgroundColor = colors.barBackgroundColor
+        //navigationBar.backgroundColor = colors.navBarColor
         navigationBar.layer.shadowOffset = navigationBarhadowOffset
         navigationBar.layer.setShadowBlur(navigationBarShadowBlur)
         navigationBar.layer.shadowColor = colors.shadow.cgColor

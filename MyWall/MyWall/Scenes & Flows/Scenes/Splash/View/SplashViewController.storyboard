@@ -31,7 +31,7 @@
                                     <constraint firstAttribute="width" secondItem="Ldl-e0-GDn" secondAttribute="height" multiplier="1:1" id="aCu-Ox-QHw"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyWall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnE-pM-b2c">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MYWALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnE-pM-b2c">
                                 <rect key="frame" x="15" y="284" width="384" height="37"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -59,7 +59,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_background" width="375" height="667"/>
-        <image name="wallet" width="200" height="200"/>
+        <image name="ic_background" width="357" height="667"/>
+        <image name="wallet" width="600" height="600"/>
     </resources>
 </document>

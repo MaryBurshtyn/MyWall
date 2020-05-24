@@ -39,6 +39,7 @@ class AppearanceColorsConfig: AppearanceColorsConfigProtocol {
     
     let loginBorderColor =  #colorLiteral(red: 0.4664202505, green: 0.7799158287, blue: 0.7136617595, alpha: 1)
     let dateBackgroundColor =  #colorLiteral(red: 0.6000769009, green: 1, blue: 0.9246149459, alpha: 0.2034460616)
+    let navBarColor = #colorLiteral(red: 0.6510270238, green: 0.749537766, blue: 0.989726603, alpha: 1)
     // MARK: - Login
 
     let hintTextColor = UIColor.white

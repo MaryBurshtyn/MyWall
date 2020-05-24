@@ -6,6 +6,7 @@ class CompositionRoot {
     private let serviceFactory: ServiceFactoryProtocol
     private let appearanceConfig: AppearanceConfig
     private let dataManagerService: DataManagerServiceProtocol
+    private let currencyService: CurrencyServiceProtocol
     private let reachability: Reachability?
     private let api: ApiProtocol
 
@@ -14,11 +15,13 @@ class CompositionRoot {
         self.serviceFactory = serviceFactory
         appearanceConfig = AppearanceConfig()
         dataManagerService = serviceFactory.getDataManagerService()
-        self.reachability = try? Reachability()
-        self.api = serviceFactory.getFirebaseService()
+        reachability = try? Reachability()
+        api = serviceFactory.getFirebaseService()
+        currencyService = serviceFactory.getCurrencyService()
     }
     
     func startServices() {
+        appearanceConfig.setup()
     }
     
     func stopServices() {
@@ -43,7 +46,9 @@ class CompositionRoot {
         case .settings:
             return SceneFactory.makeSettingsModule(navigator: navigator, appearenceConfig: appearanceConfig, api: api)
         case .graphics:
-            return SceneFactory.makeGraphicsModule(navigator: navigator, appearenceConfig: appearanceConfig, dataManager: dataManagerService)
+            return SceneFactory.makeGraphicsModule(navigator: navigator, appearenceConfig: appearanceConfig, dataManager: dataManagerService, currencyService: currencyService)
+        case .list:
+            return SceneFactory.makeShopListModule(navigator: navigator, dataManagerService: dataManagerService, appearenceConfig: appearanceConfig)
         }
     }
 
@@ -72,7 +77,8 @@ extension CompositionRoot {
             let income: IncomeViewController = composeScene(.income)
             let settings: SettingsViewController = composeScene(.settings)
             let graphics: GraphicsViewController = composeScene(.graphics)
-            return SceneFactory.makeTabBar(navigator: navigator, costView: cost, incomeView: income, settings: settings, graphics: graphics, appearenceConfig: appearanceConfig)
+            let list: ShopListViewController = composeScene(.list)
+            return SceneFactory.makeTabBar(navigator: navigator, costView: cost, incomeView: income, settings: settings, graphics: graphics, list: list, appearenceConfig: appearanceConfig)
         }
         
         

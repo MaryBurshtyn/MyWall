@@ -5,6 +5,8 @@
 "spent" = "Цена";
 "income" = "Доход";
 "settings" = "Настройки";
+"shopList" = "Список\nпродуктов";
+"shopListNavBar" = "Список продуктов";
 
 // Cost Category
 
@@ -46,7 +48,7 @@
 "bynCurrency" = "BYN";
 "rubCurrency" = "RUB";
 "usdCurrency" = "USD";
-"grnCurrency" = "грн";
+"grnCurrency" = "UAH";
 "eurCurrency" = "EUR";
 
 //IncomeCategory
@@ -78,3 +80,9 @@
 "sumType" = "Выберите тип суммирования";
 "period" = "Выберите период времени для графика";
 "plot" = "Ок";
+
+"email" = "Почта";
+"defCurrency" = "Валюта по умолчанию";
+"changePassword" = "Изменить пароль";
+"logOut" = "Выйти";
+

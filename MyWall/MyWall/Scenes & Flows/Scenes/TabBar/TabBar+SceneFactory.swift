@@ -7,12 +7,13 @@ extension SceneFactory {
                                     incomeView: IncomeViewController,
                                     settings: SettingsViewController,
                                     graphics: GraphicsViewController,
+                                    list: ShopListViewController,
                                     appearenceConfig: AppearanceConfigProtocol) -> UIViewController {
         
         let tabController: TabBarViewController = TabBarViewController.storyboardInstance()
         tabController.loadViewIfNeeded()
         tabController.appearanceConfig = appearenceConfig
-        tabController.setupViewControllers(cost: costView, income: incomeView, settings: settings, graphics: graphics)
+        tabController.setupViewControllers(cost: costView, income: incomeView, settings: settings, graphics: graphics, list: list)
         let presenter = TabBarPresenter(view: tabController,
                                         navigator: navigator)
         tabController.presenter = presenter

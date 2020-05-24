@@ -67,7 +67,7 @@ class AddIncomeAlertView: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         var incomeDB = IncomeDB()
         incomeDB.category = category.stringValue
         incomeDB.date = Date()
-        incomeDB.income = income
+        incomeDB.value = income
         incomeDB.currency = currency.stringValue
         addedIncomes.append(incomeDB)
         tableView.reloadData()
@@ -87,7 +87,7 @@ class AddIncomeAlertView: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerView.tag == 1 ? 5 : 25
+        return pickerView.tag == 1 ? 5 : 8
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

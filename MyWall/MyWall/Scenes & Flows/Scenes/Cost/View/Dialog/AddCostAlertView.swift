@@ -75,7 +75,7 @@ class AddCostAlertView: UIViewController, UIPickerViewDelegate, UIPickerViewData
         var costDB = CostDB()
         costDB.category = category.stringValue
         costDB.date = Date()
-        costDB.cost = cost
+        costDB.value = cost
         costDB.currency = currency.stringValue
         addedExpenses.append(costDB)
         tableView.reloadData()

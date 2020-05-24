@@ -35,9 +35,11 @@ class IncomeTableViewCell: UITableViewCell, NibLoadable {
     
     func configureCell(data: IncomeDB) {
         setupCellView()
-        //guard let categoryString = data.category else { return }
+        guard let categoryString = data.category,
+        let value = data.value,
+        let currency = data.currency else { return }
         categoryLabel.text = data.category
-        incomeLabel.text = data.income
-        categoryImage.image = CostCategory.noCategory.icon
+        incomeLabel.text = "\(value) \(currency)"
+        categoryImage.image = IncomeCategory(from: categoryString).icon
     }
 }

@@ -38,7 +38,6 @@ class GraphicsViewController: UIViewController {
         super.viewDidLoad()
         setUpView()
         setupListNavigationBar()
-        //presenter.handleViewWillAppear()
     }
 
     private func setUpView() {
@@ -57,7 +56,6 @@ class GraphicsViewController: UIViewController {
     private func setupListNavigationBar() {
         navigationController?.isNavigationBarHidden = false
         navigationItem.title = L10n.home
-        navigationController?.navigationBar.isTranslucent = true
 
         navigationItem.rightBarButtonItem = (UIBarButtonItem(
             image: #imageLiteral(resourceName: "add2"),
@@ -80,13 +78,14 @@ class GraphicsViewController: UIViewController {
         }
         self.view.addSubview(view)
         horizontalChart?.translatesAutoresizingMaskIntoConstraints = false
-    NSLayoutConstraint(item: view, attribute: NSLayoutConstraint.Attribute.leading, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.view, attribute: NSLayoutConstraint.Attribute.leading, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: view, attribute: NSLayoutConstraint.Attribute.trailing, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.view, attribute: NSLayoutConstraint.Attribute.trailing, multiplier: 1, constant: 0).isActive = true
+    NSLayoutConstraint(item: view, attribute: NSLayoutConstraint.Attribute.leading, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.view, attribute: NSLayoutConstraint.Attribute.leading, multiplier: 1, constant: 10).isActive = true
+        NSLayoutConstraint(item: view, attribute: NSLayoutConstraint.Attribute.trailing, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.view, attribute: NSLayoutConstraint.Attribute.trailing, multiplier: 1, constant: 10).isActive = true
         NSLayoutConstraint(item: view, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: progressMoneyView, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1, constant: 15).isActive = true
         NSLayoutConstraint(item: view, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 400).isActive = true
     
-        horizontalChart?.fitBars = true
+        //horizontalChart?.fitBars = true
         horizontalChart?.legend.enabled = false
+        horizontalChart?.drawValueAboveBarEnabled = true
         horizontalChart?.animate(yAxisDuration: 1.5)
     }
     
@@ -103,11 +102,12 @@ class GraphicsViewController: UIViewController {
     }
     
     private func setBarChartViewData(_ data: [(key: String, value: Float)]) {
-        horizontalChart?.isHidden = true
-        barChartView.isHidden = false
         if data.count == 0 {
             barChartView.noDataText = L10n.chartNoData
+            return
         }
+        horizontalChart?.isHidden = true
+        barChartView.isHidden = false
         var labels = [String]()
         var dataEntries: [BarChartDataEntry] = []
         for i in 0..<data.count {
@@ -121,6 +121,7 @@ class GraphicsViewController: UIViewController {
         barChartView.xAxis.granularity = 1
         barChartView.data = chartData
         barChartView.legend.enabled = false
+        barChartView.xAxis.drawGridLinesEnabled = false
     }
     
     private func setHorizontalChartViewData(_ data: [(key: String, value: Float)]) {
@@ -148,7 +149,8 @@ class GraphicsViewController: UIViewController {
         horizontalChart?.data = chartData
         horizontalChart?.data?.setValueFormatter(formatter)
         horizontalChart?.data?.setDrawValues(true)
-        }
+        horizontalChart?.xAxis.drawGridLinesEnabled = false
+    }
     
 }
 
@@ -172,8 +174,8 @@ extension GraphicsViewController: GraphicsViewProtocol {
 }
 
 extension GraphicsViewController: AddGraphicsAlertViewDelegate {
-    func plotButtonTapped(sumType: SumType, period: TimePeriod) {
-        presenter.handleSettingsChoosed(sumType: sumType, period: period)
+    func plotButtonTapped(dataType: DataType, sumType: SumType, period: TimePeriod) {
+        presenter.handleSettingsChoosed(dataType: dataType, sumType: sumType, period: period)
     }
 }
 
@@ -189,10 +191,10 @@ class MyValueFormatter: IValueFormatter {
         if values.count - 1 == index {
             stringValue = values[index].key
             index = 0
-            return stringValue
+            return stringValue.count > 10 ? String(stringValue.split(separator: " ").first!) : stringValue
         }
         if values.count > 1 {index += 1}
         
-        return stringValue
+        return stringValue.count > 10 ? String(stringValue.split(separator: " ").first!) : stringValue
     }
 }

@@ -124,6 +124,53 @@
 		346F3929246C98090081ABB2 /* ExpenseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F3928246C98090081ABB2 /* ExpenseParser.swift */; };
 		346F392B246C9BC40081ABB2 /* IncomeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F392A246C9BC40081ABB2 /* IncomeParser.swift */; };
 		346F392D246DDC4C0081ABB2 /* Date+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F392C246DDC4C0081ABB2 /* Date+Time.swift */; };
+		347FC6C424782A1D003B007D /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C6E2464A8C400D696E3 /* Montserrat-Black.otf */; };
+		347FC6C524782A1D003B007D /* Montserrat-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C702464A8C400D696E3 /* Montserrat-BlackItalic.otf */; };
+		347FC6C624782A1D003B007D /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C802464A8C600D696E3 /* Montserrat-Bold.otf */; };
+		347FC6C724782A1D003B007D /* Montserrat-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C712464A8C400D696E3 /* Montserrat-BoldItalic.otf */; };
+		347FC6C824782A1D003B007D /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C812464A8C700D696E3 /* Montserrat-ExtraBold.otf */; };
+		347FC6C924782A1D003B007D /* Montserrat-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C622464A8C300D696E3 /* Montserrat-ExtraBoldItalic.otf */; };
+		347FC6CA24782A1D003B007D /* Montserrat-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C632464A8C300D696E3 /* Montserrat-ExtraLight.otf */; };
+		347FC6CB24782A1D003B007D /* Montserrat-ExtraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C6B2464A8C400D696E3 /* Montserrat-ExtraLightItalic.otf */; };
+		347FC6CC24782A1D003B007D /* Montserrat-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C682464A8C300D696E3 /* Montserrat-Italic.otf */; };
+		347FC6CD24782A1D003B007D /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C7A2464A8C600D696E3 /* Montserrat-Light.otf */; };
+		347FC6CE24782A1D003B007D /* Montserrat-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C762464A8C500D696E3 /* Montserrat-LightItalic.otf */; };
+		347FC6CF24782A1D003B007D /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C782464A8C500D696E3 /* Montserrat-Medium.otf */; };
+		347FC6D024782A1D003B007D /* Montserrat-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C722464A8C500D696E3 /* Montserrat-MediumItalic.otf */; };
+		347FC6D124782A1D003B007D /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C7F2464A8C600D696E3 /* Montserrat-Regular.otf */; };
+		347FC6D224782A1D003B007D /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C6F2464A8C400D696E3 /* Montserrat-SemiBold.otf */; };
+		347FC6D324782A1D003B007D /* Montserrat-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C832464A8C700D696E3 /* Montserrat-SemiBoldItalic.otf */; };
+		347FC6D424782A1D003B007D /* Montserrat-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C842464A8C700D696E3 /* Montserrat-Thin.otf */; };
+		347FC6D524782A1D003B007D /* Montserrat-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C662464A8C300D696E3 /* Montserrat-ThinItalic.otf */; };
+		347FC6D624782A1D003B007D /* MontserratAlternates-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C752464A8C500D696E3 /* MontserratAlternates-Black.otf */; };
+		347FC6D724782A1D003B007D /* MontserratAlternates-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C852464A8C700D696E3 /* MontserratAlternates-BlackItalic.otf */; };
+		347FC6D824782A1D003B007D /* MontserratAlternates-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C792464A8C500D696E3 /* MontserratAlternates-Bold.otf */; };
+		347FC6D924782A1D003B007D /* MontserratAlternates-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C7C2464A8C600D696E3 /* MontserratAlternates-BoldItalic.otf */; };
+		347FC6DA24782A1D003B007D /* MontserratAlternates-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C7E2464A8C600D696E3 /* MontserratAlternates-ExtraBold.otf */; };
+		347FC6DB24782A1D003B007D /* MontserratAlternates-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C672464A8C300D696E3 /* MontserratAlternates-ExtraBoldItalic.otf */; };
+		347FC6DC24782A1D003B007D /* MontserratAlternates-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C7D2464A8C600D696E3 /* MontserratAlternates-ExtraLight.otf */; };
+		347FC6DD24782A1D003B007D /* MontserratAlternates-ExtraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C732464A8C500D696E3 /* MontserratAlternates-ExtraLightItalic.otf */; };
+		347FC6DE24782A1D003B007D /* MontserratAlternates-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C6D2464A8C400D696E3 /* MontserratAlternates-Italic.otf */; };
+		347FC6DF24782A1D003B007D /* MontserratAlternates-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C742464A8C500D696E3 /* MontserratAlternates-Light.otf */; };
+		347FC6E024782A1D003B007D /* MontserratAlternates-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C6C2464A8C400D696E3 /* MontserratAlternates-LightItalic.otf */; };
+		347FC6E124782A1D003B007D /* MontserratAlternates-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C692464A8C400D696E3 /* MontserratAlternates-Medium.otf */; };
+		347FC6E224782A1D003B007D /* MontserratAlternates-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C822464A8C700D696E3 /* MontserratAlternates-MediumItalic.otf */; };
+		347FC6E324782A1D003B007D /* MontserratAlternates-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C7B2464A8C600D696E3 /* MontserratAlternates-Regular.otf */; };
+		347FC6E424782A1D003B007D /* MontserratAlternates-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C642464A8C300D696E3 /* MontserratAlternates-SemiBold.otf */; };
+		347FC6E524782A1D003B007D /* MontserratAlternates-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C652464A8C300D696E3 /* MontserratAlternates-SemiBoldItalic.otf */; };
+		347FC6E624782A1D003B007D /* MontserratAlternates-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C6A2464A8C400D696E3 /* MontserratAlternates-Thin.otf */; };
+		347FC6E724782A1D003B007D /* MontserratAlternates-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345D3C772464A8C500D696E3 /* MontserratAlternates-ThinItalic.otf */; };
+		347FC6EA247977E2003B007D /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347FC6E9247977E2003B007D /* CurrencyService.swift */; };
+		347FC6EC24797981003B007D /* CurrencyServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347FC6EB24797981003B007D /* CurrencyServiceProtocol.swift */; };
+		347FC6EE2479C0CA003B007D /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347FC6ED2479C0CA003B007D /* AppConstants.swift */; };
+		347FC6F32479F071003B007D /* ShopListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347FC6F22479F071003B007D /* ShopListPresenter.swift */; };
+		347FC6F52479F082003B007D /* ShopListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347FC6F42479F082003B007D /* ShopListPresenterProtocol.swift */; };
+		347FC6F72479F09C003B007D /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347FC6F62479F09C003B007D /* ShopListViewController.swift */; };
+		347FC6F92479F0AD003B007D /* ShopListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347FC6F82479F0AD003B007D /* ShopListViewProtocol.swift */; };
+		347FC6FB2479F0C6003B007D /* ShopListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347FC6FA2479F0C6003B007D /* ShopListViewController.storyboard */; };
+		347FC6FE2479F3CF003B007D /* ShopListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347FC6FD2479F3CF003B007D /* ShopListCell.swift */; };
+		347FC7002479F3E3003B007D /* ShopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 347FC6FF2479F3E3003B007D /* ShopListCell.xib */; };
+		347FC7022479FA70003B007D /* SceneFactory+ShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347FC7012479FA70003B007D /* SceneFactory+ShopList.swift */; };
 		34C2D79D246203F100FC761C /* DataManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C2D79C246203F100FC761C /* DataManagerService.swift */; };
 		379DFC014B7654C610BCCDA2 /* Pods_MyWall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9A976B80F1D18FF0C0AC36 /* Pods_MyWall.framework */; };
 /* End PBXBuildFile section */
@@ -303,6 +350,17 @@
 		346F3928246C98090081ABB2 /* ExpenseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseParser.swift; sourceTree = "<group>"; };
 		346F392A246C9BC40081ABB2 /* IncomeParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeParser.swift; sourceTree = "<group>"; };
 		346F392C246DDC4C0081ABB2 /* Date+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Time.swift"; sourceTree = "<group>"; };
+		347FC6E9247977E2003B007D /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		347FC6EB24797981003B007D /* CurrencyServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyServiceProtocol.swift; sourceTree = "<group>"; };
+		347FC6ED2479C0CA003B007D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		347FC6F22479F071003B007D /* ShopListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListPresenter.swift; sourceTree = "<group>"; };
+		347FC6F42479F082003B007D /* ShopListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListPresenterProtocol.swift; sourceTree = "<group>"; };
+		347FC6F62479F09C003B007D /* ShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
+		347FC6F82479F0AD003B007D /* ShopListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListViewProtocol.swift; sourceTree = "<group>"; };
+		347FC6FA2479F0C6003B007D /* ShopListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopListViewController.storyboard; sourceTree = "<group>"; };
+		347FC6FD2479F3CF003B007D /* ShopListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListCell.swift; sourceTree = "<group>"; };
+		347FC6FF2479F3E3003B007D /* ShopListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopListCell.xib; sourceTree = "<group>"; };
+		347FC7012479FA70003B007D /* SceneFactory+ShopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneFactory+ShopList.swift"; sourceTree = "<group>"; };
 		34C2D79C246203F100FC761C /* DataManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerService.swift; sourceTree = "<group>"; };
 		8C9A976B80F1D18FF0C0AC36 /* Pods_MyWall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3D2C330C45B10EDA647900 /* Pods-MyWall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWall.release.xcconfig"; path = "Target Support Files/Pods-MyWall/Pods-MyWall.release.xcconfig"; sourceTree = "<group>"; };
@@ -630,6 +688,7 @@
 		3464E0B92436576D000F57C1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				347FC6E8247977C7003B007D /* CurrencyService */,
 				346F3903246B4FBB0081ABB2 /* FirebaseService */,
 				3456D4462462035700157D42 /* DataService */,
 			);
@@ -668,6 +727,7 @@
 		3464E0D124365FCF000F57C1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				347FC6EF2479F03D003B007D /* ShopList */,
 				345D8489246ED2FA00E5B7A9 /* Graphics */,
 				345D847A246EB55F00E5B7A9 /* Settings */,
 				346F3913246BEF5F0081ABB2 /* Login */,
@@ -730,6 +790,7 @@
 				346955AE23F420D100DCDC68 /* Info.plist */,
 				345D849C2470249B00E5B7A9 /* appIcon.png */,
 				3464E0CF24365E73000F57C1 /* AppDelegate+CompositionRootFactory.swift */,
+				347FC6ED2479C0CA003B007D /* AppConstants.swift */,
 			);
 			path = MyWall;
 			sourceTree = "<group>";
@@ -908,6 +969,54 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		347FC6E8247977C7003B007D /* CurrencyService */ = {
+			isa = PBXGroup;
+			children = (
+				347FC6E9247977E2003B007D /* CurrencyService.swift */,
+				347FC6EB24797981003B007D /* CurrencyServiceProtocol.swift */,
+			);
+			path = CurrencyService;
+			sourceTree = "<group>";
+		};
+		347FC6EF2479F03D003B007D /* ShopList */ = {
+			isa = PBXGroup;
+			children = (
+				347FC6F12479F055003B007D /* Presenter */,
+				347FC6F02479F04F003B007D /* View */,
+				347FC7012479FA70003B007D /* SceneFactory+ShopList.swift */,
+			);
+			path = ShopList;
+			sourceTree = "<group>";
+		};
+		347FC6F02479F04F003B007D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				347FC6FC2479F3B6003B007D /* Cell */,
+				347FC6F62479F09C003B007D /* ShopListViewController.swift */,
+				347FC6F82479F0AD003B007D /* ShopListViewProtocol.swift */,
+				347FC6FA2479F0C6003B007D /* ShopListViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		347FC6F12479F055003B007D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				347FC6F22479F071003B007D /* ShopListPresenter.swift */,
+				347FC6F42479F082003B007D /* ShopListPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		347FC6FC2479F3B6003B007D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				347FC6FD2479F3CF003B007D /* ShopListCell.swift */,
+				347FC6FF2479F3E3003B007D /* ShopListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		42846DDBF779743992201BDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -940,6 +1049,7 @@
 				341F7824A3470B3ADE611B76 /* [CP] Copy Pods Resources */,
 				345F45F52440E3B1001732C4 /* ShellScript */,
 				3434E7CD2443172300BBFC32 /* CopyFiles */,
+				345D84A82474298900E5B7A9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -989,6 +1099,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347FC6C424782A1D003B007D /* Montserrat-Black.otf in Resources */,
+				347FC6C524782A1D003B007D /* Montserrat-BlackItalic.otf in Resources */,
+				347FC6C624782A1D003B007D /* Montserrat-Bold.otf in Resources */,
+				347FC6C724782A1D003B007D /* Montserrat-BoldItalic.otf in Resources */,
+				347FC6C824782A1D003B007D /* Montserrat-ExtraBold.otf in Resources */,
+				347FC6C924782A1D003B007D /* Montserrat-ExtraBoldItalic.otf in Resources */,
+				347FC6CA24782A1D003B007D /* Montserrat-ExtraLight.otf in Resources */,
+				347FC6CB24782A1D003B007D /* Montserrat-ExtraLightItalic.otf in Resources */,
+				347FC6CC24782A1D003B007D /* Montserrat-Italic.otf in Resources */,
+				347FC6CD24782A1D003B007D /* Montserrat-Light.otf in Resources */,
+				347FC6CE24782A1D003B007D /* Montserrat-LightItalic.otf in Resources */,
+				347FC6CF24782A1D003B007D /* Montserrat-Medium.otf in Resources */,
+				347FC6D024782A1D003B007D /* Montserrat-MediumItalic.otf in Resources */,
+				347FC6D124782A1D003B007D /* Montserrat-Regular.otf in Resources */,
+				347FC6D224782A1D003B007D /* Montserrat-SemiBold.otf in Resources */,
+				347FC6D324782A1D003B007D /* Montserrat-SemiBoldItalic.otf in Resources */,
+				347FC6D424782A1D003B007D /* Montserrat-Thin.otf in Resources */,
+				347FC6D524782A1D003B007D /* Montserrat-ThinItalic.otf in Resources */,
+				347FC6D624782A1D003B007D /* MontserratAlternates-Black.otf in Resources */,
+				347FC7002479F3E3003B007D /* ShopListCell.xib in Resources */,
+				347FC6D724782A1D003B007D /* MontserratAlternates-BlackItalic.otf in Resources */,
+				347FC6D824782A1D003B007D /* MontserratAlternates-Bold.otf in Resources */,
+				347FC6D924782A1D003B007D /* MontserratAlternates-BoldItalic.otf in Resources */,
+				347FC6DA24782A1D003B007D /* MontserratAlternates-ExtraBold.otf in Resources */,
+				347FC6DB24782A1D003B007D /* MontserratAlternates-ExtraBoldItalic.otf in Resources */,
+				347FC6DC24782A1D003B007D /* MontserratAlternates-ExtraLight.otf in Resources */,
+				347FC6DD24782A1D003B007D /* MontserratAlternates-ExtraLightItalic.otf in Resources */,
+				347FC6DE24782A1D003B007D /* MontserratAlternates-Italic.otf in Resources */,
+				347FC6DF24782A1D003B007D /* MontserratAlternates-Light.otf in Resources */,
+				347FC6E024782A1D003B007D /* MontserratAlternates-LightItalic.otf in Resources */,
+				347FC6E124782A1D003B007D /* MontserratAlternates-Medium.otf in Resources */,
+				347FC6E224782A1D003B007D /* MontserratAlternates-MediumItalic.otf in Resources */,
+				347FC6E324782A1D003B007D /* MontserratAlternates-Regular.otf in Resources */,
+				347FC6E424782A1D003B007D /* MontserratAlternates-SemiBold.otf in Resources */,
+				347FC6E524782A1D003B007D /* MontserratAlternates-SemiBoldItalic.otf in Resources */,
+				347FC6E624782A1D003B007D /* MontserratAlternates-Thin.otf in Resources */,
+				347FC6E724782A1D003B007D /* MontserratAlternates-ThinItalic.otf in Resources */,
 				345D8495246F1DE000E5B7A9 /* GraphicsViewController.storyboard in Resources */,
 				345D8482246EB5BE00E5B7A9 /* SettingsViewController.storyboard in Resources */,
 				345D8479246E08CF00E5B7A9 /* IncomeTableViewCell.xib in Resources */,
@@ -1000,6 +1147,7 @@
 				345D849D2470249C00E5B7A9 /* appIcon.png in Resources */,
 				346F391F246BF0C60081ABB2 /* LoginViewController.storyboard in Resources */,
 				346955AA23F420D100DCDC68 /* Assets.xcassets in Resources */,
+				347FC6FB2479F0C6003B007D /* ShopListViewController.storyboard in Resources */,
 				345F45E42440D2B2001732C4 /* CostViewController.storyboard in Resources */,
 				345D3C4A24633BC300D696E3 /* CostTableViewCell.xib in Resources */,
 				346EE22424374FA500EF91C3 /* TabBarViewController.storyboard in Resources */,
@@ -1027,6 +1175,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyWall/Pods-MyWall-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		345D84A82474298900E5B7A9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 		345F45F52440E3B1001732C4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1108,8 +1273,10 @@
 				3464E0A624365676000F57C1 /* SceneFactory.swift in Sources */,
 				3464E0C424365ACE000F57C1 /* ApplicationFlow.swift in Sources */,
 				3464E0B0243656B9000F57C1 /* SceneNavigatorProtocol.swift in Sources */,
+				347FC7022479FA70003B007D /* SceneFactory+ShopList.swift in Sources */,
 				3464E0A424365676000F57C1 /* ServiceFactoryProtocol.swift in Sources */,
 				345F45F32440E013001732C4 /* SceneFactory+Income.swift in Sources */,
+				347FC6EC24797981003B007D /* CurrencyServiceProtocol.swift in Sources */,
 				3464E0A9243656B1000F57C1 /* Scene.swift in Sources */,
 				345D3C422462EB1200D696E3 /* IncomeDB.swift in Sources */,
 				346F3917246BF0670081ABB2 /* LoginPresenter.swift in Sources */,
@@ -1120,6 +1287,7 @@
 				346EE2092437417300EF91C3 /* SplashPresenter.swift in Sources */,
 				345D8497246F267400E5B7A9 /* Graphics+SceneFactory.swift in Sources */,
 				346F3912246B55730081ABB2 /* CommonParser.swift in Sources */,
+				347FC6F52479F082003B007D /* ShopListPresenterProtocol.swift in Sources */,
 				346F3927246C95230081ABB2 /* FirestoreCollections.swift in Sources */,
 				346F38F32468ACBC0081ABB2 /* AppearanceColorsConfig.swift in Sources */,
 				346EE203243740C700EF91C3 /* SceneFactory+Splash.swift in Sources */,
@@ -1144,6 +1312,7 @@
 				346955A123F420D000DCDC68 /* AppDelegate.swift in Sources */,
 				345D3C3A2462E60C00D696E3 /* DataManagerServiceProtocol.swift in Sources */,
 				3464E0B624365727000F57C1 /* AppearanceСonfigurable.swift in Sources */,
+				347FC6F32479F071003B007D /* ShopListPresenter.swift in Sources */,
 				346F390F246B55340081ABB2 /* CommonBlock.swift in Sources */,
 				346F391D246BF0A60081ABB2 /* LoginViewProtocol.swift in Sources */,
 				346F392B246C9BC40081ABB2 /* IncomeParser.swift in Sources */,
@@ -1164,13 +1333,16 @@
 				345D84A32472B2F500E5B7A9 /* AddGraphicsAlertView.swift in Sources */,
 				345F45ED2440DF1D001732C4 /* IncomeViewController.swift in Sources */,
 				346EE21924374F8900EF91C3 /* TabBarPresenter.swift in Sources */,
+				347FC6F92479F0AD003B007D /* ShopListViewProtocol.swift in Sources */,
 				345D847E246EB59700E5B7A9 /* SettingsViewController.swift in Sources */,
+				347FC6EE2479C0CA003B007D /* AppConstants.swift in Sources */,
 				345D848D246F174B00E5B7A9 /* GraphicsViewController.swift in Sources */,
 				346F3902246AD0330081ABB2 /* IncomeCategory.swift in Sources */,
 				346F3907246B50300081ABB2 /* ApiProtocol.swift in Sources */,
 				345D8473246E054700E5B7A9 /* AddIncomeAlertView.swift in Sources */,
 				346EE2422437834000EF91C3 /* UINavigationController+ConvenienceInit.swift in Sources */,
 				345D848F246F176400E5B7A9 /* GraphicsViewProtocol.swift in Sources */,
+				347FC6EA247977E2003B007D /* CurrencyService.swift in Sources */,
 				346EE2472437834000EF91C3 /* UIColor+Brightness.swift in Sources */,
 				345D3C4C2463433500D696E3 /* NibLoadable.swift in Sources */,
 				345D84A72472DD4000E5B7A9 /* TimePeriod.swift in Sources */,
@@ -1179,6 +1351,7 @@
 				346F392D246DDC4C0081ABB2 /* Date+Time.swift in Sources */,
 				345D3C612464A28300D696E3 /* Fonts.swift in Sources */,
 				346EE20B243741B700EF91C3 /* SplashViewProtocol.swift in Sources */,
+				347FC6F72479F09C003B007D /* ShopListViewController.swift in Sources */,
 				346EE2102437442100EF91C3 /* UIViewController+Storyboard.swift in Sources */,
 				345F45E02440D139001732C4 /* CostViewProtocol.swift in Sources */,
 				345D3C4824633B5500D696E3 /* CostTableViewCell.swift in Sources */,
@@ -1189,6 +1362,7 @@
 				3464E0B824365727000F57C1 /* AppearanceConfig.swift in Sources */,
 				3464E0B1243656B9000F57C1 /* SceneTransitionType.swift in Sources */,
 				346EE2082437417300EF91C3 /* SplashPresenterProtocol.swift in Sources */,
+				347FC6FE2479F3CF003B007D /* ShopListCell.swift in Sources */,
 				345D8493246F179B00E5B7A9 /* GraphicsPresenterProtocol.swift in Sources */,
 				346EE23124377D6200EF91C3 /* HomeViewProtocol.swift in Sources */,
 				345D8484246EB5FC00E5B7A9 /* SettingsPresenter.swift in Sources */,

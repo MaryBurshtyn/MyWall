@@ -10,6 +10,7 @@ class IncomePresenter {
     var incomes = [IncomeDB]()
     let globalGroup = DispatchGroup()
     var datesDictionary = [(key: String, value: [IncomeDB])]()
+    var apiData = [IncomeDB]()
     
     init(view: IncomeViewProtocol,
          navigator: SceneNavigatorProtocol,
@@ -57,14 +58,47 @@ class IncomePresenter {
         }
         self.datesDictionary = sortedValues
     }
-}
-
-// MARK: - SplashPresenterProtocol
-
-extension IncomePresenter: IncomePresenterProtocol {
-    func handleViewDidLoad() {
-        view.showPreloader()
-        incomes = self.dataManagerService.getAllIncomes()
+    
+    private func synchronizeDatabases() {
+           let localData = dataManagerService.getAllIncomes()
+           if apiData.count == 0 {
+               return
+           }
+           let apiDifference = difference(this: localData, that: apiData)
+           if apiDifference.count != 0 {
+               api.sendIncomes(apiDifference)
+           }
+           let localDiff = difference(this: apiData, that: localData)
+           if localDiff.count != 0 {
+               dataManagerService.uploadToRepo(localDiff, completion: nil)
+           }
+       }
+    
+    private func difference(this:  [IncomeDB], that: [IncomeDB]) -> [IncomeDB] {
+           var diff = [IncomeDB]()
+           this.forEach { (elem) in
+               if !that.contain(elem) {
+                   diff.append(elem)
+               }
+           }
+           return diff
+    }
+    
+    private func getApiData() {
+        self.api.getIncomes { [weak self] result in
+            switch result {
+            case .success(let data):
+                self?.apiData = data
+                self?.globalGroup.leave()
+            case .failure(let err):
+                log.info("Couldnt get api data cause: \(err.localizedDescription)")
+                self?.globalGroup.leave()
+            }
+        }
+    }
+    
+    private func setData() {
+        incomes = dataManagerService.getAllIncomes()
         incomes = incomes.sorted(by: {
             guard let fDate = $0.date, let sDate = $1.date else {
                 return false
@@ -72,8 +106,27 @@ extension IncomePresenter: IncomePresenterProtocol {
             return fDate.compare(sDate) == .orderedAscending
         })
         makeDatesDictionary()
-        self.view.setIncomes(incomes: datesDictionary) 
-        self.view.hidePreloader()
+        view.setIncomes(incomes: datesDictionary)
+    }
+}
+
+// MARK: - SplashPresenterProtocol
+
+extension IncomePresenter: IncomePresenterProtocol {
+    func handleViewDidLoad() {
+        view.showPreloader()
+        if let isInternetConnected = self.reachability?.connection, isInternetConnected != .unavailable {
+            globalGroup.enter()
+            getApiData()
+            globalGroup.notify(queue: .main) {
+                self.synchronizeDatabases()
+                self.setData()
+                self.view.hidePreloader()
+            }
+        } else {
+            setData()
+            view.hidePreloader()
+        }
     }
     
     func handleAddButtonTapped() {

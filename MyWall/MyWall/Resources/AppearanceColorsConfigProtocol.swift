@@ -38,6 +38,7 @@ protocol AppearanceColorsConfigProtocol {
     
     var loginBorderColor: UIColor { get }
     var dateBackgroundColor: UIColor { get }
+    var navBarColor: UIColor { get }
     // MARK: - Login
 
     var hintTextColor: UIColor { get }
