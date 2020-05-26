@@ -144,4 +144,10 @@ extension IncomePresenter: IncomePresenterProtocol {
         view.setIncomes(incomes: datesDictionary)
     }
     
+    func handleDeleteIncome(_ income: IncomeDB) {
+        api.deleteIncome(with: income.objectId)
+        dataManagerService.deleteIncomes([income])
+        
+    }
+    
 }

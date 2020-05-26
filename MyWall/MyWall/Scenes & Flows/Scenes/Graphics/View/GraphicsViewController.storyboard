@@ -34,32 +34,32 @@
                                                 <rect key="frame" x="15" y="15" width="384" height="110"/>
                                                 <subviews>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="n8r-As-9Ld">
-                                                        <rect key="frame" x="15" y="57" width="354" height="2"/>
+                                                        <rect key="frame" x="15" y="55" width="354" height="2"/>
                                                         <color key="tintColor" red="1" green="0.21948061120000001" blue="0.5357899116" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="progressTintColor" red="0.65310184288325246" green="0.75306985553684647" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="trackTintColor" red="0.62000309853242186" green="0.93282043147208116" blue="0.85328600569927371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You spent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZC-dJ-ZGp">
-                                                        <rect key="frame" x="15" y="15" width="90" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                        <rect key="frame" x="15" y="15" width="75" height="18.5"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you've got" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yz2-sj-w3N">
-                                                        <rect key="frame" x="276" y="15" width="93" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                        <rect key="frame" x="291.5" y="15" width="77.5" height="18.5"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugi-5b-I0s">
-                                                        <rect key="frame" x="15" y="73" width="168" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                        <rect key="frame" x="15" y="76.5" width="140" height="18.5"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2K-NF-1Ma">
-                                                        <rect key="frame" x="167.5" y="15" width="49.5" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                        <rect key="frame" x="170" y="15" width="44" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                         <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -81,17 +81,26 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nj-fa-W4E" customClass="BarChartView" customModule="Charts">
-                                                <rect key="frame" x="15" y="145" width="384" height="658"/>
+                                                <rect key="frame" x="15" y="145" width="384" height="648"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UB-p8-ScI">
+                                                <rect key="frame" x="15" y="803" width="384" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="2UB-p8-ScI" firstAttribute="leading" secondItem="VDH-Ib-4Go" secondAttribute="leading" constant="15" id="KmG-VL-drN"/>
                                             <constraint firstItem="FDD-SR-twE" firstAttribute="top" secondItem="VDH-Ib-4Go" secondAttribute="top" constant="15" id="NHS-X8-QLf"/>
                                             <constraint firstItem="0nj-fa-W4E" firstAttribute="top" secondItem="FDD-SR-twE" secondAttribute="bottom" constant="20" id="P1o-Uv-cld"/>
                                             <constraint firstAttribute="trailing" secondItem="FDD-SR-twE" secondAttribute="trailing" constant="15" id="RZo-0M-6fe"/>
+                                            <constraint firstAttribute="trailing" secondItem="2UB-p8-ScI" secondAttribute="trailing" constant="15" id="Rh4-W8-iw3"/>
                                             <constraint firstAttribute="trailing" secondItem="0nj-fa-W4E" secondAttribute="trailing" constant="15" id="Vc0-a7-v6l"/>
-                                            <constraint firstAttribute="bottom" secondItem="0nj-fa-W4E" secondAttribute="bottom" constant="15" id="e0Y-nj-aZ8"/>
+                                            <constraint firstItem="2UB-p8-ScI" firstAttribute="top" secondItem="0nj-fa-W4E" secondAttribute="bottom" constant="10" id="WAI-0N-9hl"/>
+                                            <constraint firstAttribute="bottom" secondItem="2UB-p8-ScI" secondAttribute="bottom" constant="15" id="XhU-cW-tLS"/>
                                             <constraint firstItem="0nj-fa-W4E" firstAttribute="leading" secondItem="VDH-Ib-4Go" secondAttribute="leading" constant="15" id="iQd-eE-upq"/>
                                             <constraint firstItem="FDD-SR-twE" firstAttribute="leading" secondItem="VDH-Ib-4Go" secondAttribute="leading" constant="15" id="ijn-lC-IUA"/>
                                         </constraints>
@@ -122,6 +131,7 @@
                         <viewLayoutGuide key="safeArea" id="PDG-65-AQu"/>
                     </view>
                     <connections>
+                        <outlet property="barChartLabel" destination="2UB-p8-ScI" id="gHh-Vb-Uki"/>
                         <outlet property="barChartView" destination="0nj-fa-W4E" id="qqZ-n2-n6D"/>
                         <outlet property="gotLabel" destination="Yz2-sj-w3N" id="ceI-3T-waO"/>
                         <outlet property="progressLabel" destination="u2K-NF-1Ma" id="bx6-wt-y4U"/>

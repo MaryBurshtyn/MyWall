@@ -8,6 +8,8 @@
 "settings" = "Settings";
 "shopList" = "Shop\nlist";
 "shopListNavBar" = "Shop list";
+"forcosts" = "Expenses";
+"forincomes" = "Incomes";
 
 // Cost Category
 
@@ -43,6 +45,10 @@
 "addCostButton" = "Add";
 "finishButton" = "Finish";
 "cancelButton" = "Cancel";
+"login" = "Login";
+"register" = "Register";
+"firstDate" = "Set first date";
+"secDate" = "Set second date";
 
 //Currency
 
@@ -82,8 +88,11 @@
 "sumType" = "Choose summarization type";
 "period" = "Choose time period to plot";
 "plot" = "Plot";
+"customPeriod" = "time period from %@ to %@";
+"chartLabel" = "%@ chart with summarization by %@ for %@";
 
 "email" = "Email";
+"password" = "Password";
 "defCurrency" = "Default currency";
 "changePassword" = "Change password";
 "logOut" = "Log out";

@@ -2,11 +2,13 @@
 "costs" = "Расходы";
 "incomes" = "Доходы";
 "home" = "Графики";
-"spent" = "Цена";
+"spent" = "Сумма";
 "income" = "Доход";
 "settings" = "Настройки";
 "shopList" = "Список\nпродуктов";
 "shopListNavBar" = "Список продуктов";
+"forcosts" = "расходов";
+"forincomes" = "доходов";
 
 // Cost Category
 
@@ -39,9 +41,13 @@
 
 // Buttons
 
-"addCostButton" = "Добавить";
+"addCostButton" = " + ";
 "finishButton" = "Завершить";
 "cancelButton" = "Отмена";
+"login" = "Войти";
+"register" = "Зарегистрироваться";
+"firstDate" = "Выбрать начало";
+"secDate" = "Выбрать конец";
 
 //Currency
 
@@ -74,14 +80,17 @@
 "month" = "Месяц";
 "category" = "Категория";
 "week" = "Неделя";
-"custom" = "Пользовательский";
+"custom" = "Пользователь";
 "quarter" = "Квартал";
 "year" = "Год";
 "sumType" = "Выберите тип суммирования";
-"period" = "Выберите период времени для графика";
+"period" = "Выберите период времени";
 "plot" = "Ок";
+"customPeriod" = "период времени с %@ по %@";
+"chartLabel" = "Диаграмма %@ с типом суммирования %@ за %@";
 
 "email" = "Почта";
+"password" = "Пароль";
 "defCurrency" = "Валюта по умолчанию";
 "changePassword" = "Изменить пароль";
 "logOut" = "Выйти";

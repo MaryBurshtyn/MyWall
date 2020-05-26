@@ -11,6 +11,8 @@ class LoginViewController: UIViewController {
     
     // MARK: - MVP Infractructure
     
+    @IBOutlet weak var passLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -50,16 +52,18 @@ class LoginViewController: UIViewController {
     }
     
     private func setUpView() {
-        registerButton.backgroundColor = .clear
-        loginButton.backgroundColor = .clear
-        setBordered(for: registerButton)
-        setBordered(for: loginButton)
+        registerButton.setTitle(L10n.register, for: .normal)
+        loginButton.setTitle(L10n.login, for: .normal)
+        registerButton.backgroundColor = .white
+        loginButton.backgroundColor = appearanceConfig.colors.navBarColor
+        emailLabel.text = L10n.email
+        passLabel.text = L10n.password
+        setCornered(for: registerButton)
+        setCornered(for: loginButton)
     }
     
-    private func setBordered(for button: UIButton) {
+    private func setCornered(for button: UIButton) {
         button.layer.cornerRadius = Constants.defaultCornerRadius
-        button.layer.borderWidth = Constants.defaultborderWidth
-        button.layer.borderColor = appearanceConfig.colors.loginBorderColor.cgColor
     }
 }
 

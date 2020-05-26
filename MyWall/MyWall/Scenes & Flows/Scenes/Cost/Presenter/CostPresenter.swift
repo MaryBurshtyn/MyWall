@@ -28,9 +28,6 @@ class CostPresenter {
     
     private func synchronizeDatabases() {
         let localData = dataManagerService.getAllExpenses()
-        if apiData.count == 0 {
-            return
-        }
         let apiDifference = difference(this: localData, that: apiData)
         if apiDifference.count != 0 {
             api.sendExpenses(apiDifference)
@@ -136,13 +133,13 @@ extension CostPresenter: CostPresenterProtocol {
     
     func handleUpdateExpensesList(expenses: [CostDB]) {
         dataManagerService.uploadToRepo(expenses, completion: nil)
+        costs.append(contentsOf: expenses)
+        makeDatesDictionary()
+        view.setCosts(costs: datesDictionary)
         guard let isInternetConnected = reachability?.connection, isInternetConnected != .unavailable else {
             return
         }
         api.sendExpenses(expenses)
-        costs.append(contentsOf: expenses)
-        makeDatesDictionary()
-        view.setCosts(costs: datesDictionary)
     }
     
     func handleDeleteExpense(_ expense: CostDB) {

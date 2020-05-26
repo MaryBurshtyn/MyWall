@@ -49,9 +49,9 @@ class AddCostAlertView: UIViewController, UIPickerViewDelegate, UIPickerViewData
         alertView.layer.cornerRadius = 12
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         costLabel.text = L10n.spent
-        addCostButton.titleLabel?.text = L10n.addCostButton
-        cancelButton.titleLabel?.text = L10n.cancelButton
-        okButton.titleLabel?.text = L10n.finishButton
+        addCostButton.setTitle(L10n.addCostButton, for: .normal)
+        cancelButton.setTitle(L10n.cancelButton, for: .normal)
+        okButton.setTitle(L10n.finishButton, for: .normal)
     }
     
     func animateView() {

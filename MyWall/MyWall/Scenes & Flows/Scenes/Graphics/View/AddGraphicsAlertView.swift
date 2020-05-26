@@ -43,12 +43,15 @@ class AddGraphicsAlertView: UIViewController {
         setUpViewForExpenses()
         dataTypeControl.setTitle(L10n.costs, forSegmentAt: 0)
         dataTypeControl.setTitle(L10n.incomes, forSegmentAt: 1)
-        
+        sumTypeLabel.text = L10n.sumType
+        timePeriodLabel.text = L10n.period
         alertView.layer.cornerRadius = 12
-        cancelButton.titleLabel?.text = L10n.cancelButton
+        cancelButton.setTitle(L10n.cancelButton, for: .normal)
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
-        plotButton.titleLabel?.text = L10n.plot
+        plotButton.setTitle(L10n.plot, for: .normal)
         customView.isHidden = true
+        firstDate.setTitle(L10n.firstDate, for: .normal)
+        secondDate.setTitle(L10n.secDate, for: .normal)
     }
     
     private func setUpViewForExpenses() {

@@ -23,6 +23,10 @@ internal enum L10n {
   internal static let changePassword = L10n.tr("Localizable", "changePassword")
   /// No data for the chart
   internal static let chartNoData = L10n.tr("Localizable", "chart_noData")
+  /// %@ chart with summarization by %@ for %@
+  internal static func chartLabel(_ p1: String, _ p2: String, _ p3: String) -> String {
+    return L10n.tr("Localizable", "chartLabel", p1, p2, p3)
+  }
   /// Beauty
   internal static let costCategoryBeauty = L10n.tr("Localizable", "costCategory_beauty")
   /// Car service
@@ -79,6 +83,10 @@ internal enum L10n {
   internal static let costs = L10n.tr("Localizable", "costs")
   /// Custom
   internal static let custom = L10n.tr("Localizable", "custom")
+  /// time period from %@ to %@
+  internal static func customPeriod(_ p1: String, _ p2: String) -> String {
+    return L10n.tr("Localizable", "customPeriod", p1, p2)
+  }
   /// Day
   internal static let day = L10n.tr("Localizable", "day")
   /// Default currency
@@ -89,6 +97,12 @@ internal enum L10n {
   internal static let eurCurrency = L10n.tr("Localizable", "eurCurrency")
   /// Finish
   internal static let finishButton = L10n.tr("Localizable", "finishButton")
+  /// Set first date
+  internal static let firstDate = L10n.tr("Localizable", "firstDate")
+  /// Expenses
+  internal static let forcosts = L10n.tr("Localizable", "forcosts")
+  /// Incomes
+  internal static let forincomes = L10n.tr("Localizable", "forincomes")
   /// UAH
   internal static let grnCurrency = L10n.tr("Localizable", "grnCurrency")
   /// Graphics
@@ -115,20 +129,28 @@ internal enum L10n {
   internal static let incomes = L10n.tr("Localizable", "incomes")
   /// en_GB
   internal static let locale = L10n.tr("Localizable", "locale")
+  /// Login
+  internal static let login = L10n.tr("Localizable", "login")
   /// Log out
   internal static let logOut = L10n.tr("Localizable", "logOut")
   /// Month
   internal static let month = L10n.tr("Localizable", "month")
+  /// Password
+  internal static let password = L10n.tr("Localizable", "password")
   /// Choose time period to plot
   internal static let period = L10n.tr("Localizable", "period")
   /// Plot
   internal static let plot = L10n.tr("Localizable", "plot")
   /// Quarter
   internal static let quarter = L10n.tr("Localizable", "quarter")
+  /// Register
+  internal static let register = L10n.tr("Localizable", "register")
   /// Remaining money: 
   internal static let remainingMoney = L10n.tr("Localizable", "remainingMoney")
   /// RUB
   internal static let rubCurrency = L10n.tr("Localizable", "rubCurrency")
+  /// Set second date
+  internal static let secDate = L10n.tr("Localizable", "secDate")
   /// Settings
   internal static let settings = L10n.tr("Localizable", "settings")
   /// Shop\nlist

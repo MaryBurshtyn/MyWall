@@ -97,6 +97,15 @@ extension IncomeViewController: UITableViewDelegate, UITableViewDataSource {
         label.text = incomes[section].key
         return label
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+      if editingStyle == .delete {
+        let deleted = incomes[indexPath.section].value[indexPath.row]
+        incomes[indexPath.section].value.remove(at: indexPath.row)
+        presenter.handleDeleteIncome(deleted)
+        self.tableView.deleteRows(at: [indexPath], with: .automatic)
+      }
+    }
 }
 
 extension IncomeViewController: IncomeViewProtocol {

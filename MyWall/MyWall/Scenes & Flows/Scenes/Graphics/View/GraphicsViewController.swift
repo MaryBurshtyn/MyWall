@@ -26,7 +26,9 @@ class GraphicsViewController: UIViewController {
     @IBOutlet weak var gotLabel: UILabel!
     @IBOutlet weak var remainingMoney: UILabel!
     @IBOutlet weak var barChartView: BarChartView!
+    @IBOutlet weak var barChartLabel: UILabel!
     var horizontalChart: HorizontalBarChartView?
+    var currentBarChart = (DataType.expenses, SumType.day, TimePeriod.week)
     // MARK: - Init & Setup
 
     override func viewWillAppear(_ animated: Bool) {
@@ -122,6 +124,7 @@ class GraphicsViewController: UIViewController {
         barChartView.data = chartData
         barChartView.legend.enabled = false
         barChartView.xAxis.drawGridLinesEnabled = false
+        barChartLabel.text =  L10n.chartLabel(currentBarChart.0.stringValue, currentBarChart.1.stringValue, currentBarChart.2.stringValue)
     }
     
     private func setHorizontalChartViewData(_ data: [(key: String, value: Float)]) {
@@ -150,6 +153,7 @@ class GraphicsViewController: UIViewController {
         horizontalChart?.data?.setValueFormatter(formatter)
         horizontalChart?.data?.setDrawValues(true)
         horizontalChart?.xAxis.drawGridLinesEnabled = false
+        barChartLabel.text =  L10n.chartLabel(currentBarChart.0.stringValue, currentBarChart.1.stringValue, currentBarChart.2.stringValue)
     }
     
 }
@@ -165,16 +169,16 @@ extension GraphicsViewController: GraphicsViewProtocol {
     }
     
     func setProgress(incomes: Float, expenses: Float) {
-        progressLabel.text = "\(String(expenses))/\(String(incomes))"
-        remainingMoney.text = L10n.remainingMoney + String(incomes - expenses)
+        let currency = UserDefaults.standard.string(forKey: AppConstants.defCurrency)
+        progressLabel.text = "\(String(format: "%.1f", expenses))/\(String(format: "%.1f", incomes))"
+        remainingMoney.text = L10n.remainingMoney + String(format: "%.1f", incomes - expenses) + " \(currency ?? "")"
         progressView.setProgress(Float((expenses)/incomes), animated: true)
     }
-    
-    
 }
 
 extension GraphicsViewController: AddGraphicsAlertViewDelegate {
     func plotButtonTapped(dataType: DataType, sumType: SumType, period: TimePeriod) {
+        currentBarChart = (dataType, sumType, period)
         presenter.handleSettingsChoosed(dataType: dataType, sumType: sumType, period: period)
     }
 }

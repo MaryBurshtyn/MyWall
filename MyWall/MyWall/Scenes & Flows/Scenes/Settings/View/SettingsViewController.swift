@@ -49,11 +49,13 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         presenter.handleLogOutTapped()
     }
     private func setUpView() {
+        emailLabel.text = L10n.email
         defaultCurrency.text = L10n.defCurrency
         defaultCurrency.font = UIFont(font: FontFamily.Montserrat.semiBold, size: 18)
         email.text = L10n.email
         changePassword.setTitle(L10n.changePassword, for: .normal)
         logOut.setTitle(L10n.logOut, for: .normal)
+        changePassword.isHidden = true
     }
     
     private func setBordered(for button: UIButton) {

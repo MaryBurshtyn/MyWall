@@ -18,27 +18,41 @@ class GraphicsPresenter {
     }
     
     private func getIncomes() -> Float {
+        let defCurrency = UserDefaults.standard.string(forKey: AppConstants.defCurrency)
         var sum: Float = 0.0
         let incomes = dataManagerService.getIncomes(for: Date())
         incomes.forEach { element in
             guard let income = element.value,
-                let intValue = income.toFloat() else {
+                let value = income.toFloat() else {
                 return
             }
-            sum += intValue
+            guard let defCur = defCurrency,
+                let cur = element.currency else {return}
+            if defCur == cur {
+               sum += value
+            } else {
+              sum += currencyService.convert(from: Currency.init(from: cur), to: Currency.init(from: defCur), value: value)
+            }
         }
         return sum
     }
     
     private func getExpenses() -> Float {
+        let defCurrency = UserDefaults.standard.string(forKey: AppConstants.defCurrency)
         var sum: Float = 0.0
         let expenses = dataManagerService.getExpenses(for: Date())
         expenses.forEach { element in
            guard let income = element.value,
-               let intValue = income.toFloat() else {
+               let value = income.toFloat() else {
                return
            }
-           sum += intValue
+            guard let defCur = defCurrency,
+              let cur = element.currency else {return}
+            if defCur == cur {
+             sum += value
+            } else {
+            sum += currencyService.convert(from: Currency.init(from: cur), to: Currency.init(from: defCur), value: value)
+            }
         }
         return sum
     }

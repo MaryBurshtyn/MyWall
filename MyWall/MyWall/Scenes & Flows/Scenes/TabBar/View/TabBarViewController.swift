@@ -65,7 +65,7 @@ class TabBarViewController: UITabBarController {
                                 title: L10n.shopListNavBar,
                                 image:  #imageLiteral(resourceName: "ic_settings"))
         
-        viewControllers = [graphics, cost, income, settings, list]
+        viewControllers = [graphics, cost, income, settings/*, list*/]
     }
     
     // MARK: - Make Controllers

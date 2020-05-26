@@ -63,10 +63,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6A-Ib-cuS">
-                                <rect key="frame" x="157" y="700.5" width="100" height="40"/>
+                                <rect key="frame" x="30" y="710.5" width="354" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="fRb-g4-Es6"/>
-                                    <constraint firstAttribute="height" constant="40" id="jFs-FY-gCh"/>
+                                    <constraint firstAttribute="height" constant="50" id="jFs-FY-gCh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="Register">
@@ -77,10 +76,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dM-7a-h7n">
-                                <rect key="frame" x="167" y="645.5" width="80" height="40"/>
+                                <rect key="frame" x="30" y="645.5" width="354" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="CUZ-eQ-wqA"/>
-                                    <constraint firstAttribute="width" constant="80" id="T6T-jF-stF"/>
+                                    <constraint firstAttribute="height" constant="50" id="CUZ-eQ-wqA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="Login">
@@ -101,7 +99,9 @@
                             <constraint firstItem="sIJ-yN-6BF" firstAttribute="leading" secondItem="kkV-AV-W11" secondAttribute="leading" constant="30" id="Fcq-KO-8SR"/>
                             <constraint firstItem="5jK-QH-EbE" firstAttribute="trailing" secondItem="kkV-AV-W11" secondAttribute="trailing" id="FkA-nZ-jZA"/>
                             <constraint firstItem="5jK-QH-EbE" firstAttribute="top" secondItem="9kL-aY-MZl" secondAttribute="top" id="KRP-vq-8ii"/>
+                            <constraint firstItem="Z6A-Ib-cuS" firstAttribute="leading" secondItem="kkV-AV-W11" secondAttribute="leading" constant="30" id="L21-il-IFy"/>
                             <constraint firstItem="9Ph-q1-URC" firstAttribute="leading" secondItem="kkV-AV-W11" secondAttribute="leading" constant="30" id="NSe-fZ-zGe"/>
+                            <constraint firstItem="kkV-AV-W11" firstAttribute="trailing" secondItem="Z6A-Ib-cuS" secondAttribute="trailing" constant="30" id="SbL-Ku-4on"/>
                             <constraint firstItem="sIJ-yN-6BF" firstAttribute="top" secondItem="Byu-un-0Zm" secondAttribute="bottom" constant="5" id="Yv9-Z0-sSs"/>
                             <constraint firstItem="9dM-7a-h7n" firstAttribute="top" secondItem="9Ph-q1-URC" secondAttribute="bottom" constant="30" id="beq-Xn-HEG"/>
                             <constraint firstItem="KPb-Fd-yyn" firstAttribute="top" secondItem="kkV-AV-W11" secondAttribute="top" constant="40" id="eVT-9t-Ggq"/>
@@ -110,15 +110,19 @@
                             <constraint firstItem="aQc-TS-h1N" firstAttribute="leading" secondItem="kkV-AV-W11" secondAttribute="leading" constant="30" id="fVE-D5-xRd"/>
                             <constraint firstItem="KPb-Fd-yyn" firstAttribute="centerX" secondItem="5jK-QH-EbE" secondAttribute="centerX" id="hMz-Ud-Zbk"/>
                             <constraint firstAttribute="bottom" secondItem="5jK-QH-EbE" secondAttribute="bottom" id="hSo-xm-R9t"/>
+                            <constraint firstItem="9dM-7a-h7n" firstAttribute="leading" secondItem="kkV-AV-W11" secondAttribute="leading" constant="30" id="jN2-2g-dK7"/>
                             <constraint firstItem="9dM-7a-h7n" firstAttribute="centerX" secondItem="5jK-QH-EbE" secondAttribute="centerX" id="jpR-ab-cYU"/>
+                            <constraint firstItem="kkV-AV-W11" firstAttribute="trailing" secondItem="9dM-7a-h7n" secondAttribute="trailing" constant="30" id="pop-Uc-N9p"/>
                             <constraint firstItem="Byu-un-0Zm" firstAttribute="centerY" secondItem="5jK-QH-EbE" secondAttribute="centerY" id="sKM-KR-NPq"/>
                             <constraint firstItem="Z6A-Ib-cuS" firstAttribute="top" secondItem="9dM-7a-h7n" secondAttribute="bottom" constant="15" id="vBq-G6-zDd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kkV-AV-W11"/>
                     </view>
                     <connections>
+                        <outlet property="emailLabel" destination="Byu-un-0Zm" id="dlq-2N-uKg"/>
                         <outlet property="emailTextField" destination="sIJ-yN-6BF" id="lgC-Oo-5fW"/>
                         <outlet property="loginButton" destination="9dM-7a-h7n" id="u3N-GN-O6P"/>
+                        <outlet property="passLabel" destination="aQc-TS-h1N" id="DWp-ZL-XjY"/>
                         <outlet property="passwordTextField" destination="9Ph-q1-URC" id="Kh3-xP-Jxi"/>
                         <outlet property="registerButton" destination="Z6A-Ib-cuS" id="o1L-su-uPb"/>
                     </connections>
@@ -129,7 +133,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_background" width="375" height="667"/>
-        <image name="wallet" width="200" height="200"/>
+        <image name="ic_background" width="357" height="667"/>
+        <image name="wallet" width="600" height="600"/>
     </resources>
 </document>
